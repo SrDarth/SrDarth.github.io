@@ -139,13 +139,13 @@ margin-top:30px;
 
 /* The grid: Three equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-  color: white;
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
 }
 
 .containerTab {
