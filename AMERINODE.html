@@ -241,11 +241,12 @@
 
 
  <br><br>
-  <div id="salatim"></div>
+
 
 <div class="row">
-	<button class="btn btn-warning" onclick="emailsala()">Gerar email para Sala TIM</button>
+	<span id="modalDragOnSala" class="btn btn-warning" onclick="emailsala()">Gerar email para Sala TIM<div id="salatim"></div></span>
 </div>
+
 </center>
 <br><br>
 <h1>ATENÇÃO</h1>
@@ -282,16 +283,6 @@ function openTab(tabName) {
 }
 </script>
 
-<script>
-$(document).ready(function(){
-  $(".btn1").click(function(){
-    $("#telaemergencial").hide();
-  });
-  $(".btn2").click(function(){
-    $("#telaemergencial").show();
-  });
-});
-</script>
 
 <script>
 $(document).ready(function() {
@@ -316,6 +307,21 @@ $(document).ready(function() {
         title: 'Filial e Centro',
         overlay: false,
         content: $('#coletaeentrega'),
+        draggable: 'title',
+        repositionOnOpen: false,
+        repositionOnContent: false
+    });
+
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    new jBox('Modal', {
+        attach: $('#modalDragOnSala'),
+        title: 'Filial e Centro',
+        overlay: false,
+        content: $('#salatim'),
         draggable: 'title',
         repositionOnOpen: false,
         repositionOnContent: false
@@ -374,5 +380,6 @@ function emailsala() {
   document.getElementById("salatim").innerHTML = linksalatim;
 }
 </script>
+
 </body>
 </html> 
