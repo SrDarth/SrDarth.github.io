@@ -27,6 +27,12 @@
   <div class="column" onclick="openTab('b3');" style="background:#2E8B57;">
     Email para Sala TIM
   </div>
+  <div class="column" onclick="openTab('b4');" style="background:#256c44;">
+    Bloco de notas
+  </div>
+  <div class="column" onclick="openTab('b5');" style="background:#8FBC8B;">
+    Calcular Rota
+  </div>
 </div>
 
 <!-- Full-width columns: (hidden by default) -->
@@ -270,6 +276,19 @@
 
 </div>
 
+<div id="b4" class="containerTab" style="display:none;background:#FFFFE0;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+<center><textarea rows="30" cols="150"></textarea></center>
+</div>
+
+<div id="b5" class="containerTab" style="display:none;background:#FFFFE0;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <label for="fonte">Fonte:</label><a href="https://pt.distance.to/" target="_blank">distance.to</a><br>
+<center><iframe src="https://pt.distance.to/" referrerpolicy="no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url" style="overflow-y:hidden;height:500px;width:920px;"></iframe></center>
+</div>
+
+
+
 </div>
 
 <script>
@@ -319,7 +338,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     new jBox('Modal', {
         attach: $('#modalDragOnSala'),
-        title: 'Email para SALA TIM',
+        title: 'Filial e Centro',
         overlay: false,
         content: $('#salatim'),
         draggable: 'title',
@@ -329,6 +348,7 @@ $(document).ready(function() {
 
 });
 </script>
+
 
 
 <script>
