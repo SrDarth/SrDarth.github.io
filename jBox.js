@@ -1577,3 +1577,52 @@ if (!Function.prototype.bind) {
 		return fBound;
 	};
 }
+
+function emergencial() {
+  var x = 
+  "🚨🚨🚨 EMERGENCIAL 🚨🚨🚨" + 
+  "<br>" + 
+  "TICKET: " + document.getElementById("TICKET").value + "<br>" + 
+  " Valor NF: R$" + document.getElementById("VALORNF").value + "<br>" + 
+  " Modal: " + document.getElementById("MODAL").value + "<br>" + 
+  "Solicitação Nº:" + document.getElementById("ETICKET").value + "<br><br>" + 
+  " Coleta: " + document.getElementById("COLETA").value + "<br>" + 
+  " Contato coleta: " + document.getElementById("CONTATOCOLETA").value + "<br><br>" + 
+  " Entrega: " + document.getElementById("ENTREGA").value + "<br>" + 
+  " Contato entrega: " + document.getElementById("CONTATOENTREGA").value + "<br><br>" +
+  " Altura: " + document.getElementById("ALTURA").value + " cm <br>" + 
+  " Largura: " + document.getElementById("LARGURA").value + " cm" + "<br>" + 
+  " Comprimento: " + document.getElementById("COMPRIMENTO").value + " cm" + "<br><br>" + 
+  " Peso: " + document.getElementById("PESO").value + " kg" + "<br>" + 
+  " Volume: " + document.getElementById("VOLUME").value + " " + document.getElementById("TIPOVOLUME").value + "<br><br>";
+  var coletadia =
+  " Data da Coleta: " + document.getElementById("CDIA").value + "/";
+  var coletames =
+  document.getElementById("CMES").value + "/";
+  var coletaano =
+  document.getElementById("CANO").value + "<br>";
+  var entregadia =
+  " Data da Entrega: " + document.getElementById("EDIA").value + "/";
+  var entregames =
+  document.getElementById("EMES").value + "/";
+  var entregaano =
+  document.getElementById("EANO").value + "<br><br>";
+  var d =
+  "*CONSEGUEM ATENDER?*";
+  var x1 = x.toUpperCase();
+  document.getElementById("demo").innerHTML = x1+coletadia+coletames+coletaano+entregadia+entregames+entregaano+d;
+}
+
+function download(){
+    var text = document.getElementById("blocodenotas").value;
+    text = text.replace(/\n/g, "\r\n");
+    var blob = new Blob([text], { type: "text/plain"});
+    var anchor = document.createElement("a");
+    anchor.download = "Minhas anotações.txt";
+    anchor.href = window.URL.createObjectURL(blob);
+    anchor.target ="_blank";
+    anchor.style.display = "none";
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+ }
