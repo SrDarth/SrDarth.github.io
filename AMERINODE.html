@@ -312,11 +312,27 @@ function openTab(tabName) {
 <script>
 $(document).ready(function() {
     new jBox('Modal', {
-        attach: $('#modalDragOnTitle'),
+        attach: $('#modalDragOnNormal'),
+        width: 600,
+        title: 'Texto Normal',
+        overlay: false,
+        content: $('#normaldemo'),
+        draggable: 'title',
+        repositionOnOpen: false,
+        repositionOnContent: false
+    });
+
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    new jBox('Modal', {
+        attach: $('#modalDragOnEmergencial'),
         width: 600,
         title: 'Texto Emergencial',
         overlay: false,
-        content: $('#demo'),
+        content: $('#emergencialdemo'),
         draggable: 'title',
         repositionOnOpen: false,
         repositionOnContent: false
