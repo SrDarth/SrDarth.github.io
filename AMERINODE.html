@@ -61,13 +61,15 @@
 
 
 
-    <td><label for="TICKET">Ticket:</label><input type="text" id="TICKET" value="" placeholder="1234"></td>
-    <td><label for="ETICKET">Solicitação Nº:</label><input type="text" id="ETICKET" value="" placeholder="EVE, TSK, NTT..."></td>
+    <td><label for="TICKET">Ticket:</label><input type="text" id="TICKET" value="" placeholder="1234..."></td>
+    <td><label for="ETICKET">SGS ou EMERGENCIAL:</label><input type="text" id="ETICKET" value="" placeholder="SGS EVE NTT TSK..."></td>
     <td><label for="VALORNF">Valor NF:</label><input type="text" id="VALORNF" value="" placeholder="1234,12"></td>
 	<td><label for="MODAL">Modal:</label>
 <select class="select" id="MODAL" name="MODAL">
 <option>RODO DEDICADO</option>
 <option>AEREO DEDICADO</option>
+<option>RODO NORMAL</option>
+<option>AEREO NORMAL</option>
 </select></td>
     <td></td>
     <td></td>
@@ -126,7 +128,10 @@
 
 <td colspan="1">
 <div class="row">
-	<span id="modalDragOnTitle" class="btn btn-warning" onclick="emergencial()">Texto Emergencial<div style="display: none;" id="demo"></div></span>
+	<span id="modalDragOnEmergencial" class="btn btn-warning" onclick="emergencial()">Texto Emergencial<div style="display: none;" id="emergencialdemo"></div></span>
+</div>
+<div class="row">
+	<span id="modalDragOnNormal" class="btn btn-warning" onclick="normal()">Texto Normal<div style="display: none;" id="normaldemo"></div></span>
 </div>
 </td>
 <td colspan="2">
