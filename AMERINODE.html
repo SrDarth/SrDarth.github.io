@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="myDIV" style="display:none;">
+<html>
 <head>
     <title>AMERINODE - BACKOFFICE</title>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -352,7 +352,16 @@ $(document).ready(function() {
 
 <script>
 function myFunction() {
-  var x = document.getElementById("myOption").value;
+  var text;
+  var Senha = prompt("Digite aquela senha lá... sabe... aquela lá...", "");
+  switch(Senha) {
+    case "@Merinode10":
+    alert("Senha correta...");
+       var x = document.getElementById("myOption").value;
+	   break;
+    default:
+      alert("Errou... Tente outra vez... ");
+  }
   document.getElementById("coletaeentrega").innerHTML = x;
 }
 </script>
