@@ -1578,6 +1578,37 @@ if (!Function.prototype.bind) {
 	};
 }
 
+function normal() {
+  var corpo = 
+  "TICKET: " + document.getElementById("TICKET").value + "<br>" + 
+  " Valor NF: R$" + document.getElementById("VALORNF").value + "<br>" + 
+  " Modal: " + document.getElementById("MODAL").value + "<br>" + 
+  "SGS:" + document.getElementById("ETICKET").value + "<br><br>" + 
+  " Coleta: " + document.getElementById("COLETA").value + "<br>" + 
+  " Contato coleta: " + document.getElementById("CONTATOCOLETA").value + "<br><br>" + 
+  " Entrega: " + document.getElementById("ENTREGA").value + "<br>" + 
+  " Contato entrega: " + document.getElementById("CONTATOENTREGA").value + "<br><br>" +
+  " Altura: " + document.getElementById("ALTURA").value + " cm <br>" + 
+  " Largura: " + document.getElementById("LARGURA").value + " cm" + "<br>" + 
+  " Comprimento: " + document.getElementById("COMPRIMENTO").value + " cm" + "<br><br>" + 
+  " Peso: " + document.getElementById("PESO").value + " kg" + "<br>" + 
+  " Volume: " + document.getElementById("VOLUME").value + " " + document.getElementById("TIPOVOLUME").value + "<br><br>";
+  var coletadia =
+  " Data da Coleta: " + document.getElementById("CDIA").value + "/";
+  var coletames =
+  document.getElementById("CMES").value + "/";
+  var coletaano =
+  document.getElementById("CANO").value + "<br>";
+  var entregadia =
+  " Data da Entrega: " + document.getElementById("EDIA").value + "/";
+  var entregames =
+  document.getElementById("EMES").value + "/";
+  var entregaano =
+  document.getElementById("EANO").value + "<br><br>";
+  var corpox1 = corpo.toUpperCase();
+  document.getElementById("normaldemo").innerHTML = corpox1+coletadia+coletames+coletaano+entregadia+entregames+entregaano;
+}
+
 function emergencial() {
   var x = 
   "🚨🚨🚨 EMERGENCIAL 🚨🚨🚨" + 
@@ -1610,7 +1641,7 @@ function emergencial() {
   var d =
   "*CONSEGUEM ATENDER?*";
   var x1 = x.toUpperCase();
-  document.getElementById("demo").innerHTML = x1+coletadia+coletames+coletaano+entregadia+entregames+entregaano+d;
+  document.getElementById("emergencialdemo").innerHTML = x1+coletadia+coletames+coletaano+entregadia+entregames+entregaano+d;
 }
 
 function download(){
