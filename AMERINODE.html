@@ -8,63 +8,6 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <link href="jBox.css" rel="stylesheet">
     <script src="jBox.js"></script>
-<script type="text/javascript">
-    var reader; //GLOBAL File Reader object for demo purpose only
-
-    /**
-     * Check for the various File API support.
-     */
-    function checkFileAPI() {
-        if (window.File && window.FileReader && window.FileList && window.Blob) {
-            reader = new FileReader();
-            return true; 
-        } else {
-            alert('The File APIs are not fully supported by your browser. Fallback required.');
-            return false;
-        }
-    }
-
-    /**
-     * read text input
-     */
-    function readText(filePath) {
-        var output = ""; //placeholder for text output
-        if(filePath.files && filePath.files[0]) {           
-            reader.onload = function (e) {
-                output = e.target.result;
-                displayContents(output);
-            };//end onload()
-            reader.readAsText(filePath.files[0]);
-        }//end if html5 filelist support
-        else if(ActiveXObject && filePath) { //fallback to IE 6-8 support via ActiveX
-            try {
-                reader = new ActiveXObject("Scripting.FileSystemObject");
-                var file = reader.OpenTextFile(filePath, 1); //ActiveX File Object
-                output = file.ReadAll(); //text contents of file
-                file.Close(); //close file "input stream"
-                displayContents(output);
-            } catch (e) {
-                if (e.number == -2146827859) {
-                    alert('Unable to access local files due to browser security settings. ' + 
-                     'To overcome this, go to Tools->Internet Options->Security->Custom Level. ' + 
-                     'Find the setting for "Initialize and script ActiveX controls not marked as safe" and change it to "Enable" or "Prompt"'); 
-                }
-            }       
-        }
-        else { //this is where you could fallback to Java Applet, Flash or similar
-            return false;
-        }       
-        return true;
-    }   
-
-    /**
-     * display content using a basic HTML replacement
-     */
-    function displayContents(txt) {
-        var el = document.getElementById('blocodenotas'); 
-        el.innerHTML = txt; //display output in DOM
-    }   
-</script>
 </head>
 <body onload="checkFileAPI();">
 
@@ -221,7 +164,7 @@
 <table>
 <thead>
   <tr>
-    <th><label for="FC">...</label>
+    <th style="padding: 10px 20px 50px;"><label for="FC">...</label>
 <select class="tabela" id="myOption">
 <option value="<div class='tabela'>TCO	QNDB<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C057</td><td>CB21</td><td>Back Office AC</td><td>02.421.421/0045-32</td><td>AC</td><td>RUA MAJOR&nbsp;&nbsp;&nbsp;LADISLAU FERREIRA 30, PARTE A - DOM GIOCONDO,RIO BRANCO - AC</td><td>69900-279</td></tr><tr><td>C057</td><td>CO45</td><td>Regional Rio Branco 1 - AC</td><td>02.421.421/0045-32</td><td>AC</td><td>RUA MAJOR LADISLAU FERREIRA 30, PARTE A - DOM GIOCONDO,RIO&nbsp;&nbsp;&nbsp;BRANCO - AC</td><td>69900-279</td></tr><tr><td>I045</td><td>IO45</td><td>Regional Rio&nbsp;&nbsp;&nbsp;Branco 2 - AC</td><td>02.421.421/0045-32</td><td>AC</td><td>RUA MAJOR&nbsp;&nbsp;&nbsp;LADISLAU FERREIRA 30, PARTE A - DOM GIOCONDO,RIO BRANCO - AC</td><td>69900-279</td></tr></tbody></table></div>">AC</option>
 
@@ -282,20 +225,8 @@
 	<span id="modalDragOn" class="btn btn-warning" onclick="myFunction()">Filial e Centro<div style="display: none;" id="coletaeentrega"></div></span>
 </div></th>
     <th>
-	  -  -  -  -  -  <br>
-	  -  -  -  -  -  <br>
-	  -  -  -  -  -  <br>
-	  -  -  -  -  -  <br>
-	  -  -  -  -  -  <br>
-	  -  -  -  -  -  <br>
-	  -  -  -  -  -  <br>
-	  -  -  -  -  -  <br>
-	  -  -  -  -  -  <br>
-	  -  -  -  -  -  <br>
-	  -  -  -  -  -  <br>
-	
 	</th>
-    <th><label for="MODAL">...</label>
+    <th style="padding: 10px 20px 50px;"><label for="MODAL">...</label>
 <select id="XMANTENEDOR" name="Mantenedor">
 <option>ABILITY - OLINDA - PE</option>
 <option>ABILITY - SALVADOR - BA</option>
@@ -415,9 +346,16 @@
 
 <div id="b4" class="containerTab" style="display:none;background:#FFFFE0;">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <button class="btn btn-warning" type="button" onclick="download()">Salvar anotações</button><br><br>
-  <label for="Abrir">Abrir anotações:</label>
-  <input type="file" onchange='readText(this)'/><br>
+  <table>
+<thead>
+  <tr>
+    <th style="padding: 10px 20px 50px;"><br><button class="btn btn-warning" type="button" onclick="download()">Salvar anotações</button></th>
+    <th></th>
+    <th style="padding: 10px 20px 50px;"><label for="Abrir">Abrir anotações:</label>
+  <input class="btn btn-warning" type="file" onchange='readText(this)'/></th>
+  </tr>
+</thead>
+</table><br>
 <center><textarea style="word-wrap: break-word; white-space: pre-wrap;" id="blocodenotas" rows="30" cols="150"></textarea></center>
 </div>
 
@@ -441,7 +379,6 @@ function openTab(tabName) {
   document.getElementById(tabName).style.display = "block";
 }
 </script>
-
 
 <script>
 $(document).ready(function() {
@@ -473,6 +410,13 @@ $(document).ready(function() {
     });
 
 });
+</script>
+
+<script>
+function emailsala() {
+  var linksalatim = document.getElementById("EMAILSALATIM").value;
+  document.getElementById("salatim").innerHTML = linksalatim;
+}
 </script>
 
 <script>
@@ -520,11 +464,48 @@ $(document).ready(function() {
 });
 </script>
 
-<script>
-function emailsala() {
-  var linksalatim = document.getElementById("EMAILSALATIM").value;
-  document.getElementById("salatim").innerHTML = linksalatim;
-}
+<script type="text/javascript">
+    var reader;
+    function checkFileAPI() {
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+            reader = new FileReader();
+            return true; 
+        } else {
+            alert('Erro... tente outro aquivo.');
+            return false;
+        }
+    }
+    function readText(filePath) {
+        var output = "teste";
+        if(filePath.files && filePath.files[0]) {           
+            reader.onload = function (e) {
+                output = e.target.result;
+                displayContents(output);
+            };
+            reader.readAsText(filePath.files[0]);
+        }
+        else if(ActiveXObject && filePath) {
+            try {
+                reader = new ActiveXObject("Scripting.FileSystemObject");
+                var file = reader.OpenTextFile(filePath, 1);
+                output = file.ReadAll();
+                file.Close();
+                displayContents(output);
+            } catch (e) {
+                if (e.number == -2146827859) {
+                    alert('Erro. Tente liberar o acesso do site aos arquivos.'); 
+                }
+            }       
+        }
+        else { 
+            return false;
+        }       
+        return true;
+    }   
+    function displayContents(txt) {
+        var el = document.getElementById('blocodenotas'); 
+        el.innerHTML = txt;
+    }   
 </script>
 
 </body>
