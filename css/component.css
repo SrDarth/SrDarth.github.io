@@ -134,6 +134,9 @@
 .icon-notas:before {
 	content: "✎";
 }
+.icon-notas:before {
+	content: "✉☶";
+}
 
 
 
