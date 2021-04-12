@@ -124,7 +124,7 @@
 }
 
 .icon-pencil:before {
-	content: "🚨📝";
+	content: "🚨\e008";
 }
 
 .icon-home:before {
