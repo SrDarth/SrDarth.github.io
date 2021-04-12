@@ -159,8 +159,14 @@
 
 <div id="b2" class="containerTab" style="display:none;background:#FFFFE0;">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <center class="tabela"><label for="FC">PROCURAR FILIAL E CENTRO:</label>
-<select id="myOption">
+
+<center>
+<table>
+<thead>
+<tr>
+<th>
+<label for="FC">PROCURAR FILIAL E CENTRO:</label>
+<select class="tabela" id="myOption">
 <option value="<div class='tabela'>TCO	QNDB<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C057</td><td>CB21</td><td>Back Office AC</td><td>02.421.421/0045-32</td><td>AC</td><td>RUA MAJOR&nbsp;&nbsp;&nbsp;LADISLAU FERREIRA 30, PARTE A - DOM GIOCONDO,RIO BRANCO - AC</td><td>69900-279</td></tr><tr><td>C057</td><td>CO45</td><td>Regional Rio Branco 1 - AC</td><td>02.421.421/0045-32</td><td>AC</td><td>RUA MAJOR LADISLAU FERREIRA 30, PARTE A - DOM GIOCONDO,RIO&nbsp;&nbsp;&nbsp;BRANCO - AC</td><td>69900-279</td></tr><tr><td>I045</td><td>IO45</td><td>Regional Rio&nbsp;&nbsp;&nbsp;Branco 2 - AC</td><td>02.421.421/0045-32</td><td>AC</td><td>RUA MAJOR&nbsp;&nbsp;&nbsp;LADISLAU FERREIRA 30, PARTE A - DOM GIOCONDO,RIO BRANCO - AC</td><td>69900-279</td></tr></tbody></table></div>">AC</option>
 
 <option value="<div class='tabela'>TNE	QNDN<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C638</td><td>CB48</td><td>Back Office AL</td><td>02.421.421/0236-77</td><td>AL</td><td>AV COMENDADOR&nbsp;&nbsp;&nbsp;GUSTAVO PAIVA 2990, 109 - MANGABEIRAS,MACEIO - AL</td><td>57037-901</td></tr><tr><td>I015</td><td>CB33</td><td>Back Office AL</td><td>02.421.421/0015-17</td><td>AL</td><td>PROFESSOR JOSÉ DA SILVEIRA CAMERINO 340, 01 -&nbsp;&nbsp;&nbsp;PINHEIRO,MACEIÓ - AL</td><td>57055-630</td></tr><tr><td>I015</td><td>CO54</td><td>Regional Maceió&nbsp;&nbsp;&nbsp;1 - AL</td><td>02.421.421/0015-17</td><td>AL</td><td>PROFESSOR JOSÉ&nbsp;&nbsp;&nbsp;DA SILVEIRA CAMERINO 340, 01 - PINHEIRO,MACEIÓ - AL</td><td>57055-630</td></tr><tr><td>I015</td><td>IO15</td><td>Regional Maceió 2 - AL</td><td>02.421.421/0015-17</td><td>AL</td><td>PROFESSOR JOSÉ DA SILVEIRA CAMERINO 340, 01 -&nbsp;&nbsp;&nbsp;PINHEIRO,MACEIÓ - AL</td><td>57055-630</td></tr></tbody></table></div>">AL</option>
@@ -216,12 +222,70 @@
 <option value="<div class='tabela'>TCO	QNDB<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C629</td><td>CB46</td><td>Back Office TO</td><td>02.421.421/0196-45</td><td>TO</td><td>104 NORTE&nbsp;&nbsp;&nbsp;AVENIDA JUSCELINO KUBITSCHEK 99 LOJA 104, LOTE 39 01 TERREO - PLANO DIRETOR&nbsp;&nbsp;&nbsp;NORTE,PALMAS - TO</td><td>77006-014</td></tr><tr><td>I021</td><td>CB20</td><td>Back Office TO</td><td>02.421.421/0021-65</td><td>TO</td><td>104 NORTE AVENIDA JUSCELINO KUBITSCHEK 99, LOTE 39 02&nbsp;&nbsp;&nbsp;TERREO - PLANO DIRETOR NORTE,PALMAS - TO</td><td>77006-014</td></tr><tr><td>I021</td><td>CO53</td><td>Regional Palmas&nbsp;&nbsp;&nbsp;1 - TO</td><td>02.421.421/0021-65</td><td>TO</td><td>104 NORTE&nbsp;&nbsp;&nbsp;AVENIDA JUSCELINO KUBITSCHEK 99, LOTE 39 02 TERREO - PLANO DIRETOR&nbsp;&nbsp;&nbsp;NORTE,PALMAS - TO</td><td>77006-014</td></tr><tr><td>I021</td><td>IO21</td><td>Regional Palmas 2 - TO</td><td>02.421.421/0021-65</td><td>TO</td><td>104 NORTE AVENIDA JUSCELINO KUBITSCHEK 99, LOTE 39 02&nbsp;&nbsp;&nbsp;TERREO - PLANO DIRETOR NORTE,PALMAS - TO</td><td>77006-014</td></tr></tbody></table></div>">TO</option>
 
 </select>
-
 <div class="row">
 	<span id="modalDragOn" class="btn btn-warning" onclick="myFunction()">Filial e Centro<div style="display: none;" id="coletaeentrega"></div></span>
 </div>
+</th>
 
+<th>
+<label for="MODAL">Consulta Mantenedor com codigo SAP:</label>
+<select id="XMANTENEDOR" name="Mantenedor">
+<option>ABILITY - OLINDA - PE</option>
+<option>ABILITY - SALVADOR - BA</option>
+<option>ALGAR - BELO HORIZONTE - MG</option>
+<option>ALGAR - BRASÍLIA - DF</option>
+<option>ALGAR - CAMPO GRANDE - MS</option>
+<option>ALGAR - CUIABÁ - MT</option>
+<option>ALGAR - GOIÂNIA - GO</option>
+<option>ALGAR - MACEIÓ - AL</option>
+<option>ALGAR - MESSEJANA - CE</option>
+<option>ALGAR - NATAL - RN</option>
+<option>ALGAR - PALMAS - TO</option>
+<option>ALGAR - PARNAMIRIM - PE</option>
+<option>ALGAR - PORTO VELHO - RO</option>
+<option>ALGAR - RIO BRANCO - AC</option>
+<option>ALGAR - SE</option>
+<option>ALGAR - TERESINA - PI</option>
+<option>ALGAR -SALVADOR - BA</option>
+<option>EZENTIS - CANOAS - RS</option>
+<option>EZENTIS - PARQUE LAFAIETE - RJ</option>
+<option>EZENTIS - PINHAIS - PR</option>
+<option>EZENTIS - SÃO JOSÉ - SC</option>
+<option>TEL - BAURU - SP</option>
+<option>TEL - BELEM - PA</option>
+<option>TEL - BOA VISTA - RR</option>
+<option>TEL - BRASÍLIA - DF</option>
+<option>TEL - CAMPO GRANDE - MS</option>
+<option>TEL - CUBATÃO - SP</option>
+<option>TEL - CUIABÁ - MT</option>
+<option>TEL - GOIANIA - GO</option>
+<option>TEL - JUNDIAÍ - SP</option>
+<option>TEL - JURUBATUBA - SP</option>
+<option>TEL - MACAPÁ - AP</option>
+<option>TEL - MANAUS</option>
+<option>TEL - PALMAS - TO</option>
+<option>TEL - PIRACICABA - SP</option>
+<option>TEL - PORTO VELHO - RO</option>
+<option>TEL - RIBEIRÃO PRETO - SP</option>
+<option>TEL - RIO BRANCO - AC</option>
+<option>TEL - SÃO JOSÉ DOS CAMPOS - SP</option>
+<option>TEL - SÃO JOSÉ RIO PRETO - SP</option>
+<option>TEL - SÃO LUIS - MA</option>
+<option>TLP - MANGUINHOS - RJ</option>
+<option>TLP - SERRA - ES</option>
+<option>TLP -BELO HORIZONTE - MG</option>
+<option>TLP -VARGINHA - MG</option>
+</select>
+
+<div class="row">
+<span id="modalDragOnMantenedor" class="btn btn-warning" onclick="mantenedor()">Consultar Mantenedor<div style="display: none;" id="cmantenedor"></div></span>
+</div>
+</th>
+</tr>
+</thead>
+</table>
 </center>
+
 </div>
 
 <div id="b3" class="containerTab" style="display:none;background:#FFFFE0;">
@@ -374,19 +438,18 @@ $(document).ready(function() {
 </script>
 
 <script>
-function myFunction() {
-  var text;
-  var Senha = prompt("Digite aquela senha lá... sabe... aquela lá...", "");
-  switch(Senha) {
-    case "@Merinode10":
-    alert("Senha correta...");
-       var x = document.getElementById("myOption").value;
-	   break;
-    default:
-      alert("Errou... Tente outra vez... ");
-  }
-  document.getElementById("coletaeentrega").innerHTML = x;
-}
+$(document).ready(function() {
+    new jBox('Modal', {
+        attach: $('#modalDragOnMantenedor'),
+        title: 'Reparador',
+        overlay: false,
+        content: $('#cmantenedor'),
+        draggable: 'title',
+        repositionOnOpen: false,
+        repositionOnContent: false
+    });
+
+});
 </script>
 
 <script>
