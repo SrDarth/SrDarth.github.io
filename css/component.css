@@ -131,6 +131,10 @@
 	content: "☶";
 }
 
+.icon-notas:before {
+	content: "✎";
+}
+
 
 
 /* Content */
