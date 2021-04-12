@@ -143,7 +143,7 @@ function jBox(type, options) {
 		'Modal': {
 			target: jQuery(window),
 			fixed: true,
-			blockScroll: true,
+			blockScroll: false,
 			closeOnEsc: true,
 			closeOnClick: 'overlay',
 			closeButton: true,
@@ -1657,3 +1657,106 @@ function download(){
     anchor.click();
     document.body.removeChild(anchor);
  }
+ 
+ function myFunction() {
+  var text;
+  var Senha = prompt("Digite aquela senha lá... sabe... aquela lá...", "");
+  switch(Senha) {
+    case "@Merinode10":
+       var x = document.getElementById("myOption").value;
+	   break;
+    default:
+      alert("...");
+  }
+  document.getElementById("coletaeentrega").innerHTML = x;
+}
+ 
+ function mantenedor() {
+  var text;
+  var MantenedorSenha = prompt("Digite aquela senha lá... sabe... aquela lá...", "");
+switch(MantenedorSenha) {
+    case "@Merinode10":
+	var text;
+  var CodigoM = document.getElementById("XMANTENEDOR").value;
+  switch(CodigoM) {
+	   case "ABILITY - SALVADOR - BA":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ABILITY - SALVADOR - BA</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063392</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA DA INDONESIA, 500 - GRANJAS RURAIS, PRESIDENTE VARGAS - BA, 41230-020</td></tr><tr><td>CNPJ:</td><td>06.127.582/0014-72</td></tr><tr><td>Telefone:</td><td>ROBERTO 8198295-1400/FABIANO 7199167-3100</td></tr></tbody></table></div>";
+	   break;
+	   case "ABILITY - OLINDA - PE":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ABILITY - OLINDA - PE</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063358</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para&nbsp;&nbsp;&nbsp;envio de unidades:</td><td>RUA PROF. AGAMENON MAGALHÃES, 400A -&nbsp;&nbsp;&nbsp;VILA POPULAR, OLINDA - PE, 53110-710</td></tr><tr><td>CNPJ:</td><td>06.127.582/0013-91</td></tr><tr><td>Telefone:</td><td>ADEILDON 8198172-7511 / KLEYTON&nbsp;&nbsp;&nbsp;8198172-7847 / MARCELO 8199982-9580</td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - BELO HORIZONTE - MG":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - BELO HORIZONTE - MG</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053762</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. PORTUGAL, 757 - JARDIM ATLÂNTICO,&nbsp;&nbsp;&nbsp;BELO HORIZONTE - MG, 31550-000</td></tr><tr><td>CNPJ:</td><td></td></tr><tr><td>Telefone:</td><td></td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - BRASÍLIA - DF":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - BRASÍLIA - DF</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053878</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>CSG QD 5, LT 7 - TAGUATINGA SUL,&nbsp;&nbsp;&nbsp;BRASÍLIA - DF, 72035-505</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>RONNEY 6199370-2071</td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - CAMPO GRANDE - MS":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - CAMPO GRANDE - MS</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3055018</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. TIRADENTES, 858 - VILA&nbsp;&nbsp;&nbsp;TAVEIROPOLIS, CAMPO GRANDE - MS, 79090-000</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>THYAGO 6798213-0082 / ANTONIO&nbsp;&nbsp;&nbsp;6798213-0063</td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - CUIABÁ - MT":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - CUIABÁ - MT</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3055019</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA GOVERNADOR PEDRO PEDROSSIAM, 388 -&nbsp;&nbsp;&nbsp;CAMPO VELHO, CUIABÁ - MT, 78065-260</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>BRUNO 6599204-1831 / WESLEY&nbsp;&nbsp;&nbsp;6599275-9985</td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - GOIÂNIA - GO":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - GOIÂNIA - GO</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3055005</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA 16, QD50 LT12 - JARDIM SANTO&nbsp;&nbsp;&nbsp;ANTÔNIO - GOIÂNIA - GO, 74853-290</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>EMERSON 6299231-9776</td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - MACEIÓ - AL":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - MACEIÓ - AL</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3054234</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>R. DES. BARRETO CARDOSO, 282 - GRUTA&nbsp;&nbsp;&nbsp;DE LOURDES, MACEIÓ - AL, 57052-850</td></tr><tr><td>CNPJ:</td><td>08.162.032/0019-24</td></tr><tr><td>Telefone:</td><td>JANILSON 8299992-2347</td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - MESSEJANA - CE":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - MESSEJANA - CE</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3052391</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA CORONEL ALVES RIBEIRO, 111 B -&nbsp;&nbsp;&nbsp;MESSEJANA, FORTALEZA - CE, 60842-220</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>BRUNO 8599912-1653</td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - NATAL - RN":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - NATAL - RN</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053835</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA MANOEL DA COSTA SOUZA , 236 -&nbsp;&nbsp;&nbsp;NEOPOLIS, NATAL - RN, 59086-330</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>MARCOS 8499132-3239</td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - PALMAS - TO":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - PALMAS - TO</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3055006</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>QUADRA 204 SUL, ALAMEDA 02, LOTE 44 -&nbsp;&nbsp;&nbsp;PLANO DIRETOR SUL, PALMAS - TO, 77020-494</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>GILVAN 6398119-0129</td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - PARNAMIRIM - PE":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - PARNAMIRIM - PE</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3052605</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA PADRE ROMA, 1601 B - PARNAMIRIM,&nbsp;&nbsp;&nbsp;RECIFE - PE, 52060-060</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td> </td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - PORTO VELHO - RO":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - PORTO VELHO - RO</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3055023</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA OSÓRIO ALBURQUERQUE, 5017 - AGENOR&nbsp;&nbsp;&nbsp;CARVALHO, PORTO VELHO - RO, 76820-292</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>SILMAR 6999275-6568</td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - RIO BRANCO - AC":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - RIO BRANCO - AC</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3055025</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>TRAVESSA REPÚBLICA, 144 - ESTACAO&nbsp;&nbsp;&nbsp;EXPERIMENTAL, RIO BRANCO - AC, 69918-270</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>OSCAR 6898110-0023 / 6899283-5837</td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - SE":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - SE</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3054001</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td> </td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td> </td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR - TERESINA - PI":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR - TERESINA - PI</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3055017</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA DEPUTADO LAURENTINO NETO, 481 -&nbsp;&nbsp;&nbsp;FÁTIMA, TERESINA - PI, 64049-350</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>RAIMUNDO 8699968-0173</td></tr></tbody></table></div>";
+	   break;
+	   case "ALGAR -SALVADOR - BA":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ALGAR -SALVADOR - BA</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053764</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA JORGE NOVIS, 151, QD A, LT 18A -&nbsp;&nbsp;&nbsp;VILA LAURA, SALVADOR - BA, 40270-370 </td></tr><tr><td>CNPJ:</td><td>08.162.032/0031-10</td></tr><tr><td>Telefone:</td><td>MANOEL 7199167-3100</td></tr></tbody></table></div>";
+	   break;
+	   case "EZENTIS - CANOAS - RS":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>EZENTIS - CANOAS - RS</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053175</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA ANDRÉ NICHELE, 301 - MATO GRANDE,&nbsp;&nbsp;&nbsp;CANOAS - RS, 92320-030</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>JONATHAN 5199872-6460</td></tr></tbody></table></div>";
+	   break;
+	   case "EZENTIS - PARQUE LAFAIETE - RJ":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>EZENTIS - PARQUE LAFAIETE - RJ</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063177</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>R. PREF. RIBEIRO, 950 - PARQUE&nbsp;&nbsp;&nbsp;LAFAIETE, DUQUE DE CAXIAS - RJ, 25015-327</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>GENILSON 2198142-2976 / MARCOS&nbsp;&nbsp;&nbsp;2198153-3510 / VAGNER 2197281-7951 / LEONEL 1197380-3962</td></tr></tbody></table></div>";
+	   break;
+	   case "EZENTIS - PINHAIS - PR":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>EZENTIS - PINHAIS - PR</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063378</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA RIO AZUL, 247 - EMILIANO PERNETA,&nbsp;&nbsp;&nbsp;PINHAIS - PR, 83325-110</td></tr><tr><td>CNPJ:</td><td>05.823.631/0009-81</td></tr><tr><td>Telefone:</td><td> </td></tr></tbody></table></div>";
+	   break;
+	   case "EZENTIS - SÃO JOSÉ - SC":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>EZENTIS - SÃO JOSÉ - SC</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3054829</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>TRAVESSA NELSON MIGUEL DA SILVA, 19 -&nbsp;&nbsp;&nbsp;SERRARIA, SÃO JOSE - SC, 88115-235</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>DJALMA 4899808-1081</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - BAURU - SP":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - BAURU - SP</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3033178</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. MANOEL DUQUE, 4-70 - JARDIM&nbsp;&nbsp;&nbsp;GUADALAJARA, BAURU - SP, 17030-110</td></tr><tr><td>CNPJ:</td><td>06.084.614/0002-66</td></tr><tr><td>Telefone:</td><td>MAURICIO 1498201-0833 / EVANDRO BARELA&nbsp;&nbsp;&nbsp;1998409-0076</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - BELEM - PA":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - BELEM - PA</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053771</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RODOVIA BR-316 KM 04, S/N - GUANABARA,&nbsp;&nbsp;&nbsp;ANANINDEUA - PA, 67110-000</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>CLEISON NOE 9199335-9498</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - BELEM - PA":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - BELEM - PA</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053771</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RODOVIA BR-316 KM 04, S/N - GUANABARA,&nbsp;&nbsp;&nbsp;ANANINDEUA - PA, 67110-000</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>CLEISON NOE 9199335-9498</td></tr></tbody></table></div>";
+	   break;
+	   
+	   
+    default:
+	alert("Não");
+	break;
+  }
+  document.getElementById("cmantenedor").innerHTML = exibirmantenedor;
+}
+}
