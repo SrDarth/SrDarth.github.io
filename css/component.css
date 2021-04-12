@@ -124,7 +124,7 @@
 }
 
 .icon-pencil:before {
-	content: "\e008";
+	content: "📝";
 }
 
 .icon-home:before {
@@ -132,9 +132,9 @@
 }
 
 .icon-notas:before {
-	content: "✎";
+	content: "\e008";
 }
-.icon-notas:before {
+.icon-email:before {
 	content: "✉☶";
 }
 
