@@ -1,46 +1,76 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>AMERINODE - BACKOFFICE</title>
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <link href="jBox.css" rel="stylesheet">
-    <script src="jBox.js"></script>
-</head>
-<body onload="checkFileAPI();">
-
-<div style="text-align:center">
-  <h2>Amerinode</h2>
-  <p>Click na opção abaixo:</p>
-</div>
-
-<!-- Three columns -->
-<div class="row">
-  <div class="column" onclick="openTab('b1');" style="background: #90EE90;">
-    Auxiliar EMERGENCIAL e NORMAL
-  </div>
-  <div class="column" onclick="openTab('b2');" style="background:#3CB371;">
-    Consultar Codigo
-  </div>
-  <div class="column" onclick="openTab('b3');" style="background:#2E8B57;">
-    Email para Sala TIM
-  </div>
-  <div class="column" onclick="openTab('b4');" style="background:#256c44;">
-    Bloco de notas
-  </div>
-  <div class="column" onclick="openTab('b5');" style="background:#8FBC8B;">
-    Calcular Rota
-  </div>
-</div>
-
-<!-- Full-width columns: (hidden by default) -->
-<div id="b1" class="containerTab" style="display:none;background:#FFFFE0;">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <center>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>AMERINODE - BACKOFFICE</title>
+		<meta name="description" content="Mais uma ferramenta para ajudar no dia a dia do backoffice" />
+		<meta name="keywords" content="responsivo, amerinode, backoffice, alexandre m freitas" />
+		<meta name="author" content="Alexandre M Freitas" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/jBox.css" />
+		<script src="js/jBox.js"></script>
+	</head>
+	
+	<body>
+		<div class="container">
+			<header>
+				<span>Amerinode <span class="bp-icon bp-icon-about" data-content="Mais uma ferramenta para ajudar no dia a dia do backoffice"></span></span>
+				<h1>BackOffice</h1>
+			</header>	
+			<div id="tabs" class="tabs">
+				<nav>
+					<ul class="cbp-vimenu">
+						<li><a href="#section-1" class="icon-home"><span>Avisos</span></a></li>
+						<li><a href="#section-2" class="icon-pencil"><span>Montar Texto</span></a></li>
+						<li><a href="#section-3" class="icon-search"><span>Consultar Codigo</span></a></li>
+						<li><a href="#section-4" class="icon-pencil"><span>Email para Sala TIM</span></a></li>
+						<li><a href="#section-5" class="icon-pencil"><span>Bloco de notas</span></a></li>
+						<li><a href="#section-6" class="icon-location"><span>Calcular Rota</span></a></li>
+					</ul>
+				</nav>
+				<div class="content">
+					<section id="section-1">
+						<div class="mediabox">
+							<img src="img/01.png" alt="img01" />
+							<h3>Avisos EM BREVA</h3>
+							<p>Avisos</p>
+						</div>
+						<div class="mediabox">
+							<img src="img/02.png" alt="img02" />
+							<h3>Avisos EM BREVA</h3>
+							<p>Avisos</p>
+						</div>
+						<div class="mediabox">
+							<img src="img/03.png" alt="img03" />
+							<h3>Avisos EM BREVA</h3>
+							<p>Avisos</p>
+						</div>
+						<div class="mediabox">
+							<img src="img/04.png" alt="img04" />
+							<h3>Avisos EM BREVA</h3>
+							<p>Avisos</p>
+						</div>
+						<div class="mediabox">
+							<img src="img/05.png" alt="img05" />
+							<h3>Avisos EM BREVA</h3>
+							<p>Avisos</p>
+						</div>
+						<div class="mediabox">
+							<img src="img/06.png" alt="img06" />
+							<h3>Avisos EM BREVA</h3>
+							<p>Avisos</p>
+						</div>
+					</section>
+					<section id="section-2">
+					<div class="mediabox">
+						<center>
 <div class="container">
-<h2>Auxiliar do TICKET</h2>
+<h2>Montar Texto</h2>
 <div class="meio">
 <table>
 <thead>
@@ -146,21 +176,18 @@
   <tr>
     <td></td>
     <td><div class="row">
-	<span id="modalDragOnEmergencial" class="btn btn-warning" onclick="emergencial()">Texto Emergencial<div style="display: none;" id="emergencialdemo"></div></span>
+	<button id="modalDragOnEmergencial" class="btn btn-warning" onclick="emergencial()">Texto Emergencial<div style="display: none;" id="emergencialdemo"></div></button>
 </div></td>
     <td><div class="row">
-	<span id="modalDragOnNormal" class="btn btn-warning" onclick="normal()">Texto Normal<div style="display: none;" id="normaldemo"></div></span>
+	<button id="modalDragOnNormal" class="btn btn-warning" onclick="normal()">Texto Normal<div style="display: none;" id="normaldemo"></div></button>
 </div></td>
   </tr>
 </tbody>
 </table>
-</div></div></center>
-</div>
-
-<div id="b2" class="containerTab" style="display:none;background:#FFFFE0;">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-<center>
+</div></div></center></div>
+					</section>
+					<section id="section-3">
+					<div class="mediabox">
 <table>
 <thead>
   <tr>
@@ -280,15 +307,10 @@
 </div></th>
   </tr>
 </thead>
-</table>
-</center>
-
-</div>
-
-<div id="b3" class="containerTab" style="display:none;background:#FFFFE0;">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-<center>
+</table></div>
+					</section>
+					<section id="section-4">
+					<div class="mediabox">
 <label for="EMAILSALATIM">EMAIL DA SALA TIM:</label>
 <select id="EMAILSALATIM">
 <option value="<button class='btn btn-warning'><a href='mailto:rfreitas_amerinode@timbrasil.com.br,DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br,rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br,mpanhoca@timbrasil.com.br,atendimento.bo@amerinode.com.br,bjusto_amerinode@timbrasil.com.br,kfreitas_sa@timbrasil.com.br,maparecida_servis@timbrasil.com.br,ksilva_ultra@timbrasil.com.br,walmeida_ultra@timbrasil.com.br,lsilva_evik@timbrasil.com.br,fsilva_servis@timbrasil.com.br,rporto@timbrasil.com.br,mrlopes@timbrasil.com.br,bjusto_amerinode@timbrasil.com.br,kfreitas_sa@timbrasil.com.br,&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20S%C3%83O%20PAULO%20-%20LAPA%20-%20REPARO%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM SÃO PAULO - LAPA - REPARO</option>
@@ -310,11 +332,8 @@
 <option value="<button class='btn btn-warning'><a href='mailto:hpereira_amerinode@timbrasil.com.br,DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br,rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br,mpanhoca@timbrasil.com.br,atendimento.bo@amerinode.com.br,bjusto_amerinode@timbrasil.com.br,kfreitas_sa@timbrasil.com.br,maparecida_servis@timbrasil.com.br,ksilva_ultra@timbrasil.com.br,walmeida_ultra@timbrasil.com.br,lsilva_evik@timbrasil.com.br,fsilva_servis@timbrasil.com.br,rporto@timbrasil.com.br,mrlopes@timbrasil.com.br,bjusto_amerinode@timbrasil.com.br,kfreitas_sa@timbrasil.com.br,&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20CAMPO%20GRANDE%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM CAMPO GRANDE</option>
 
 <option value="<a href='mailto:egoncalves_amerinode@timbrasil.com.br,DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br,rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br,mpanhoca@timbrasil.com.br,atendimento.bo@amerinode.com.br,bjusto_amerinode@timbrasil.com.br,kfreitas_sa@timbrasil.com.br,maparecida_servis@timbrasil.com.br,ksilva_ultra@timbrasil.com.br,walmeida_ultra@timbrasil.com.br,lsilva_evik@timbrasil.com.br,fsilva_servis@timbrasil.com.br,rporto@timbrasil.com.br,mrlopes@timbrasil.com.br,bjusto_amerinode@timbrasil.com.br,kfreitas_sa@timbrasil.com.br,&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20CUIABA%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...'>CLIQUE AQUI PARA ABRIR O EMAIL</a>">TIM CUIABA</option>
-
 </select>
-
-
- <br><br>
+<br><br>
 
 
 <div class="row">
@@ -340,47 +359,44 @@
   <li><b>[ OBSERVAÇÃO SE MATERIAL FOI SEGUIDO POR SIMILARIDADE NA NOTA SE NÃO TIVER O QUE INFORMAR AQUI É SÓ APAGAR ESTE CAMPO ]</b></li>
 </ul>
 
-
-
-</div>
-
-<div id="b4" class="containerTab" style="display:none;background:#FFFFE0;">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <table>
+</select></div>
+					</section>
+					<section id="section-5">
+					<div class="mediabox">
+<table>
 <thead>
   <tr>
     <th style="padding: 10px 20px 50px;"><br><button class="btn btn-warning" type="button" onclick="download()">Salvar anotações</button></th>
     <th></th>
-    <th style="padding: 10px 20px 50px;"><label for="Abrir">Abrir anotações:</label>
-  <input class="btn btn-warning" type="file" onchange='readText(this)'/></th>
+    <th style="padding: 10px 20px 50px;"></th>
   </tr>
 </thead>
-</table><br>
-<center><textarea style="word-wrap: break-word; white-space: pre-wrap;" id="blocodenotas" rows="30" cols="150"></textarea></center>
-</div>
-
-<div id="b5" class="containerTab" style="display:none;background:#FFFFE0;">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <label for="fonte">Fonte:</label><a href="https://pt.distance.to/" target="_blank">distance.to</a><br>
-<center><iframe scrolling="no" src="https://pt.distance.to/" referrerpolicy="no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url" style="overflow-y:hidden;height:500px;width:920px;"></iframe></center>
-</div>
-
-
+</table>
+<br>
+<center>
+<textarea id="blocodenotas" rows="50" cols="160"></textarea>
+</center>
 
 </div>
-
-<script>
-function openTab(tabName) {
-  var i, x;
-  x = document.getElementsByClassName("containerTab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  document.getElementById(tabName).style.display = "block";
-}
-</script>
-
-<script>
+					</section>
+					<section id="section-6">
+					<div class="mediabox">
+<label for="fonte">Fonte:</label>
+<a href="https://pt.distance.to/" target="_blank">distance.to</a>
+<br>
+<center>
+<iframe scrolling="no" src="https://pt.distance.to/" referrerpolicy="no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url" style="overflow-y:hidden;height:500px;width:920px;"></iframe>
+</center></div>
+					</section>
+				</div><!-- /content -->
+			</div><!-- /tabs -->
+			<p class="info">Desenvolvido por: <a href="https://srdarth.github.io/">Sr. Darth</a></p>
+		</div>
+		<script src="js/cbpFWTabs.js"></script>
+		<script>
+			new CBPFWTabs( document.getElementById( 'tabs' ) );
+		</script>
+		<script>
 $(document).ready(function() {
     new jBox('Modal', {
         attach: $('#modalDragOnNormal'),
@@ -464,49 +480,6 @@ $(document).ready(function() {
 });
 </script>
 
-<script type="text/javascript">
-    var reader;
-    function checkFileAPI() {
-        if (window.File && window.FileReader && window.FileList && window.Blob) {
-            reader = new FileReader();
-            return true; 
-        } else {
-            alert('Erro... tente outro aquivo.');
-            return false;
-        }
-    }
-    function readText(filePath) {
-        var output = "teste";
-        if(filePath.files && filePath.files[0]) {           
-            reader.onload = function (e) {
-                output = e.target.result;
-                displayContents(output);
-            };
-            reader.readAsText(filePath.files[0]);
-        }
-        else if(ActiveXObject && filePath) {
-            try {
-                reader = new ActiveXObject("Scripting.FileSystemObject");
-                var file = reader.OpenTextFile(filePath, 1);
-                output = file.ReadAll();
-                file.Close();
-                displayContents(output);
-            } catch (e) {
-                if (e.number == -2146827859) {
-                    alert('Erro. Tente liberar o acesso do site aos arquivos.'); 
-                }
-            }       
-        }
-        else { 
-            return false;
-        }       
-        return true;
-    }   
-    function displayContents(txt) {
-        var el = document.getElementById('blocodenotas'); 
-        el.innerHTML = txt;
-    }   
-</script>
 
-</body>
+	</body>
 </html>
