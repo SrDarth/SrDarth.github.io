@@ -1673,7 +1673,7 @@ function download(){
  
  function mantenedor() {
   var text;
-  var MantenedorSenha = prompt("Digite aquela senha lá... sabe... aquela lá...", "");
+  var MantenedorSenha = prompt("Digite aquela senha e eu prometo que mostro o codigo do mantenedor...", "");
 switch(MantenedorSenha) {
     case "@Merinode10":
 	var text;
@@ -1748,8 +1748,71 @@ switch(MantenedorSenha) {
 	   case "TEL - BELEM - PA":
        var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - BELEM - PA</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053771</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RODOVIA BR-316 KM 04, S/N - GUANABARA,&nbsp;&nbsp;&nbsp;ANANINDEUA - PA, 67110-000</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>CLEISON NOE 9199335-9498</td></tr></tbody></table></div>";
 	   break;
-	   case "TEL - BELEM - PA":
-       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - BELEM - PA</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053771</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RODOVIA BR-316 KM 04, S/N - GUANABARA,&nbsp;&nbsp;&nbsp;ANANINDEUA - PA, 67110-000</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>CLEISON NOE 9199335-9498</td></tr></tbody></table></div>";
+	   case "TEL - BOA VISTA - RR":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - BOA VISTA - RR</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3054725</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. GETÚLIO VARGAS, 3684 - CANARINHO,&nbsp;&nbsp;&nbsp;BOA VISTA - RR, 69306-545</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>WARLLEN RONALD 9598108-6261</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - BRASÍLIA - DF":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - BRASÍLIA - DF</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063192</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>ADE CONJUNTO 25, 25, LT 03 - ÁREA DE&nbsp;&nbsp;&nbsp;DESENVOLVIMENTO ECONÔMICO (ÁGUAS CLARAS), BRASÍLIA - DF, 71990-541</td></tr><tr><td>CNPJ:</td><td>06.084.614/0015-80</td></tr><tr><td>Telefone:</td><td>MARCOS CAETANO 6199943-3583 / MARCUS&nbsp;&nbsp;&nbsp;VINICIUS 6199642-3458 / VANDERSON 6199691-9489</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - CAMPO GRANDE - MS":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - CAMPO GRANDE - MS</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063224</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA BUENOS AIRES, 314 - VILA&nbsp;&nbsp;&nbsp;MARGARIDA, CAMPO GRANDE - MS, 79023-210</td></tr><tr><td>CNPJ:</td><td>06.084.614/0014-08</td></tr><tr><td>Telefone:</td><td>ALEXANDRE&nbsp;&nbsp;&nbsp;6799987-0917 / EMERSON 6799636-2378</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - CUBATÃO - SP":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - CUBATÃO - SP</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053770</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. NOSSA SRA. DE FÁTIMA, 1172 -&nbsp;&nbsp;&nbsp;CASQUEIRO, CUBATÃO - SP, 11530-030</td></tr><tr><td>CNPJ:</td><td>06.084.614/0018-23</td></tr><tr><td>Telefone:</td><td>PEDRO 1398168-1135 / EVANDRO BARELA&nbsp;&nbsp;&nbsp;1998409-0076</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - CUIABÁ - MT":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - CUIABÁ - MT</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063225</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. FERNANDO CORREIA DA COSTA, 6635 -&nbsp;&nbsp;&nbsp;SÃO JOSÉ, CUIABÁ - MT, 78085-700</td></tr><tr><td>CNPJ:</td><td>06.084.614/001-157</td></tr><tr><td>Telefone:</td><td>ANDERSON&nbsp;&nbsp;&nbsp;6598131-0084 / VALDETINA 6599989-6257</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - GOIANIA - GO":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - GOIANIA - GO</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063176</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AVENIDA PRIMEIRA AVENIDA, QD 01B, LT.&nbsp;&nbsp;&nbsp;27 - COND. CIDADE EMPRESARIAL, APARECIDA DE GOIÂNIA - GO, 74935-900</td></tr><tr><td>CNPJ:</td><td>06.084.614/0017-42</td></tr><tr><td>Telefone:</td><td>MARCOS ROBERTO 6299992-7051 / EMERSON&nbsp;&nbsp;&nbsp;SOUZA 6298271-7759</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - JUNDIAÍ - SP":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - JUNDIAÍ - SP</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053770</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. ANTONIETA PIVA BARRANQUEIROS, 295&nbsp;&nbsp;&nbsp;- ST. INDUSTRIAL, JUNDIAÍ - SP, 13213-009</td></tr><tr><td>CNPJ:</td><td>06.084.614/0018-23</td></tr><tr><td>Telefone:</td><td>MARCELO CALIXTO  1197558-2168</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - JURUBATUBA - SP":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - JURUBATUBA - SP</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053770</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>R. DAS BAIADEIRAS, 290 - JURUBATUBA,&nbsp;&nbsp;&nbsp;SÃO PAULO - SP, 04675-210</td></tr><tr><td>CNPJ:</td><td>06.084.614/0018-23</td></tr><tr><td>Telefone:</td><td>JHENIFFER 1993004-3169 / EVANDRO&nbsp;&nbsp;&nbsp;BARELA 1998409-0076</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - MACAPÁ - AP":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - MACAPÁ - AP</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3055195</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>R. PALMAS, 670 - INFRAERO, MACAPÁ -&nbsp;&nbsp;&nbsp;AP, 68908-033</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>EVERTON CUNHA 9698142-0442</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - MANAUS - AM":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - MANAUS - AM</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053772</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. URUCARÁ, 986 - CACHOEIRINHA,&nbsp;&nbsp;&nbsp;MANAUS - AM, 69065-180</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>ADRIANO 9298193-9394 / RENATO COSTA&nbsp;&nbsp;&nbsp;9298193-5062</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - PALMAS - TO":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - PALMAS - TO</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063188</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>QUADRA 103 SUL RUA SO 5 LT 13 SALA 02&nbsp;&nbsp;&nbsp;- PLANO DIRETOR SUL, PALMAS - TO, 77015-018</td></tr><tr><td>CNPJ:</td><td>06.084.614/0012-38</td></tr><tr><td>Telefone:</td><td>LEANDRO 6399994-8871</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - PIRACICABA - SP":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - PIRACICABA - SP</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053768</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>R. JOSÉ DO PATROCÍNIO, 205 - JARDIM&nbsp;&nbsp;&nbsp;CALIFORNIA, PIRACICABA - SP, 13424-565</td></tr><tr><td>CNPJ:</td><td>06.084.614/0010-76</td></tr><tr><td>Telefone:</td><td>FLAVIO ROSSINI 1998409-0791 / EVANDRO&nbsp;&nbsp;&nbsp;BARELA 1998409-0076</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - PORTO VELHO - RO":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - PORTO VELHO - RO</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063226</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA PAULO LEAL, 1622 - NOSSA SENHORA&nbsp;&nbsp;&nbsp;DAS GRAÇAS, PORTO VELHO - RO, 76804-146</td></tr><tr><td>CNPJ:</td><td>06.084.614/001-319</td></tr><tr><td>Telefone:</td><td>LUAN 6999937-0605</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - RIBEIRÃO PRETO - SP":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - RIBEIRÃO PRETO - SP</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053767</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. MAL. COSTA E SILVA, 2315 - CAMPOS&nbsp;&nbsp;&nbsp;ELÍSIOS, RIBEIRÃO PRETO - SP, 14080-130</td></tr><tr><td>CNPJ:</td><td>06.084.614/0008-51</td></tr><tr><td>Telefone:</td><td>FELIPE CANATO 1699961-8242</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - RIO BRANCO - AC":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - RIO BRANCO - AC</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063247</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>R. SILVESTRE COELHO, 773 - BOSQUE, RIO&nbsp;&nbsp;&nbsp;BRANCO - AC, 69900-661</td></tr><tr><td>CNPJ:</td><td>06.084.614/0016-61</td></tr><tr><td>Telefone:</td><td>JHONATAN TALINCO 6899607-3707</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - SÃO JOSÉ DOS CAMPOS - SP":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - SÃO JOSÉ DOS CAMPOS - SP</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053770</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>R. LUCÉLIA, 864 - CHÁCARAS REUNIDAS,&nbsp;&nbsp;&nbsp;SÃO JOSÉ DOS CAMPOS - SP, 12238-450</td></tr><tr><td>CNPJ:</td><td>06.084.614/0018-23</td></tr><tr><td>Telefone:</td><td>GILSON 1298171-2478 / EVANDRO BARELA&nbsp;&nbsp;&nbsp;1998409-0076</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - SÃO JOSÉ RIO PRETO - SP":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - SÃO JOSÉ RIO PRETO - SP</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053767</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA WILK FERREIRA DE SOUZA, 180 -&nbsp;&nbsp;&nbsp;DISTRITO INDUSTRIAL WALDEMAR DE OLIVEIRA VERDI, SÃO JOSÉ DO RIO PRETO - SP,&nbsp;&nbsp;&nbsp;15035-510</td></tr><tr><td>CNPJ:</td><td>06.084.614/0008-51</td></tr><tr><td>Telefone:</td><td>GRACIELI 1798211-0955 / EVANDRO BARELA&nbsp;&nbsp;&nbsp;1998409-0076</td></tr></tbody></table></div>";
+	   break;
+	   case "TEL - SÃO LUIS - MA":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - SÃO LUIS - MA</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3053761</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. BRISA MAR, LOTES 3 E 4, QUADRA 25&nbsp;&nbsp;&nbsp;- ARAÇAGI, SÃO LUIS - MA, 65068-128</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>FRANCISCO 9899229-9017</td></tr></tbody></table></div>";
+	   break;
+	   case "TLP - MANGUINHOS - RJ":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TLP - MANGUINHOS - RJ</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3062891</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. DOM HÉLDER CÂMARA, 199 -&nbsp;&nbsp;&nbsp;MANGUINHOS, RIO DE JANEIRO - RJ, 20911-291</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>KENI 2299759-5360</td></tr></tbody></table></div>";
+	   break;
+	   case "TLP - SERRA - ES":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TLP - SERRA - ES</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3062919</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>R. CURITIBA - ALTEROSAS, SERRA - ES,&nbsp;&nbsp;&nbsp;29167-031</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>CRISTIANO 2799824-0864</td></tr></tbody></table></div>";
+	   break;
+	   case "TLP -BELO HORIZONTE - MG":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TLP -BELO HORIZONTE - MG</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3062833</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA HÉLIO LAZZAROTTI, 497 - ALTO&nbsp;&nbsp;&nbsp;CAIÇARAS, BELO HORIZONTE - MG, 30750-270</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>LUCAS 3199131-0611</td></tr></tbody></table></div>";
+	   break;
+	   case "TLP -VARGINHA - MG":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TLP -VARGINHA - MG</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3062890</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>R. JOÃO LEITE ALVARENGA, 115 - VILA&nbsp;&nbsp;&nbsp;VERONICA, VARGINHA - MG, 37026-486</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>ARIMATEIA 3199131-3383</td></tr></tbody></table></div>";
 	   break;
 	   
 	   
