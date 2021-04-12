@@ -1583,7 +1583,7 @@ function normal() {
   "TICKET: " + document.getElementById("TICKET").value + "<br>" + 
   " Valor NF: R$" + document.getElementById("VALORNF").value + "<br>" + 
   " Modal: " + document.getElementById("MODAL").value + "<br>" + 
-  "SGS:" + document.getElementById("ETICKET").value + "<br>" + "KM: " + document.getElementById("KM").value + "Km" +"<br><br>" + 
+  "SGS:" + document.getElementById("ETICKET").value + "<br>" + "Distância: " + document.getElementById("KM").value + " Km" +"<br><br>" + 
   " Coleta: " + document.getElementById("COLETA").value + "<br>" + 
   " Contato coleta: " + document.getElementById("CONTATOCOLETA").value + "<br><br>" + 
   " Entrega: " + document.getElementById("ENTREGA").value + "<br>" + 
@@ -1616,7 +1616,7 @@ function emergencial() {
   "TICKET: " + document.getElementById("TICKET").value + "<br>" + 
   " Valor NF: R$ " + document.getElementById("VALORNF").value + "<br>" + 
   " Modal: " + document.getElementById("MODAL").value + "<br>" + 
-  "Solicitação Nº: " + document.getElementById("ETICKET").value + "<br>" + "KM: " + document.getElementById("KM").value + "Km" +"<br><br>" + 
+  "Solicitação Nº: " + document.getElementById("ETICKET").value + "<br>" + "Distância: " + document.getElementById("KM").value + " Km" +"<br><br>" + 
   " Coleta: " + document.getElementById("COLETA").value + "<br>" + 
   " Contato coleta: " + document.getElementById("CONTATOCOLETA").value + "<br><br>" + 
   " Entrega: " + document.getElementById("ENTREGA").value + "<br>" + 
