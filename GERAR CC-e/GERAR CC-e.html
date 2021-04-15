@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+    <title>Gerar CC-e</title>
+    <script type="text/javascript">
+    var reader;
+    function checkFileAPI() {
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+            reader = new FileReader();
+            return true; 
+        } else {
+            alert('As APIs de arquivo não são totalmente suportadas por seu navegador. Suporte obrigatório.');
+            return false;
+        }
+    }
+
+    /**
+     * read text input
+     */
+    function readText(filePath) {
+        var output = ""; //placeholder for text output
+        if(filePath.files && filePath.files[0]) {           
+            reader.onload = function (e) {
+                output = e.target.result;
+                displayContents(output);
+            };//end onload()
+            reader.readAsText(filePath.files[0]);
+        }//end if html5 filelist support
+        else if(ActiveXObject && filePath) { //fallback to IE 6-8 support via ActiveX
+            try {
+                reader = new ActiveXObject("Scripting.FileSystemObject");
+                var file = reader.OpenTextFile(filePath, 1); //ActiveX File Object
+                output = file.ReadAll(); //text contents of file
+                file.Close(); //close file "input stream"
+                displayContents(output);
+            } catch (e) {
+                if (e.number == -2146827859) {
+                    alert('Incapaz de acessar arquivos locais devido às configurações de segurança do navegador. ' + 
+                     'Para superar isso, vá para Ferramentas-> Opções da Internet-> Segurança-> Nível personalizado. ' + 
+                     'Encontre a configuração para "Inicializar e executar scripts de controles ActiveX não marcados como seguros" e altere para "Ativar" ou "Solicitar"'); 
+                }
+            }       
+        }
+        else { //this is where you could fallback to Java Applet, Flash or similar
+            return false;
+        }       
+        return true;
+    }   
+    function displayContents(xml) {
+        var parser = new DOMParser();
+        var el = document.getElementById('blocodenotas');
+		var xmlDoc = parser.parseFromString(xml,"text/xml");
+		var NotaFiscal = xmlDoc.getElementsByTagName("chNFe")[0].childNodes[0].nodeValue;
+		
+        el.innerHTML = xml;
+		document.getElementById("AQUIinfEvento").innerHTML = xmlDoc.getElementsByTagName("tpEvento")[0].childNodes[0].nodeValue + xmlDoc.getElementsByTagName("chNFe")[0].childNodes[0].nodeValue + "01";
+		document.getElementById("AQUIxCorrecao").innerHTML = xmlDoc.getElementsByTagName("xCorrecao")[0].childNodes[0].nodeValue;
+		document.getElementById("AQUIdhEvento").innerHTML = xmlDoc.getElementsByTagName("dhEvento")[0].childNodes[0].nodeValue;
+		document.getElementById("AQUInProt").innerHTML = xmlDoc.getElementsByTagName("nProt")[0].childNodes[0].nodeValue;
+		document.getElementById("AQUIdhRegEvento").innerHTML = xmlDoc.getElementsByTagName("dhRegEvento")[0].childNodes[0].nodeValue;
+		document.getElementById("AQUIchNFe").innerHTML = xmlDoc.getElementsByTagName("chNFe")[0].childNodes[0].nodeValue
+		document.getElementById("AQUINotaFiscal").innerHTML = "Nota Fiscal: " + NotaFiscal[25]+NotaFiscal[26]+NotaFiscal[27]+"."+NotaFiscal[28]+NotaFiscal[29]+NotaFiscal[30]+"."+NotaFiscal[31]+NotaFiscal[32]+NotaFiscal[33]+"<br>Série: "+NotaFiscal[22]+NotaFiscal[23]+NotaFiscal[24];
+		}
+</script>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .before {
+        page-break-before: always;
+      }
+      .after {
+        page-break-after: always;
+      }
+      .avoid {
+        page-break-inside: avoid;
+      }
+      .big {
+        height: 10.9in;
+        background-color: yellow;
+      }
+      .fullpage {
+        height: 11in;
+        background-color: fuchsia;
+      }
+      .bigger {
+        height: 11.1in;
+        background-color: aqua;
+      }
+      .tg  {
+        border-collapse: inherit;
+        border-spacing: 2px;
+        margin: 1px;
+      }
+      .tg td{
+        border-color: rgb(0 0 0 / 64%);
+		border-style: dashed;
+		border-width: thin;
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		overflow: hidden;
+		padding: 10px 5px;
+		word-break: normal;
+      }
+      .tg th {
+        border-color: rgb(0 0 0 / 64%);
+		border-style: dashed;
+		border-width: thin;
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		overflow: hidden;
+		padding: 10px 5px;
+		word-break: normal;
+      }
+      .tg .tg-0lax {
+        text-align: left;
+		vertical-align: top
+      }
+	  #AQUIchNFe {
+		font-family: 'Libre Barcode 128 Text', cursive;
+		font-size: 25px;
+		text-align: -webkit-right;
+		letter-spacing: 0px;
+		transform: scaleY(2);
+		z-index: -1;
+	  }
+	  .button {
+  background-color: #47a3da;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button2 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+</head>
+<body onload="checkFileAPI();">
+    <div id="ctextarea">    
+        <input type="file" class="button2" onchange='readText(this)' /><button class="button" onclick="test()">DOWNLOAD CC-e</button><br><br>
+        <textarea style="display:none;" id="blocodenotas" rows="30" cols="150">
+        </textarea>
+		<br><br>
+		<p id='demo'></p>
+    </div>
+	
+
+
+<h1>Visualização</h1><br><br>
+<div style="position:flex;top:70%;width:795px;height:941px;">
+    <!-- Div to capture. -->
+    <div id="root">
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax" colspan="6" rowspan="7"></th>
+    <th class="tg-0lax" colspan="5" rowspan="2"><center><h3>Representação Gráfica de CC-e</h3><br> (Carta de Correção Eletrônica)</center></th>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td class="tg-0lax" style="border-color: #fff;">ID do Evento: </td>
+    <td class="tg-0lax" colspan="4" style="border-color: #fff;" id="AQUIinfEvento"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" style="border-color: #fff;">Criado em:</td>
+    <td class="tg-0lax" style="border-color: #fff;" ID="AQUIdhEvento"></td>
+    <td class="tg-0lax" style="border-color: #fff;"></td>
+    <td class="tg-0lax" style="border-color: #fff;"></td>
+    <td class="tg-0lax" style="border-color: #fff;"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" style="border-color: #fff;" >Prococolo:</td>
+    <td class="tg-0lax" colspan="4" style="border-color: #fff;" ID="AQUInProt"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" style="border-color: #fff;" >Registrado na SEFAZ em:</td>
+    <td class="tg-0lax" style="border-color: #fff;" ID="AQUIdhRegEvento"></td>
+    <td class="tg-0lax" style="border-color: #fff;"></td>
+    <td class="tg-0lax" style="border-color: #fff;"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" style="border-color: #fff;" colspan="5"></td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax" colspan="11" rowspan="3">De acordo com as determinações legais vigentes, vimos por meio desta comunicar-lhe que a Nota Fiscal, abaixo referenciada, contêm irregularidades que estão destacadas e suas respectivas correções, solicitamos que sejam aplicadas essas correções ao executar seus lançamentos fiscais.</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="6" style="border-color: #fff;"></td>
+    <td class="tg-0lax" colspan="5" rowspan="3" style="border-color: #fff;" id="AQUIeam">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <center><td class="tg-0lax" colspan="6" rowspan="3" style="border-color: #fff;" ID="AQUINotaFiscal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></center>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="5" style="border-color: #fff;" ID="AQUIchNFe"></td>
+  </tr>
+  <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="11" rowspan="4">A Carta de Correcao e disciplinada pelo paragrafo 1o-A do art. 7o do Convenio S/N, de 15 de dezembro de 1970 e pode ser utilizada para regularizacao de erro ocorrido na emissao de documento fiscal, desde que o erro nao esteja relacionado com: I - as variaveis que determinam o valor do imposto tais como: base de calculo, aliquota, diferenca de preco, quantidade, valor da operacao ou da prestacao; II - a correcao de dados cadastrais que implique mudanca do remetente ou do destinatario; III - a data de emissao ou de saida.</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="11" rowspan="2"><b>CORREÇÕES&nbsp;&nbsp;&nbsp;A SEREM CONSIDERADAS</b></td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td class="tg-0lax" style="border-color: #fff;" colspan="11" id="AQUIxCorrecao" rowspan="2"></td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  </tr>
+  <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  </tr>
+  <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  </tr>
+  <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  </tr>
+  <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  </tr>
+  <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  </tr>
+  <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  </tr>
+  <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  </tr>
+  <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  </tr>
+  <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  </tr>
+  <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  <tr>
+    <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  <tr>
+    <tr>
+    <td style="border-color: #fff;" colspan="11"></td>
+  <tr>
+  <tr>
+    <td class="tg-0lax" style="border-color: #fff;" colspan="11" rowspan="3">Este documento é uma representação gráfica da CC-e e foi impresso apenas para sua informação e não possue validade fiscal. A CC-e deve ser recebida e mantida em arquivo eletrônico XML e pode ser consultada através dos Portais das SEFAZ.</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="11" rowspan="3"><center>Amerinode - BackOffice</center></td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+    <!-- Include html2pdf bundle. -->
+    <script src="dist/html2pdf.bundle.js"></script>
+
+    <script>
+      function test() {
+        // Get the element..min
+        var element = document.getElementById('root');
+
+        // Generate the PDF.
+        html2pdf().from(element).set({
+          filename: 'Carta de Correção.pdf',
+          html2canvas: { scale: 3 },
+          jsPDF: {orientation: 'portrait', unit: 'in', format: 'letter', compressPDF: false}
+        }).save();
+      }
+    </script>
+
+	
+	
+</body>
+</html>
