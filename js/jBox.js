@@ -1593,21 +1593,21 @@ function normal() {
   " Comprimento: " + document.getElementById("COMPRIMENTO").value + " cm" + "<br><br>" + 
   " Peso: " + document.getElementById("PESO").value + " kg" + "<br>" + 
   " Volume: " + document.getElementById("VOLUME").value + " " + document.getElementById("TIPOVOLUME").value + "<br><br>";
-  var coletadia =
-  " Data da Coleta: " + document.getElementById("CDIA").value + "/";
-  var coletames =
-  document.getElementById("CMES").value + "/";
-  var coletaano =
-  document.getElementById("CANO").value + "<br>";
-  var entregadia =
-  " Data da Entrega: " + document.getElementById("EDIA").value + "/";
-  var entregames =
-  document.getElementById("EMES").value + "/";
-  var entregaano =
-  document.getElementById("EANO").value + "<br><br>";
+  var tcoleta = "Data da Coleta: ";
+var xcoleta = document.getElementById("datacoleta").value;
+var dcoleta = xcoleta[8]+xcoleta[9]+"/"+xcoleta[5]+xcoleta[6]+"/"+xcoleta[0]+xcoleta[1]+xcoleta[2]+xcoleta[3] + "<br>";
+var tentrega = "Data da Entrega: ";
+var xentrega = document.getElementById("dataentrega").value;
+var dentrega = xentrega[8]+xentrega[9]+"/"+xentrega[5]+xentrega[6]+"/"+xentrega[0]+xentrega[1]+xentrega[2]+xentrega[3] + "<br><br>";
   var corpox1 = corpo.toUpperCase();
-  document.getElementById("normaldemo").innerHTML = corpox1+coletadia+coletames+coletaano+entregadia+entregames+entregaano;
-}
+  if (xcoleta < 1) {
+	  document.getElementById("normaldemo").innerHTML = corpox1;
+	  } else {
+if (xentrega < 1) {
+	document.getElementById("normaldemo").innerHTML = corpox1;
+} else {
+  document.getElementById("normaldemo").innerHTML = corpox1+tcoleta+dcoleta+tentrega+dentrega;
+}}}
 
 function emergencial() {
   var x = 
@@ -1626,23 +1626,23 @@ function emergencial() {
   " Comprimento: " + document.getElementById("COMPRIMENTO").value + " cm" + "<br><br>" + 
   " Peso: " + document.getElementById("PESO").value + " kg" + "<br>" + 
   " Volume: " + document.getElementById("VOLUME").value + " " + document.getElementById("TIPOVOLUME").value + "<br><br>";
-  var coletadia =
-  " Data da Coleta: " + document.getElementById("CDIA").value + "/";
-  var coletames =
-  document.getElementById("CMES").value + "/";
-  var coletaano =
-  document.getElementById("CANO").value + "<br>";
-  var entregadia =
-  " Data da Entrega: " + document.getElementById("EDIA").value + "/";
-  var entregames =
-  document.getElementById("EMES").value + "/";
-  var entregaano =
-  document.getElementById("EANO").value + "<br><br>";
+  var tcoleta = "Data da Coleta: ";
+var xcoleta = document.getElementById("datacoleta").value;
+var dcoleta = xcoleta[8]+xcoleta[9]+"/"+xcoleta[5]+xcoleta[6]+"/"+xcoleta[0]+xcoleta[1]+xcoleta[2]+xcoleta[3] + "<br>";
+var tentrega = "Data da Entrega: ";
+var xentrega = document.getElementById("dataentrega").value;
+var dentrega = xentrega[8]+xentrega[9]+"/"+xentrega[5]+xentrega[6]+"/"+xentrega[0]+xentrega[1]+xentrega[2]+xentrega[3] + "<br><br>";
   var d =
   "*CONSEGUEM ATENDER?*";
   var x1 = x.toUpperCase();
-  document.getElementById("emergencialdemo").innerHTML = x1+coletadia+coletames+coletaano+entregadia+entregames+entregaano+d;
-}
+  if (xcoleta < 1) {
+	  document.getElementById("emergencialdemo").innerHTML = x1+d;
+	  	  } else {
+    if (xentrega < 1) {
+  document.getElementById("emergencialdemo").innerHTML = x1+d;
+} else {
+  document.getElementById("emergencialdemo").innerHTML = x1+tcoleta+dcoleta+tentrega+dentrega+d;
+}}}
 
 function download(){
     var text = document.getElementById("blocodenotas").value;
