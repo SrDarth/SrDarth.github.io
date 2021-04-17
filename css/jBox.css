@@ -25,45 +25,49 @@
 }
 
 .row {margin:30px 0}
-input {
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-	border: 1px solid #000;
-    line-height: 1;
-    font-size: 15px;
-    padding: 5px 10px;
-    color: #000;
+
+
+textarea {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #FFF;
+  background: #FFF;
+  resize: none;
+}
+textarea:focus {
+  background-color: lightblue;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+input, select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
     width: 90%;
-    background: transparent;
+    background-color: #FFF;
+    background: #FFF;
 }
 input:focus {
-	outline: none;
-	border: 2px solid #10689a;
-    background: transparent;
-    padding: 5px;
-    color: #000;
-    z-index: 100;
+  background-color: lightblue;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+select:focus {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 label {
     padding: 5px 2px 5px 2px;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-	display: block;
-}
-select {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    line-height: 1.5;
-    font-size: 12px;
-    padding: 5px 10px;
-    color: #000;
-    background: transparent;
-}
-select:focus {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-	outline: none;
-	border: 3px solid #10689a;
-    color: #000;
+	display: table-caption;
 }
 p {
 display: block;
@@ -79,18 +83,13 @@ button {
     padding-top: 40px;
     clear: both;
 }
-table {
-position: relative;
-border-collapse:collapse;
-border-spacing:0;
+
+.formulario {
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
-td {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    overflow: hidden;
-    padding: 1px 1px;
-    word-break: normal;
-}
+
 .tabela td {
     border-color: #000;
     border-style: solid;
@@ -112,16 +111,6 @@ td {
     word-break: normal;
 }
 
-th {
-    font-family:Arial, sans-serif;
-    font-size:10px;
-    font-weight:normal;
-    overflow:hidden;
-    padding:1px 1px;
-    word-break:normal;
-    text-align:left;
-    vertical-align:bottom
-}
 #wrapper {
   width: 400px;
   margin: 0 auto;
