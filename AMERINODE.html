@@ -10,6 +10,7 @@
 		<meta name="author" content="Alexandre M Freitas" />
 		<link rel="shortcut icon" href="favicon.ico">
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/jBox.css" />
@@ -71,174 +72,121 @@
 						</div>
 					</section>
 					<section id="section-2">
-					<div class="mediabox">
-					<table>
+<center>
+<div class="formulario">
+<table>
 <thead>
   <tr>
-    <th><label for="TICKET">TICKET:</label><input type="text" id="TICKET" value="" placeholder="1234..."></th>
-    <th><label for="ETICKET">SGS ou EMERGENCIAL:</label><input type="text" id="ETICKET" value="" placeholder="SGS EVE NTT TSK..."></th>
-    <th colspan="2"><label for="VALORNF">VALOR NF:</label><input type="text" id="VALORNF" value="" placeholder="1234,12"></th>
-    <th><label for="MODAL">MODAL:</label>
-<select class="select" id="MODAL" name="MODAL">
+    <th></th>
+    <th></th>
+	<th></th>
+    <th></th>
+	<th></th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><input type="number" id="TICKET" value="" placeholder="TICKET" style="width:3cm;"></td>
+    <td><input type="text" id="ETICKET" value="" placeholder="SGS ou 🚨 EVE NTT TSK..." style="width:5.3cm;"></td>
+    <td><input type="number" id="VALORNF" value="" placeholder="VALOR NF" style="width:3cm;"></td>
+    <td><select class="select" id="MODAL" name="MODAL" style="width:4.8cm;">
 <option>RODO DEDICADO</option>
 <option>AEREO DEDICADO</option>
 <option>RODO NORMAL</option>
 <option>AEREO NORMAL</option>
-</select></th>
-    <th colspan="2">
+</select></td>
+    <td><input type="number" id="KM" value="" placeholder="KM" style="width:3cm;"></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<thead>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></th>
-	<th><label for="KM">KM:</label><input type="text" id="KM" value="" placeholder="1234..."></th>
-	<th></th>
-	<th></th>
+    <th></th>
+    <th></th>
   </tr>
 </thead>
-<tbody></td>
+<tbody>
+  <tr>
+    <td><textarea type="text" id="COLETA" value="" placeholder="COLETA - EX: AV.JOAOZINHO, 123 - BAIRRO, CIDADE - UF" rows="4" cols="50"></textarea></td>
+    <td><textarea type="text" id="CONTATOCOLETA" value="" placeholder="CONTATO COLETA - EX: NOME +551234567-8910 / NOME +551234567-8910 ..." rows="4" cols="50"></textarea></td>
+  </tr>
+  <tr>
+    <td><textarea type="text" id="ENTREGA" value="" placeholder="ENTREGA - EX: AV.JOAOZINHO, 123 - BAIRRO, CIDADE - UF" rows="4" cols="50"></textarea></td>
+    <td><textarea type="text" id="CONTATOENTREGA" value="" placeholder="CONTATO ENTREGA - EX: NOME +551234567-8910 / NOME +551234567-8910 ..." rows="4" cols="50"></textarea></td>
+  </tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+  <tr>
+    <th></th>
+    <th></th>
+	<th></th>
+    <th></th>
+	<th></th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><input type="number" id="ALTURA" value="" placeholder="ALTURA" style="width:4cm;"></td>
     <td></td>
-	<td></td>
+    <td></td>
+    <td><input type="number" id="PESO" value="" placeholder="PESO" style="width:3cm;"></td>
+    <td></td>
 	<td></td>
   </tr>
   <tr>
-    <td colspan="2"><label for="COLETA">COLETA:</label><textarea type="text" id="COLETA" value="" placeholder="EX: AV.JOAOZINHO, 123 - BAIRRO, CIDADE - UF" rows="4" cols="50"></textarea></td>
-    <td></td>
-    <td colspan="2"><label for="CONTATOCOLETA">CONTATO COLETA:</label><textarea type="text" id="CONTATOCOLETA" value="" placeholder="EX: NOME +551234567-8910 / NOME +551234567-8910 ..." rows="4" cols="50"></textarea></td>
-  </tr>
-  <td></td>
-  <td></td>
-  <td></td>
-  <tr>
+    <td><input type="number" id="LARGURA" value="" placeholder="LARGURA" style="width:4cm;"></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-  </tr>
-  <tr>
-    <td colspan="2"><label for="ENTREGA">ENTREGA:</label><textarea type="text" id="ENTREGA" value="" placeholder="EX: AV.JOAOZINHO, 123 - BAIRRO, CIDADE - UF" rows="4" cols="50"></textarea></td>
-    <td></td>
-    <td colspan="2"><label for="CONTATOENTREGA">CONTATO ENTREGA:</label><textarea type="text" id="CONTATOENTREGA" value="" placeholder="EX: NOME +551234567-8910 / NOME +551234567-8910 ..." rows="4" cols="50"></textarea></td>
-	<td></td>
-	<td></td>
-	<td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-  </tr>
-  <tr>
-    <td><label for="ALTURA">ALTURA:</label><input type="text" id="ALTURA" value="" placeholder="EX: 1,23..."></td>
-    <td></td>
-    <td></td>
-    <td><label for="PESO">PESO:</label><input type="text" id="PESO" value="" placeholder="EX: 1,23..."></td>
-    <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-  </tr>
-  <tr>
-    <td><label for="LARGURA">LARGURA:</label><input type="text" id="LARGURA" value="" placeholder="EX: 1,23..."></td>
-    <td></td>
-    <td></td>
-    <td><label for="VOLUME">VOLUME:</label><input type="text" id="VOLUME" value="" placeholder="EX: 123..."></td>
-    <td><label for="TIPO">Tipo:</label>
+    <td><input type="number" id="VOLUME" value="" placeholder="VOLUME" style="width:3cm;"></td>
+    <td>
 <select class="select" id="TIPOVOLUME" name="VOLUME">
 <option>CX</option>
 <option>UN</option>
 <option>PALETE</option>
 </select></td>
-<td></td>
-<td></td>
-<td></td>
   </tr>
   <tr>
-    <td><label for="COMPRIMENTO">COMPRIMENTO:</label><input type="text" id="COMPRIMENTO" value="" placeholder="EX: 1,23..."></td>
+  <td><input type="number" id="COMPRIMENTO" value="" placeholder="COMPRIMENTO" style="width:4cm;"></td>
     <td></td>
     <td></td>
     <td></td>
 	<td></td>
 	<td></td>
-	<td></td>
-	<td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-  </tr>
-  <tr>
-    <td colspan="2"><label for="DATA COLETA">DATA COLETA:</label>
-<select class="select" id="CDIA" name="MODAL">
-<option></option>
-<option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option>
-</select>
-<select class="select" id="CMES" name="MODAL">
-<option>04</option>
-<option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option>
-</select>
-<select class="select" id="CANO" name="MODAL">
-<option>2021</option>
-<option>2021</option><option>2022</option><option>2023</option><option>2024</option>
-</select></td>
-    <td></td>
-    <td colspan="2"><label for="DATA ENTREGA">DATA ENTREGA:</label>
-<select class="select" id="EDIA" name="MODAL">
-<option></option>
-<option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option>
-</select>
-<select class="select" id="EMES" name="MODAL">
-<option>04</option>
-<option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option>
-</select>
-<select class="select" id="EANO" name="MODAL">
-<option>2021</option>
-<option>2021</option><option>2022</option><option>2023</option><option>2024</option>
-</select></td>
-<td></td>
-<td></td>
-<td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-  </tr>
-  <tr>
-    <td colspan="2"><div class="row">
-	<button id="modalDragOnEmergencial" class="btn btn-warning" onclick="emergencial()">Texto Emergencial<div style="display: none;" id="emergencialdemo"></div></button>
-</div></td>
-    <td></td>
-    <td colspan="2"><div class="row">
-	<button id="modalDragOnNormal" class="btn btn-warning" onclick="normal()">Texto Normal<div style="display: none;" id="normaldemo"></div></button>
-</div></td>
-<td></td>
-<td></td>
-<td></td>
   </tr>
 </tbody>
 </table>
-					</div>
+
+<table>
+<thead>
+  <tr>
+    <th><label for="DATA COLETA">DATA COLETA:</label>
+<input type="date" id="datacoleta" style="width:5cm;"></th>
+    <th><label for="DATA ENTREGA">DATA ENTREGA:</label>
+<input type="date" id="dataentrega" style="width:5cm;"></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><div class="row">
+	<button id="modalDragOnEmergencial" class="btn btn-warning" onclick="emergencial()">Texto Emergencial<div style="display: none;" id="emergencialdemo"></div></button>
+</div></td>
+    <td><div class="row">
+	<button id="modalDragOnNormal" class="btn btn-warning" onclick="normal()">Texto Normal<div style="display: none;" id="normaldemo"></div></button>
+</div></td>
+  </tr>
+</tbody>
+</table>
+</div>
+</center>
 					</section>
 					<section id="section-3">
 					<div class="mediabox">
@@ -446,7 +394,7 @@
 					<div class="mediabox">
 <br>
 <center>
-<iframe scrolling="no" src="GERAR%20CC-e/GERAR%20CC-e.html" referrerpolicy="no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url" style="overflow-y:hidden;width:795px;height:1041px;"></iframe>
+<iframe scrolling="no" src="GERAR%20CC-e/GERAR%20CC-e.html" referrerpolicy="no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url" style="overflow-y:hidden;width:895px;height:1241px;"></iframe>
 </center></div>
 					</section>
 				</div><!-- /content -->
