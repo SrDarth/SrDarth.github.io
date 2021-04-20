@@ -79,7 +79,7 @@
   <tr>
     <th><button class="btn btn-warning" onclick="document.getElementById('TICKET').value = '',document.getElementById('ETICKET').value = '',document.getElementById('VALORNF').value = '',document.getElementById('KM').value = '',document.getElementById('COLETA').value = '',document.getElementById('CONTATOCOLETA').value = '',document.getElementById('ENTREGA').value = '',document.getElementById('CONTATOENTREGA').value = '',document.getElementById('ALTURA').value = '',document.getElementById('ALTURA').value = '',document.getElementById('LARGURA').value = '',document.getElementById('COMPRIMENTO').value = '',document.getElementById('PESO').value = '',document.getElementById('VOLUME').value = '',document.getElementById('datacoleta').value = '',document.getElementById('dataentrega').value = ''">APAGAR TUDO</button></th>
     <th></th>
-	<th></th>
+	<th><textarea id="CALCULAR" placeholder="CALCULADORA ❗REMOVER O PONTO" style="width:8cm;"></textarea></th>
     <th></th>
 	<th></th>
     <th></th>
@@ -89,7 +89,7 @@
   <tr>
     <td><input type="number" id="TICKET" value="" placeholder="TICKET" style="width:3cm;"></td>
     <td><input type="text" id="ETICKET" value="" placeholder="SGS ou 🚨 EVE NTT TSK..." style="width:5.3cm;"></td>
-    <td><input type="text" id="VALORNF" value="" placeholder="VALOR NF" style="width:7cm;"></td>
+    <td><input type="text" id="VALORNF" value="" placeholder="VALOR NF" style="width:8cm;"></td>
     <td><select class="select" id="MODAL" name="MODAL" style="width:4.8cm;">
 <option>RODO DEDICADO</option>
 <option>AEREO DEDICADO</option>
@@ -490,7 +490,7 @@ $(document).ready(function() {
 </script>
 <script src="js/srdarth.js"></script>
 <script type="text/javascript">
-        $('#VALORNF').srdarth();
+        $('#CALCULAR').srdarth();
     </script>
 
 	</body>
