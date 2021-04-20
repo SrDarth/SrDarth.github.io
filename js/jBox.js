@@ -1649,7 +1649,7 @@ function download(){
     text = text.replace(/\n/g, "\r\n");
     var blob = new Blob([text], { type: "text/plain"});
     var anchor = document.createElement("a");
-    anchor.download = "Minhas anotações.txt";
+    anchor.download = "Minhas anotações" + "TICKET: " + document.getElementById("TICKET").value + " " +document.getElementById("NTICKET").value;
     anchor.href = window.URL.createObjectURL(blob);
     anchor.target ="_blank";
     anchor.style.display = "none";
