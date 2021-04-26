@@ -1,106 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>AMERINODE - BACKOFFICE</title>
-		<meta name="description" content="Mais uma ferramenta para ajudar no dia a dia do backoffice" />
-		<meta name="keywords" content="responsivo, amerinode, backoffice, alexandre m freitas" />
-		<meta name="author" content="Alexandre M Freitas" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/jBox.css" />
-		<script src="js/jBox.js"></script>
-	</head>
-	
-	<body>
-		<div class="container">
-			<header>
-				<span>Amerinode <span class="bp-icon bp-icon-about" data-content="Mais uma ferramenta para ajudar no dia a dia do backoffice"></span></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackOffice</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f0601b0fb2.js" crossorigin="anonymous"></script>
+    <script nomodule='' src='js/ionicons.js'></script>
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" href="css/jBox.css">
+
+<link rel="stylesheet" href="css/CSS_White.css">
+
+<style>
+.tab {
+  overflow: hidden;
+}
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+</style>
+
+</head>
+<body>
+<center><div class="clock">
+      <div class="hand hours"></div>
+      <div class="hand minutes"></div>
+      <div class="hand seconds"></div>
+      <div class="point"></div>
+      <div class="marker">
+        <span><h3>Amerinode</h3></span>
 				<h1>BackOffice</h1>
-			</header>	
-			<div id="tabs" class="tabs">
-				<nav>
-					<ul class="cbp-vimenu">
-						<li><a href="#section-1" class="icon-home"><span>Avisos</span></a></li>
-						<li><a href="#section-2" class="icon-pencil"><span>Montar Texto</span></a></li>
-						<li><a href="#section-3" class="icon-search"><span>Consultar Codigo</span></a></li>
-						<li><a href="#section-4" class="icon-email"><span>Email para Sala TIM</span></a></li>
-						</ul>
-						<ul class="cbp-vimenu">
-						<li><a href="#section-5" class="icon-notas"><span>Bloco de notas</span></a></li>
-						<li><a href="#section-6" class="icon-location"><span>Calcular Rota</span></a></li>
-						<li><a href="#section-7" class="icon-home"><span>Gerar Carta de Correção</span></a></li>
-					</ul>
-				</nav>
-				<div class="content">
-					<section id="section-1">
-						<h1>AVISOS</h1>
-					<div alt="1" class="mediabox">
-							
-							<h3>❗ Avisos - SAP</h3>
-							<p>•	Todas as NFs que forem emitidas através de BIP, cujos fretes serão responsabilidade do demandante, ou seja, por exemplo, quando é o Player que fará o transporte, teremos que emitir CC-e com a informação “Frete por conta do demandante”;<br><br>•	Todas as NFs Writer, que são emitidas na transação ZSDNFW, cujos fretes serão responsabilidade do demandante, mesmo exemplo acima (quando o Player realizar o transporte), devem alterar o campo “Incoterms” de CIF para FOB.</p><br><br>
-							
-							<h3>❗ Avisos - TRANSPORTE</h3>
-							<p>•	Segunda a sexta x horário comercial:<br>o	Back Office aprova até 1 mil reais;<br>o	Focais aprovam de 1 mil a 3 mil reais (voltamos à regra anterior);<br>o	Gestor da área (Renata) aprova acima de $ 3 mil;<br><br><br>•	Fora do horário comercial, finais de semana e feriados:<br>o	Back Office aprova até 3 mil reais;<br>o	De R$ 3 mil a R$ 5 mil, BackOffice segue com o frete pré aprovado, porém formaliza por e-mail para ciência/cópia do focal/gestor. Este acompanhamento será feito para fazermos o acompanhamento da frequência dessas demandas, e como estão tratando esses fretes maiores;<br>o	Acima de R$ 5 mil: aprovação somente com o gestor da área (Renata).</p>
-						</div>
-					
-						<div alt="2" class="mediabox">
-							
-							<h3>❗ Atenção - TICKET</h3>
-							<p>Sempre adicionar focais de origem e destino no ticket</p><br><br>
-							
-							<h3>❗ Aviso - SGS</h3>
-							<p>Para ajustes no sgs é obrigatorio ter a foto do equipamento e de acordo das respectivas Focais Regionais<br><br>- Exceção para atender as solicitações sem foto dos equipamentos, apenas quando forem solicitadas pelo Avancini ou pelas Focais Regionais</p><br><br>
-							
-							<h3>❗ Aviso - SAP</h3>
-							<p>TCO e TSL retornam pra fila TCO para aprovação do Gustavo</p><br><br>
-							
-							<h3>❗ Aviso - SAP</h3>
-							<p>Apartir de 12/04/2021, adicionar o km na solicitação de transporte.</p><br><br>
-							
-							
-						</div>
-						<div alt="3" class="mediabox">
-							<h3>❗ Avisos - SIMPLES REMESSA</h3>
-							<p>Segue orientação para ser aplicada na emissão de NF de Outras Saídas – Simples Remessa (S00044) emitida para o Mantenedor:<br><br>•	Informar nas observações o texto: Remessa para depósito em estabelecimento de terceiro.<br><br>•	Caso trate-se da segunda perna de uma transferência entre estados informar nas observações: O número da NF de transferência de ativos entre estados (1ª perna) + o texto “Remessa para depósito em estabelecimento de terceiro”.</p>
-							
-						</div>
-					</section>
-					<section id="section-2">
+      </div>
+    </div></center><br>
+
 <center>
-<div class="formulario">
+<a class="tablink" onclick="openPage('Avisos')" id="defaultOpen"><div class="btn btn__Menu"><p>Avisos</p></div></a>
+<a class="tablink" onclick="openPage('Montar Texto')"><div class="btn btn__Menu"><p>Montar Texto</p></div></a>
+<a class="tablink" onclick="openPage('Consultar Codigo')"><div class="btn btn__Menu"><p>Consultar Codigo</p></div></a>
+<a class="tablink" onclick="openPage('Sala TIM')"><div class="btn btn__Menu"><p>Email para Sala TIM</p></div></a>
+<a class="tablink" onclick="openPage('Anotações')"><div class="btn btn__Menu"><p>Anotações</p></div></a>
+<a class="tablink" onclick="openPage('Calcular distâncias')"><div class="btn btn__Menu"><p>Calcular distâncias</p></div></a>
+<a class="tablink" onclick="openPage('CC-e')"><div class="btn btn__Menu"><p>CC-e</p></div></a>
+</center><br><br>
+
+<div class="container">
+
+<div class="components">
+
+<div id="Avisos" class="tabcontent">
+<h1>AVISOS</h1>
+<div alt="1" class="chip">
+<h3>❗ Avisos - SAP</h3>
+<p>•	Todas as NFs que forem emitidas através de BIP, cujos fretes serão responsabilidade do demandante, ou seja, por exemplo, quando é o Player que fará o transporte, teremos que emitir CC-e com a informação “Frete por conta do demandante”;<br><br>•	Todas as NFs Writer, que são emitidas na transação ZSDNFW, cujos fretes serão responsabilidade do demandante, mesmo exemplo acima (quando o Player realizar o transporte), devem alterar o campo “Incoterms” de CIF para FOB.</p>
+</div>
+<div alt="2" class="chip">		
+<h3>❗ Avisos - TRANSPORTE</h3>
+<p>•	Segunda a sexta x horário comercial:<br>o	Back Office aprova até 1 mil reais;<br>o	Focais aprovam de 1 mil a 3 mil reais (voltamos à regra anterior);<br>o	Gestor da área (Renata) aprova acima de $ 3 mil;<br><br><br>•	Fora do horário comercial, finais de semana e feriados:<br>o	Back Office aprova até 3 mil reais;<br>o	De R$ 3 mil a R$ 5 mil, BackOffice segue com o frete pré aprovado, porém formaliza por e-mail para ciência/cópia do focal/gestor. Este acompanhamento será feito para fazermos o acompanhamento da frequência dessas demandas, e como estão tratando esses fretes maiores;<br>o	Acima de R$ 5 mil: aprovação somente com o gestor da área (Renata).</p>
+</div>				
+<div alt="3" class="chip">
+<h3>❗ Atenção - TICKET</h3>
+<p>Sempre adicionar focais de origem e destino no ticket</p>
+</div>
+<div alt="4" class="chip">	
+<h3>❗ Aviso - SGS</h3>
+<p>Para ajustes no sgs é obrigatorio ter a foto do equipamento e de acordo das respectivas Focais Regionais<br><br>- Exceção para atender as solicitações sem foto dos equipamentos, apenas quando forem solicitadas pelo Avancini ou pelas Focais Regionais</p>
+</div>
+<div alt="5" class="chip">	
+<h3>❗ Aviso - SAP</h3>
+<p>TCO e TSL retornam pra fila TCO para aprovação do Gustavo</p>
+</div>
+<div alt="6" class="chip">	
+<h3>❗ Aviso - SAP</h3>
+<p>Apartir de 12/04/2021, adicionar o km na solicitação de transporte.</p>
+</div>
+<div alt="7" class="chip">
+<h3>❗ Avisos - SIMPLES REMESSA</h3>
+<p>Segue orientação para ser aplicada na emissão de NF de Outras Saídas – Simples Remessa (S00044) emitida para o Mantenedor:<br><br>•	Informar nas observações o texto: Remessa para depósito em estabelecimento de terceiro.<br><br>•	Caso trate-se da segunda perna de uma transferência entre estados informar nas observações: O número da NF de transferência de ativos entre estados (1ª perna) + o texto “Remessa para depósito em estabelecimento de terceiro”.</p>
+
+</div>
+					
+</div>
+
+<div id="Montar Texto" class="tabcontent">
+<center>
+
+
 <table>
 <thead>
-  <tr>
-    <th><button class="btn btn-warning" onclick="document.getElementById('TICKET').value = '',document.getElementById('ETICKET').value = '',document.getElementById('VALORNF').value = '',document.getElementById('KM').value = '',document.getElementById('COLETA').value = '',document.getElementById('CONTATOCOLETA').value = '',document.getElementById('ENTREGA').value = '',document.getElementById('CONTATOENTREGA').value = '',document.getElementById('ALTURA').value = '',document.getElementById('ALTURA').value = '',document.getElementById('LARGURA').value = '',document.getElementById('COMPRIMENTO').value = '',document.getElementById('PESO').value = '',document.getElementById('VOLUME').value = '',document.getElementById('datacoleta').value = '',document.getElementById('dataentrega').value = ''">APAGAR TUDO</button></th>
-    <th></th>
-	<th><textarea id="CALCULAR" placeholder="CALCULADORA ❗REMOVER O PONTO" style="width:8cm;"></textarea></th>
-    <th></th>
-	<th></th>
-    <th></th>
-  </tr>
+<tr>
+<th><a class="AtencaoAPAGAR" onclick="document.getElementById('TICKET').value = '',document.getElementById('ETICKET').value = '',document.getElementById('VALORNF').value = '',document.getElementById('KM').value = '',document.getElementById('COLETA').value = '',document.getElementById('CONTATOCOLETA').value = '',document.getElementById('ENTREGA').value = '',document.getElementById('CONTATOENTREGA').value = '',document.getElementById('ALTURA').value = '',document.getElementById('ALTURA').value = '',document.getElementById('LARGURA').value = '',document.getElementById('COMPRIMENTO').value = '',document.getElementById('PESO').value = '',document.getElementById('VOLUME').value = '',document.getElementById('datacoleta').value = '',document.getElementById('dataentrega').value = ''"><div class="btn btn__primary"><p>APAGAR TUDO</p></div></a></th>
+<th></th>
+<th><textarea id="CALCULAR" class="LembreteCalc TextAreaForm" placeholder="CALCULADORA" style="width:8cm;"></textarea></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
 </thead>
 <tbody>
-  <tr>
-    <td><input type="number" id="TICKET" value="" placeholder="TICKET" style="width:3cm;"></td>
-    <td><input type="text" id="ETICKET" value="" placeholder="SGS ou 🚨 EVE NTT TSK..." style="width:5.3cm;"></td>
-    <td><input type="text" id="VALORNF" value="" placeholder="VALOR NF" style="width:8cm;"></td>
-    <td><select class="select" id="MODAL" name="MODAL" style="width:4.8cm;">
+<tr>
+<td><input class="form__input" type="number" id="TICKET" value="" placeholder="TICKET" style="width:5cm;" autocomplete="off"></td>
+<td><input class="form__input" type="text" id="ETICKET" value="" placeholder="SGS ou 🚨 EVE NTT TSK..." style="width:6cm;" autocomplete="off"></td>
+<td><input class="form__input" type="text" id="VALORNF" value="" placeholder="VALOR NF" style="width:8cm;" autocomplete="off"></td>
+<td><select class="select form__input" id="MODAL" name="MODAL" style="width:4.8cm;">
 <option>RODO DEDICADO</option>
 <option>AEREO DEDICADO</option>
 <option>RODO NORMAL</option>
 <option>AEREO NORMAL</option>
 </select></td>
-    <td><input type="text" id="KM" value="" placeholder="KM" style="width:3cm;"></td>
-    <td></td>
-  </tr>
+<td><input class="form__input" type="text" id="KM" value="" placeholder="KM" style="width:3cm;" autocomplete="off"></td>
+<td></td>
+</tr>
 </tbody>
 </table>
+
 
 <table>
 <thead>
@@ -111,12 +128,12 @@
 </thead>
 <tbody>
   <tr>
-    <td><textarea type="text" id="COLETA" value="" placeholder="COLETA - EX: AV.JOAOZINHO, 123 - BAIRRO, CIDADE - UF" rows="4" cols="50"></textarea></td>
-    <td><textarea type="text" id="CONTATOCOLETA" value="" placeholder="CONTATO COLETA - EX: NOME +551234567-8910 / NOME +551234567-8910 ..." rows="4" cols="50"></textarea></td>
+    <td><textarea class="TextAreaForm" type="text" id="COLETA" value="" placeholder="COLETA - EX: AV.JOAOZINHO, 123 - BAIRRO, CIDADE - UF" rows="4" cols="50"></textarea></td>
+    <td><textarea class="TextAreaForm" type="text" id="CONTATOCOLETA" value="" placeholder="CONTATO COLETA - EX: NOME +551234567-8910 / NOME +551234567-8910 ..." rows="4" cols="50"></textarea></td>
   </tr>
   <tr>
-    <td><textarea type="text" id="ENTREGA" value="" placeholder="ENTREGA - EX: AV.JOAOZINHO, 123 - BAIRRO, CIDADE - UF" rows="4" cols="50"></textarea></td>
-    <td><textarea type="text" id="CONTATOENTREGA" value="" placeholder="CONTATO ENTREGA - EX: NOME +551234567-8910 / NOME +551234567-8910 ..." rows="4" cols="50"></textarea></td>
+    <td><textarea class="TextAreaForm" type="text" id="ENTREGA" value="" placeholder="ENTREGA - EX: AV.JOAOZINHO, 123 - BAIRRO, CIDADE - UF" rows="4" cols="50"></textarea></td>
+    <td><textarea class="TextAreaForm" type="text" id="CONTATOENTREGA" value="" placeholder="CONTATO ENTREGA - EX: NOME +551234567-8910 / NOME +551234567-8910 ..." rows="4" cols="50"></textarea></td>
   </tr>
 </tbody>
 </table>
@@ -135,27 +152,27 @@
 </thead>
 <tbody>
   <tr>
-    <td><input type="number" id="ALTURA" value="" placeholder="ALTURA" style="width:4cm;" autocomplete="off"></td>
+    <td><input class="form__input" type="number" id="ALTURA" value="" placeholder="ALTURA" style="width:4cm;" autocomplete="off"></td>
     <td></td>
     <td></td>
-    <td><input type="number" id="PESO" value="" placeholder="PESO" style="width:3cm;" autocomplete="off"></td>
+    <td><input class="form__input" type="number" id="PESO" value="" placeholder="PESO" style="width:3cm;" autocomplete="off"></td>
     <td></td>
 	<td></td>
   </tr>
   <tr>
-    <td><input type="number" id="LARGURA" value="" placeholder="LARGURA" style="width:4cm;" autocomplete="off"></td>
+    <td><input class="form__input" type="number" id="LARGURA" value="" placeholder="LARGURA" style="width:4cm;" autocomplete="off"></td>
     <td></td>
     <td></td>
-    <td><input type="number" id="VOLUME" value="" placeholder="VOLUME" style="width:3cm;" autocomplete="off"></td>
+    <td><input class="form__input" type="number" id="VOLUME" value="" placeholder="VOLUME" style="width:3cm;" autocomplete="off"></td>
     <td>
-<select class="select" id="TIPOVOLUME" name="VOLUME">
+<select class="select form__input" id="TIPOVOLUME" name="VOLUME" style="width:4cm;">
 <option>CX</option>
 <option>UN</option>
 <option>PALETE</option>
 </select></td>
   </tr>
   <tr>
-  <td><input type="number" id="COMPRIMENTO" value="" placeholder="COMPRIMENTO" style="width:4cm;" autocomplete="off"></td>
+  <td><input class="form__input" type="number" id="COMPRIMENTO" value="" placeholder="COMPRIMENTO" style="width:4cm;" autocomplete="off"></td>
     <td></td>
     <td></td>
     <td></td>
@@ -165,36 +182,40 @@
 </tbody>
 </table>
 
+<br><br>
 <table>
 <thead>
   <tr>
-    <th><label for="DATA COLETA">DATA COLETA:</label>
-<input type="date" id="datacoleta" style="width:5cm;"></th>
-    <th><label for="DATA ENTREGA">DATA ENTREGA:</label>
-<input type="date" id="dataentrega" style="width:5cm;"></th>
+    <th><label class="form__input" for="DATA COLETA">DATA COLETA:</label><br>
+<input class="form__input" type="date" id="datacoleta" style="width:5cm;"></th>
+    <th><label class="form__input" for="DATA ENTREGA">DATA ENTREGA:</label><br>
+<input class="form__input" type="date" id="dataentrega" style="width:5cm;"></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td><div class="row">
-	<button id="modalDragOnEmergencial" class="btn btn-warning" onclick="emergencial()">Texto Emergencial<div style="display: none;" id="emergencialdemo"></div></button>
+	<a id="modalDragOnEmergencial"  onclick="emergencial()"><div class="btn btn__primary"><p> Texto Emergencial </p></div><div style="display: none;" id="emergencialdemo"></div></a>
 </div></td>
     <td><div class="row">
-	<button id="modalDragOnNormal" class="btn btn-warning" onclick="normal()">Texto Normal<div style="display: none;" id="normaldemo"></div></button>
+	<a id="modalDragOnNormal" class="btn btn__Normal" onclick="normal()"><div class="btn btn__Normal"><p> Texto Normal </p></div><div style="display: none;" id="normaldemo"></div></a>
 </div></td>
   </tr>
 </tbody>
 </table>
-</div>
+
+
 </center>
-					</section>
-					<section id="section-3">
-					<div class="mediabox">
+</div>
+
+<div id="Consultar Codigo" class="tabcontent">
+<center>
+<div class="chipcce" style="width:13cm;">
 <table>
 <thead>
-  <tr>
-    <th style="padding: 10px 20px 50px;"><label for="FC">...</label>
-<select class="tabela" id="myOption">
+<tr>
+<th>
+<select class="form__input" id="myOption" style="width:3cm;">
 <option value="<div class='tabela'>TCO	QNDB<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C057</td><td>CB21</td><td>Back Office AC</td><td>02.421.421/0045-32</td><td>AC</td><td>RUA MAJOR&nbsp;&nbsp;&nbsp;LADISLAU FERREIRA 30, PARTE A - DOM GIOCONDO,RIO BRANCO - AC</td><td>69900-279</td></tr><tr><td>C057</td><td>CO45</td><td>Regional Rio Branco 1 - AC</td><td>02.421.421/0045-32</td><td>AC</td><td>RUA MAJOR LADISLAU FERREIRA 30, PARTE A - DOM GIOCONDO,RIO&nbsp;&nbsp;&nbsp;BRANCO - AC</td><td>69900-279</td></tr><tr><td>I045</td><td>IO45</td><td>Regional Rio&nbsp;&nbsp;&nbsp;Branco 2 - AC</td><td>02.421.421/0045-32</td><td>AC</td><td>RUA MAJOR&nbsp;&nbsp;&nbsp;LADISLAU FERREIRA 30, PARTE A - DOM GIOCONDO,RIO BRANCO - AC</td><td>69900-279</td></tr></tbody></table></div>">AC</option>
 
 <option value="<div class='tabela'>TNE	QNDN<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C638</td><td>CB48</td><td>Back Office AL</td><td>02.421.421/0236-77</td><td>AL</td><td>AV COMENDADOR&nbsp;&nbsp;&nbsp;GUSTAVO PAIVA 2990, 109 - MANGABEIRAS,MACEIO - AL</td><td>57037-901</td></tr><tr><td>I015</td><td>CB33</td><td>Back Office AL</td><td>02.421.421/0015-17</td><td>AL</td><td>PROFESSOR JOSÉ DA SILVEIRA CAMERINO 340, 01 -&nbsp;&nbsp;&nbsp;PINHEIRO,MACEIÓ - AL</td><td>57055-630</td></tr><tr><td>I015</td><td>CO54</td><td>Regional Maceió&nbsp;&nbsp;&nbsp;1 - AL</td><td>02.421.421/0015-17</td><td>AL</td><td>PROFESSOR JOSÉ&nbsp;&nbsp;&nbsp;DA SILVEIRA CAMERINO 340, 01 - PINHEIRO,MACEIÓ - AL</td><td>57055-630</td></tr><tr><td>I015</td><td>IO15</td><td>Regional Maceió 2 - AL</td><td>02.421.421/0015-17</td><td>AL</td><td>PROFESSOR JOSÉ DA SILVEIRA CAMERINO 340, 01 -&nbsp;&nbsp;&nbsp;PINHEIRO,MACEIÓ - AL</td><td>57055-630</td></tr></tbody></table></div>">AL</option>
@@ -250,13 +271,14 @@
 <option value="<div class='tabela'>TCO	QNDB<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C629</td><td>CB46</td><td>Back Office TO</td><td>02.421.421/0196-45</td><td>TO</td><td>104 NORTE&nbsp;&nbsp;&nbsp;AVENIDA JUSCELINO KUBITSCHEK 99 LOJA 104, LOTE 39 01 TERREO - PLANO DIRETOR&nbsp;&nbsp;&nbsp;NORTE,PALMAS - TO</td><td>77006-014</td></tr><tr><td>I021</td><td>CB20</td><td>Back Office TO</td><td>02.421.421/0021-65</td><td>TO</td><td>104 NORTE AVENIDA JUSCELINO KUBITSCHEK 99, LOTE 39 02&nbsp;&nbsp;&nbsp;TERREO - PLANO DIRETOR NORTE,PALMAS - TO</td><td>77006-014</td></tr><tr><td>I021</td><td>CO53</td><td>Regional Palmas&nbsp;&nbsp;&nbsp;1 - TO</td><td>02.421.421/0021-65</td><td>TO</td><td>104 NORTE&nbsp;&nbsp;&nbsp;AVENIDA JUSCELINO KUBITSCHEK 99, LOTE 39 02 TERREO - PLANO DIRETOR&nbsp;&nbsp;&nbsp;NORTE,PALMAS - TO</td><td>77006-014</td></tr><tr><td>I021</td><td>IO21</td><td>Regional Palmas 2 - TO</td><td>02.421.421/0021-65</td><td>TO</td><td>104 NORTE AVENIDA JUSCELINO KUBITSCHEK 99, LOTE 39 02&nbsp;&nbsp;&nbsp;TERREO - PLANO DIRETOR NORTE,PALMAS - TO</td><td>77006-014</td></tr></tbody></table></div>">TO</option>
 
 </select>
-<div class="row">
-	<span id="modalDragOn" class="btn btn-warning" onclick="myFunction()">Filial e Centro<div style="display: none;" id="coletaeentrega"></div></span>
-</div></th>
-    <th>
-	</th>
-    <th style="padding: 10px 20px 50px;"><label for="MODAL">...</label>
-<select id="XMANTENEDOR" name="Mantenedor">
+<br><br><br>
+
+<a id="modalDragOn" onclick="myFunction()"><div class="btn btn__Normal"><p>Consultar<br>Filial Centro</p></div><div style="display: none;" id="coletaeentrega"></div></a>
+
+</th>
+<th></th>
+<th>
+<select class="form__input" id="XMANTENEDOR" name="Mantenedor">
 <option>ABILITY - OLINDA - PE</option>
 <option>ABILITY - SALVADOR - BA</option>
 <option>ALGAR - BELO HORIZONTE - MG</option>
@@ -304,45 +326,96 @@
 <option>TLP -VARGINHA - MG</option>
 </select>
 
-<div class="row">
-<span id="modalDragOnMantenedor" class="btn btn-warning" onclick="mantenedor()">Consultar Mantenedor<div style="display: none;" id="cmantenedor"></div></span>
-</div></th>
+<br><br><br>
+
+<a id="modalDragOnMantenedor" onclick="mantenedor()"><div class="btn btn__Normal"><p>Consultar<br>Mantenedor</p></div><div style="display: none;" id="cmantenedor"></div></a>
+
+</th>
+ </tr>
+</thead>
+</table>
+</div>
+</center>
+</div>
+
+<div id="Anotações" class="tabcontent">
+
+<table>
+<thead>
+  <tr>
+    <th><button class="btn btn__Normal" onclick="download()"><p>Salvar anotações</p></button></th>
+	  <th><input type="text" class="form__input" id="NTICKET" value="" placeholder="..." style="width:5cm;"></th>
+	  <th><a class="AtencaoAPAGAR" onclick="document.getElementById('blocodenotas').value = ''"><div class="btn btn__primary"><p>APAGAR TUDO</p></div></a></th>
   </tr>
 </thead>
-</table></div>
-					</section>
-					<section id="section-4">
-					<div class="mediabox">
-<label for="EMAILSALATIM">EMAIL DA SALA TIM:</label>
-<select id="EMAILSALATIM">
-<option value="<button class='btn btn-warning'><a href='mailto:rfreitas_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br;Rmarques_amerinoe@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20S%C3%83O%20PAULO%20-%20LAPA%20-%20REPARO%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM SÃO PAULO - LAPA - REPARO</option>
+</table>
+<br>
+<center>
+<textarea id="blocodenotas"  class="chipcce" rows="50" cols="160"></textarea>
+</center>
 
-<option value="<button class='btn btn-warning'><a href='mailto:cgomes_amerinode@timbrasil.com.br;jthinnes_amerinode@timbrasil.com.br;taraujo_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20S%C3%83O%20CRISTOV%C3%83O%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM SÃO CRISTOVÃO</option>
 
-<option value="<button class='btn btn-warning'><a href='mailto:kfreitas_sa@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20BH%20-%20AQUILES%20LOBO%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM BH - AQUILES LOBO</option>
 
-<option value="<button class='btn btn-warning'><a href='mailto:asouza_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20ARACAJU%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM ARACAJU</option>
+</div>
 
-<option value="<button class='btn btn-warning'><a href='mailto:ejcarvalho_sa@timbrasil.com.br;wmiranda_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20SALVADOR%20-%20COMERCIO%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM SALVADOR - COMERCIO</option>
+<div id="Calcular distâncias" class="tabcontent">
+<label for="fonte">Fonte:</label>
+<a href="https://pt.distance.to/" target="_blank">distance.to</a>
+<br>
+<center>
+<iframe scrolling="no" class="chipcce" src="https://pt.distance.to/" referrerpolicy="no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url" style="overflow-y:hidden;height:500px;width:920px;"></iframe>
+</center>
+</div>
 
-<option value="<button class='btn btn-warning'><a href='mailto:edsilva_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20FLORIANOPOLIS%20-%20ESTREITO%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM FLORIANOPOLIS - ESTREITO</option>
+<div id="CC-e" class="tabcontent">
 
-<option value="<button class='btn btn-warning'><a href='mailto:moliveira_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20PORTO%20ALEGRE%20-%20RAMIRO%20BARCELOS%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM PORTO ALEGRE - RAMIRO BARCELOS</option>
+<center><h1>Indicação de sites para gerar a representação grafica da carta de correção</h1></center><br><br>
+O que é importante saber sobre a "Carta de correção" ?</br>
+A Carta de Correção e disciplinada pelo parágrafo 1o-A do art. 7o do Convenio S/N, de 15 de dezembro de 1970 e pode ser utilizada para regularização de erro ocorrido na emissão de documento fiscal, desde que o erro não esteja relacionado com:<br>
+I - as variáveis que determinam o valor do imposto tais como: base de cálculo, alíquota, diferença de preço, quantidade, valor da operação ou da prestação;<br>
+II - a correção de dados cadastrais que implique mudança do remetente ou do destinatário;<br>
+III - a data de emissão ou de saída.
+</p><br>
+<b>A representação gráfica da carta de correção não possue validade fiscal. A CC-e deve ser recebida e mantida em arquivo eletrônico XML e pode ser consultada através dos Portais das SEFAZ.</b><br><br>
+<ul style="list-style-type: square;">
+  <li><a class="btn btn__Menu" href="https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx"target="_blank">Nfe Fazenda</a></li>
+  <li><a class="btn btn__Menu" href="https://www.webdanfe.com.br/danfe/index.html" target="_blank">WebDanfe</a></li>
+  <li><a class="btn btn__Menu" href="https://www.freenfe.com.br/leitor-de-xml-online/" target="_blank">Freenfe</a></li>
+</ul>
 
-<option value="<button class='btn btn-warning'><a href='mailto:acosta_amerinode@timbrasil.com.br;segurancagoiania@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20GOIANIA%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM GOIANIA</option>
+</div>
 
-<option value="<button class='btn btn-warning'><a href='mailto:hpereira_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20CAMPO%20GRANDE%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM CAMPO GRANDE</option>
+<div id="Sala TIM" class="tabcontent">
+<center>
+<div class="chipcce">
+<select class="form__input" id="EMAILSALATIM" style="width:10cm;">
+<option value="<button class='btn btn-warning'><a href='mailto:rfreitas_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br;Rmarques_amerinoe@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20S%C3%83O%20PAULO%20-%20LAPA%20-%20REPARO%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM SÃO PAULO - LAPA - REPARO</option>
 
-<option value="<a href='mailto:egoncalves_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20CUIABA%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...'>CLIQUE AQUI PARA ABRIR O EMAIL</a>">TIM CUIABA</option>
+<option value="<button class='btn btn-warning'><a href='mailto:cgomes_amerinode@timbrasil.com.br;jthinnes_amerinode@timbrasil.com.br;taraujo_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20S%C3%83O%20CRISTOV%C3%83O%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM SÃO CRISTOVÃO</option>
+
+<option value="<button class='btn btn-warning'><a href='mailto:kfreitas_sa@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20BH%20-%20AQUILES%20LOBO%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM BH - AQUILES LOBO</option>
+
+<option value="<button class='btn btn-warning'><a href='mailto:asouza_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20ARACAJU%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM ARACAJU</option>
+
+<option value="<button class='btn btn-warning'><a href='mailto:ejcarvalho_sa@timbrasil.com.br;wmiranda_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20SALVADOR%20-%20COMERCIO%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM SALVADOR - COMERCIO</option>
+
+<option value="<button class='btn btn-warning'><a href='mailto:edsilva_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20FLORIANOPOLIS%20-%20ESTREITO%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM FLORIANOPOLIS - ESTREITO</option>
+
+<option value="<button class='btn btn-warning'><a href='mailto:moliveira_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20PORTO%20ALEGRE%20-%20RAMIRO%20BARCELOS%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM PORTO ALEGRE - RAMIRO BARCELOS</option>
+
+<option value="<button class='btn btn-warning'><a href='mailto:acosta_amerinode@timbrasil.com.br;segurancagoiania@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20GOIANIA%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM GOIANIA</option>
+
+<option value="<button class='btn btn-warning'><a href='mailto:hpereira_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20CAMPO%20GRANDE%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM CAMPO GRANDE</option>
+
+<option value="<a href='mailto:egoncalves_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20CUIABA%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a>">TIM CUIABA</option>
 </select>
 <br><br>
 
 
-<div class="row">
-	<span id="modalDragOnSala" class="btn btn-warning" onclick="emailsala()">Gerar email para Sala TIM<div id="salatim"></div></span>
+<span id="modalDragOnSala" class="btn btn__Normal" onclick="emailsala()">Gerar email para Sala TIM<div id="salatim"></div></span>
 </div>
-
 </center>
+
 <br><br>
 <h1>ATENÇÃO</h1>
 <p> Ao clicar no link ("CLIQUE AQUI PARA ABRIR O EMAIL") vai abrir opções de onde enviar o email, selecionar o email autorizado para liberar o material na SALA TIM.</p>
@@ -353,7 +426,7 @@
 </ul>  
 
 <h3>Corpo:</h3>
-<ul>
+<ul style="list-style-type: square;">
   <li>Substituir <b>[Prezado]</b> com a saudação utilizada por você.</li>
   <li>Substituir <b>[ DESCRIÇÃO DO MATERIAL ]</b> com a descrição do material no SGS</li>
   <li>Substituir <b>[ NOME DO TÉCNICO ]</b> com o nome completo do técnico</li>
@@ -361,137 +434,17 @@
   <li><b>[ OBSERVAÇÃO SE MATERIAL FOI SEGUIDO POR SIMILARIDADE NA NOTA SE NÃO TIVER O QUE INFORMAR AQUI É SÓ APAGAR ESTE CAMPO ]</b></li>
 </ul>
 
-</select></div>
-					</section>
-					<section id="section-5">
-					<div class="mediabox">
-<table>
-<thead>
-  <tr>
-    <th><button class="btn btn-warning" type="button" onclick="download()">Salvar anotações</button></th>
-	  <th><input type="text" id="NTICKET" value="" placeholder="..." style="width:5cm;"></th>
-	  <th><button class="btn btn-warning" type="button" onclick="document.getElementById('blocodenotas').value = ''" style="background-color: red;">APAGAR TUDO</button></th>
-  </tr>
-</thead>
-</table>
-<br>
-<center>
-<textarea id="blocodenotas" rows="50" cols="160"></textarea>
-</center>
+</div>
+
+
 
 </div>
-					</section>
-					<section id="section-6">
-					<div class="mediabox">
-<label for="fonte">Fonte:</label>
-<a href="https://pt.distance.to/" target="_blank">distance.to</a>
-<br>
-<center>
-<iframe scrolling="no" src="https://pt.distance.to/" referrerpolicy="no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url" style="overflow-y:hidden;height:500px;width:920px;"></iframe>
-</center></div>
-					</section>
-					<section id="section-7">
-					<div class="mediabox">
-<br>
-<center>
-<iframe scrolling="no" src="GERAR%20CC-e/GERAR%20CC-e.html" referrerpolicy="no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url" style="overflow-y:hidden;width:895px;height:1241px;"></iframe>
-</center></div>
-					</section>
-				</div><!-- /content -->
-			</div><!-- /tabs -->
-			<p class="info">Desenvolvido por: <a href="https://srdarth.github.io/">Sr. Darth</a></p>
-		</div>
-		<script src="js/cbpFWTabs.js"></script>
-		<script>
-			new CBPFWTabs( document.getElementById( 'tabs' ) );
-		</script>
-		<script>
-$(document).ready(function() {
-    new jBox('Modal', {
-        attach: $('#modalDragOnNormal'),
-        width: 600,
-        title: 'Texto Normal',
-        overlay: false,
-        content: $('#normaldemo'),
-        draggable: 'title',
-        repositionOnOpen: false,
-        repositionOnContent: false
-    });
+</div>
 
-});
-</script>
-
-<script>
-$(document).ready(function() {
-    new jBox('Modal', {
-        attach: $('#modalDragOnEmergencial'),
-        width: 600,
-        title: 'Texto Emergencial',
-        overlay: false,
-        content: $('#emergencialdemo'),
-        draggable: 'title',
-        repositionOnOpen: false,
-        repositionOnContent: false
-    });
-
-});
-</script>
-
-<script>
-function emailsala() {
-  var linksalatim = document.getElementById("EMAILSALATIM").value;
-  document.getElementById("salatim").innerHTML = linksalatim;
-}
-</script>
-
-<script>
-$(document).ready(function() {
-    new jBox('Modal', {
-        attach: $('#modalDragOn'),
-        title: 'Filial e Centro',
-        overlay: false,
-        content: $('#coletaeentrega'),
-        draggable: 'title',
-        repositionOnOpen: false,
-        repositionOnContent: false
-    });
-
-});
-</script>
-
-<script>
-$(document).ready(function() {
-    new jBox('Modal', {
-        attach: $('#modalDragOnSala'),
-        title: 'Email para SALA TIM',
-        overlay: false,
-        content: $('#salatim'),
-        draggable: 'title',
-        repositionOnOpen: false,
-        repositionOnContent: false
-    });
-
-});
-</script>
-
-<script>
-$(document).ready(function() {
-    new jBox('Modal', {
-        attach: $('#modalDragOnMantenedor'),
-        title: 'Reparador',
-        overlay: false,
-        content: $('#cmantenedor'),
-        draggable: 'title',
-        repositionOnOpen: false,
-        repositionOnContent: false
-    });
-
-});
-</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/js.js"></script>
+<script src="js/jBox.js"></script>
 <script src="js/srdarth.js"></script>
-<script type="text/javascript">
-        $('#CALCULAR').srdarth();
-    </script>
-
-	</body>
+<script src="js/srdarthBox.js"></script>
+</body>
 </html>
