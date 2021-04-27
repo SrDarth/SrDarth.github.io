@@ -42,10 +42,11 @@
 <a class="tablink" onclick="openPage('Avisos')" id="defaultOpen"><div class="btn btn__Menu"><p>Avisos</p></div></a>
 <a class="tablink" onclick="openPage('Montar Texto')"><div class="btn btn__Menu"><p>Montar Texto</p></div></a>
 <a class="tablink" onclick="openPage('Consultar Codigo')"><div class="btn btn__Menu"><p>Consultar Codigo</p></div></a>
-<a class="tablink" onclick="openPage('Sala TIM')"><div class="btn btn__Menu"><p>Email para Sala TIM</p></div></a>
+<a class="tablink" onclick="openPage('Sala TIM')"><div class="btn btn__Menu"><p>Email para Sala TIM</p></div></a><br>
 <a class="tablink" onclick="openPage('Anotações')"><div class="btn btn__Menu"><p>Anotações</p></div></a>
 <a class="tablink" onclick="openPage('Calcular distâncias')"><div class="btn btn__Menu"><p>Calcular distâncias</p></div></a>
 <a class="tablink" onclick="openPage('CC-e')"><div class="btn btn__Menu"><p>CC-e</p></div></a>
+<a class="tablink" onclick="openPage('Similar')"><div class="btn btn__Menu"><p class="fa fa-search"> </p><p> Pesquisar item similar</p></div></a>
 </center><br><br>
 
 <div class="container">
@@ -53,36 +54,60 @@
 <div class="components">
 
 <div id="Avisos" class="tabcontent">
+
 <h1>AVISOS</h1>
-<div alt="1" class="chip">
-<h3>❗ Avisos - SAP</h3>
-<p>•	Todas as NFs que forem emitidas através de BIP, cujos fretes serão responsabilidade do demandante, ou seja, por exemplo, quando é o Player que fará o transporte, teremos que emitir CC-e com a informação “Frete por conta do demandante”;<br><br>•	Todas as NFs Writer, que são emitidas na transação ZSDNFW, cujos fretes serão responsabilidade do demandante, mesmo exemplo acima (quando o Player realizar o transporte), devem alterar o campo “Incoterms” de CIF para FOB.</p>
+
+<div class="rowgrid">
+
+<div alt="5" class="chipcce">	
+<h3>❗ Aviso - SAP</h3>
+<p>Para demandas de retificador, <b style="color: red;">não</b> utilizar como similar "opss" e "retrofit"<br>
+<a class="tablink" onclick="openPage('Similar')"><div class="btn btn__Menu"><p>Pesquisar item similar</p></div></a>
+</p>
 </div>
-<div alt="2" class="chip">		
-<h3>❗ Avisos - TRANSPORTE</h3>
-<p>•	Segunda a sexta x horário comercial:<br>o	Back Office aprova até 1 mil reais;<br>o	Focais aprovam de 1 mil a 3 mil reais (voltamos à regra anterior);<br>o	Gestor da área (Renata) aprova acima de $ 3 mil;<br><br><br>•	Fora do horário comercial, finais de semana e feriados:<br>o	Back Office aprova até 3 mil reais;<br>o	De R$ 3 mil a R$ 5 mil, BackOffice segue com o frete pré aprovado, porém formaliza por e-mail para ciência/cópia do focal/gestor. Este acompanhamento será feito para fazermos o acompanhamento da frequência dessas demandas, e como estão tratando esses fretes maiores;<br>o	Acima de R$ 5 mil: aprovação somente com o gestor da área (Renata).</p>
-</div>				
-<div alt="3" class="chip">
-<h3>❗ Atenção - TICKET</h3>
-<p>Sempre adicionar focais de origem e destino no ticket</p>
-</div>
-<div alt="4" class="chip">	
+
+<div alt="4" class="chipcce">	
 <h3>❗ Aviso - SGS</h3>
-<p>Para ajustes no sgs é obrigatorio ter a foto do equipamento e de acordo das respectivas Focais Regionais<br><br>- Exceção para atender as solicitações sem foto dos equipamentos, apenas quando forem solicitadas pelo Avancini ou pelas Focais Regionais</p>
+<p>Para ajustes no sgs é obrigatorio ter a foto do equipamento e de acordo das respectivas Focais Regionais<br><p>- Exceção para atender as solicitações sem foto dos equipamentos, apenas quando forem solicitadas pelo Avancini ou pelas Focais Regionais</p>
 </div>
-<div alt="5" class="chip">	
+
+<div alt="3" class="chipcce">
+<h3>❗ Atenção - TICKET</h3>
+<p>Sempre adicionar focais de origem e destino no ticket<br>
+<b>QUELLEN</b>: MT, MS, GO, DF, RO, AC, TO, PR, RS, SC<br>
+<b>ILDA</b>: SP, AM, PA, MA, AP, RR<br>
+<b>LOIANE</b>: AL, PE, PB, CE, PI, RN, RJ, ES, MG, BA, SE
+</p>
+</div>
+
+<div alt="5" class="chipcce">	
 <h3>❗ Aviso - SAP</h3>
 <p>TCO e TSL retornam pra fila TCO para aprovação do Gustavo</p>
 </div>
-<div alt="6" class="chip">	
+
+<div alt="6" class="chipcce">	
 <h3>❗ Aviso - SAP</h3>
 <p>Apartir de 12/04/2021, adicionar o km na solicitação de transporte.</p>
 </div>
-<div alt="7" class="chip">
+
+<div alt="1" class="chipcce">
+<h3>❗ Avisos - SAP</h3>
+<p>•	Todas as NFs que forem emitidas através de BIP, cujos fretes serão responsabilidade do demandante, ou seja, por exemplo, quando é o Player que fará o transporte, teremos que emitir CC-e com a informação “Frete por conta do demandante”;<br><br>•	Todas as NFs Writer, que são emitidas na transação ZSDNFW, cujos fretes serão responsabilidade do demandante, mesmo exemplo acima (quando o Player realizar o transporte), devem alterar o campo “Incoterms” de CIF para FOB.</p>
+</div>
+
+<div alt="2" class="chipcce">		
+<h3>❗ Avisos - TRANSPORTE</h3>
+<p>•	Segunda a sexta x horário comercial:<br>o	Back Office aprova até 1 mil reais;<br>o	Focais aprovam de 1 mil a 3 mil reais (voltamos à regra anterior);<br>o	Gestor da área (Renata) aprova acima de $ 3 mil;<br><br><br>•	Fora do horário comercial, finais de semana e feriados:<br>o	Back Office aprova até 3 mil reais;<br>o	De R$ 3 mil a R$ 5 mil, BackOffice segue com o frete pré aprovado, porém formaliza por e-mail para ciência/cópia do focal/gestor. Este acompanhamento será feito para fazermos o acompanhamento da frequência dessas demandas, e como estão tratando esses fretes maiores;<br>o	Acima de R$ 5 mil: aprovação somente com o gestor da área (Renata).<br></p>
+</div>
+
+<div alt="7" class="chipcce">
 <h3>❗ Avisos - SIMPLES REMESSA</h3>
 <p>Segue orientação para ser aplicada na emissão de NF de Outras Saídas – Simples Remessa (S00044) emitida para o Mantenedor:<br><br>•	Informar nas observações o texto: Remessa para depósito em estabelecimento de terceiro.<br><br>•	Caso trate-se da segunda perna de uma transferência entre estados informar nas observações: O número da NF de transferência de ativos entre estados (1ª perna) + o texto “Remessa para depósito em estabelecimento de terceiro”.</p>
+</div>
 
 </div>
+
+
 					
 </div>
 
@@ -436,10 +461,224 @@ III - a data de emissão ou de saída.
 
 </div>
 
+<div id="Similar" class="tabcontent pesquisac">
+
+<center>
+<form action="#">
+<div class="search">
+<input class="search__input" id="MinhaPesquisa" onkeyup="Pesquisa()" type="text" placeholder="Pesquisar..." autocomplete="off" style="width:15cm;">
+<div class="search__icon">
+        <p class="fa fa-search"></p>
+      </div>
+</div>
+</form></center>
+<br><br>
+
+<ul id="ConteudoPesquisa">
+
+<div class="rowgrid">
+ <li class="chipcce">
+ <figure>
+ <img class="chipcce"  src="img/RBS.jpg" style="width:100%">
+ <figcaption>
+ <a>
+ <i>
+ <h1>Radio Base Station (RBS)</h1>
+ </i>
+ <p>Desenvolvida pela Ericsson, normalmente constituindo uma parte considerável de Radio Access Network (RAN)<br>
+ <h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- RBS (Radio Base Station)</p>
+<p>- BTS (Base Transceiver Station)</p>
+<p>- Distribution Switch Unit (DXU)</p>
+<p>- Rack</p>
+</div>
+ </p></a></figcaption></figure></li>
+ 
+<li class="chipcce"><figure><img class="chipcce"  src="img/DUWRBSKDU.jpg" style="width:100%"><figcaption><a><i>
+<h1>DUW cards for UMTS (UTRAN)</h1>
+</i>
+<p>Desenvolvida pela Ericsson, é um modulo parte do Radio Base Station (RBS)<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- DUW</p>
+<p>- Modulo</p>
+<p>- Module</p>
+<p>- Switch</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li class="chipcce"><figure><img  class="chipcce" src="img/PTN.png" style="width:100%"><figcaption><a><i>
+<h1>OptiX PTN ou SPTN</h1>
+</i>
+<p>É composta por dispositivos de acesso multisserviço de última geração orientados ao transporte de pacotes<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- SPTN</p>
+<p>- OptiX</p>
+<p>- Modulo</p>
+<p>- Module</p>
+<p>- Switch</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li class="chipcce"><figure><img  class="chipcce" src="img/ASR.jpg" style="width:100%"><figcaption><a><i>
+<h1>ASR 900 Series</h1>
+</i>
+<p>É um módulo de interface Cisco<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- ASR</p>
+<p>- Placa de Controle</p>
+<p>- Control board</p>
+<p>- CPAK</p>
+<p>- Module ASR</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li class="chipcce"><figure><img  class="chipcce" src="img/FAN.jpg" style="width:100%"><figcaption><a><i>
+<h1>FAN</h1>
+</i>
+<p>Existe vários modelos de vários fabricantes, mas basicamente é um "Módulo de Ventilador" ou "Módulo de Ventoinha" conhecidas como bandejas de ventilador. São utilizadas para fluxo de ar dentro de um rack fechado ou RBS...<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- FAN</p>
+<p>- Módulo ventilador</p>
+<p>- Módulo Ventoinha</p>
+<p>- Module FAN</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li class="chipcce"><figure><img  class="chipcce" src="img/FLATPACK.jpg" style="width:100%"><figcaption><a><i>
+<h1>Flatpack ou Retificador</h1>
+</i>
+<p>Existe vários modelos de vários fabricantes, mas basicamente é um retificador que controla e proteje a fonte de energia de gabinete ou rack. A unidade retificadora é importante para fornecer a alimentação de energia na medida certa, sem inconsistência e falhas, permitindo o funcionamento correto e sem interrupções dos equipamentos de telecomunicações.<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- Retificador</p>
+<p>- Módulo Retificador</p>
+<p>- Rectifiers</p>
+<p>- Module Rectifier</p>
+<p>- Flatpack</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li class="chipcce"><figure><img  class="chipcce" src="img/ASIA.jpg" style="width:100%"><figcaption><a><i>
+<h1>Flexi Multiradio</h1>
+</i>
+<p>Desenvolvido pela NOKIA, é basicamente um modulo externo que transmite rede lte...<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- ASIA</p>
+<p>- Flexi Radio</p>
+<p>- Multiradio</p>
+<p>- AirScale</p>
+<p>- Bts</p>
+<p>- FXEA</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li class="chipcce"><figure><img  class="chipcce" src="img/IDU.jpg" style="width:100%"><figcaption><a><i>
+<h1>Unidade Interna (IDU – “indoor unit”)</h1>
+</i>
+<p>IDU é onde fica toda a parte de banda básica, constituída essencialmente do modem. A IDU se conecta à ODU por meio de cabos coaxiais onde a transmissão é feita a nível de frequência intermediária (FI), geralmente na faixa de 2 GHz. A distância máxima que a ODU pode ficar da IDU varia de 50 a 100 metros.<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- MSS-1</p>
+<p>- AGS20</p>
+<p>- AIRMUX</p>
+<p>- ALCPLUS</p>
+<p>- INDOOR UNIT</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li class="chipcce"><figure><img  class="chipcce" src="img/ODU.jpg" style="width:100%"><figcaption><a><i>
+<h1>Unidade Externa (ODU – “outdoor unit”)</h1>
+</i>
+<p>ODU é onde fica a antena, alimentador e a parte de RF, o transmissor e o receptor.<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- RTN</p>
+<p>- ASNK</p>
+<p>- OUTDOOR UNIT</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li class="chipcce"><figure><img  class="chipcce" src="img/COREVO.jpg" style="width:100%"><figcaption><a><i>
+<h1>CorEvo</h1>
+</i>
+<p>CorEvo é uma placa que fornece gerenciamento de nó, conexão cruzada entre MSS plugins e portas Ethernet a 10 Gbit/s, resumindo é uma placa de controle para IDU<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- 10Gbps</p>
+<p>- Placa de Controle</p>
+<p>- Control board</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li class="chipcce"><figure><img  class="chipcce" src="img/OPSS.jpg" style="width:100%"><figcaption><a><i>
+<h1>OPSS ou OPZS</h1>
+</i>
+<p>Bateria de armazenamento tubular para a energia solar<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- OPSS 200AH</p>
+<p>- OPS2</p>
+<p>- OPZS2</p>
+<p>- Battery</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li class="chipcce"><figure><img  class="chipcce" src="img/UPEU.jpg" style="width:100%"><figcaption><a><i>
+<h1>UPEU</h1>
+</i>
+<p>A placa UPEU converte a energia de entrada de -48 V DC em energia de +12 V DC e fornece duas portas com cada uma transmitindo um canal de sinais RS485, diferente da unidade retificadora a placa UPEU funciona como inversor. É parte de uma OLT (Terminal de Linha Óptica)<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- OPSS 200AH</p>
+<p>- OPS2</p>
+<p>- OPZS2</p>
+<p>- Battery</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li class="chipcce"><figure><img  class="chipcce" src="img/RETROFIT.jpg" style="width:100%"><figcaption><a><i>
+<h1>Retrofit ou Retrofitting (Renovação)</h1>
+</i>
+<p>O termo é utilizado para itens aprimorados para maior durabilidade e economia, portando precisa prestar atenção na utilização dos ativos com este termo pois pode não estar referindo-se ao equipamento e sim ao melhoramento dele. Um exemplo na imagem...<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- RETROFIT</p>
+</div>
+</p></a></figcaption></figure></li>
+
+</div>
+  
+</ul>
+
+</div>
+
 
 
 </div>
 </div>
+
+<script>
+function Pesquisa() {
+var input, filter, ul, li, a, i;
+input = document.getElementById("MinhaPesquisa");
+filter = input.value.toUpperCase();
+ul = document.getElementById("ConteudoPesquisa");
+li = ul.getElementsByTagName("li");
+for (i = 0; i < li.length; i++) {
+a = li[i].getElementsByTagName("a")[0];
+if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+li[i].style.display = "";
+} else {
+li[i].style.display = "none"; }
+}
+}
+</script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/js.js"></script>

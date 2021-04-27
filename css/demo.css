@@ -24,6 +24,52 @@ body {
     color: #000;
 }
 
+li {
+list-style: none;
+}
+
+.coluna {
+    float: left;
+    width: 30%;
+    padding: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 5px 5px 5px;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.tab {
+  overflow: hidden;
+}
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+figure {
+  padding: 4px;
+  margin: auto;
+  width: 300px
+}
+
+figcaption {
+  color: #000;
+  font-style: italic;
+  padding: 2px;
+}
+.row a {
+  color: #000;
+}
+
 a {
 	color: #00c4ff;
 	text-decoration: none;
