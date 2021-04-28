@@ -27,17 +27,16 @@
 
 </head>
 <body>
-<center><div class="clock">
+<center>
+      <div class="clock">
       <div class="hand hours"></div>
       <div class="hand minutes"></div>
       <div class="hand seconds"></div>
       <div class="point"></div>
-      <div class="marker">
-        <span><h3>Amerinode</h3></span>
-				<h1>BackOffice</h1>
-      </div>
-    </div></center><br>
-
+      <div class="marker"><span><h3>Amerinode</h3></span><h1>BackOffice</h1></div>
+    </div>
+</center>
+<br>
 <center>
 <a class="tablink" onclick="openPage('Avisos')" id="defaultOpen"><div class="btn btn__Menu"><p>Avisos</p></div></a>
 <a class="tablink" onclick="openPage('Montar Texto')"><div class="btn btn__Menu"><p>Montar Texto</p></div></a>
@@ -47,73 +46,91 @@
 <a class="tablink" onclick="openPage('Calcular distâncias')"><div class="btn btn__Menu"><p>Calcular distâncias</p></div></a>
 <a class="tablink" onclick="openPage('CC-e')"><div class="btn btn__Menu"><p>CC-e</p></div></a>
 <a class="tablink" onclick="openPage('Similar')"><div class="btn btn__Menu"><p class="fa fa-search"> </p><p> Pesquisar item similar</p></div></a>
-</center><br><br>
+</center>
+
+<br>
+<br>
 
 <div class="container">
 
 <div class="components">
 
-<div id="Avisos" class="tabcontent">
+<div id="Avisos" class="tabcontent pesquisac">
 
 <h1>AVISOS</h1>
 
-<div class="rowgrid">
+<ul class="rowgrid">
 
-<div alt="5" class="chipcce">	
+<li alt="Aviso - PACER" class="chipcce">	
+<h3>❗ Aviso - PACER</h3>
+<p>Não seguir no modal Aéreo Convencional (Normal) quando o transporte cair para PACER:</p>
+<p>Aracaju – SE</p>
+<p>Belém - PA</p>
+<p>Boa Vista – RR</p>
+<p>Cuiabá - MT</p>
+<p>Florianópolis – SC</p>
+<p>Fortaleza – CE</p>
+<p>Imperatriz – MA</p>
+<p>Manaus - AM</p>
+<p>Macapá – AP</p>
+<p>Porto Velho – RO</p>
+<p>Rio Branco – AC</p>
+</li>
+
+<li alt="Avisos - SIMPLES REMESSA" class="chipcce">
+<h3>❗ Avisos - SIMPLES REMESSA</h3>
+<p>Segue orientação para ser aplicada na emissão de NF de Outras Saídas – Simples Remessa (S00044) emitida para o Mantenedor:<br><br>•	Informar nas observações o texto: Remessa para depósito em estabelecimento de terceiro.<br><br>•	Caso trate-se da segunda perna de uma transferência entre estados informar nas observações: O número da NF de transferência de ativos entre estados (1ª perna) + o texto “Remessa para depósito em estabelecimento de terceiro”.</p>
+</li>
+
+<li alt="Aviso - SAP" class="chipcce">	
 <h3>❗ Aviso - SAP</h3>
 <p>Para demandas de retificador, <b style="color: red;">não</b> utilizar como similar "opss" e "retrofit"<br>
 <a class="tablink" onclick="openPage('Similar')"><div class="btn btn__Menu"><p>Pesquisar item similar</p></div></a>
 </p>
-</div>
+</li>
 
-<div alt="4" class="chipcce">	
+<li alt="Aviso - SGS" class="chipcce">	
 <h3>❗ Aviso - SGS</h3>
-<p>Para ajustes no sgs é obrigatorio ter a foto do equipamento e de acordo das respectivas Focais Regionais<br><p>- Exceção para atender as solicitações sem foto dos equipamentos, apenas quando forem solicitadas pelo Avancini ou pelas Focais Regionais</p>
-</div>
+<p>Para ajustes no sgs é obrigatorio ter a foto do equipamento e de acordo das respectivas Focais Regionais</p>
+<p>- Exceção para atender as solicitações sem foto dos equipamentos, apenas quando forem solicitadas pelo Avancini ou pelas Focais Regionais</p>
+</li>
 
-<div alt="3" class="chipcce">
+<li alt="Atenção - TICKET" class="chipcce">
 <h3>❗ Atenção - TICKET</h3>
-<p>Sempre adicionar focais de origem e destino no ticket<br>
+<p>Sempre adicionar focais de origem e destino no ticket</p>
 <b>QUELLEN</b>: MT, MS, GO, DF, RO, AC, TO, PR, RS, SC<br>
 <b>ILDA</b>: SP, AM, PA, MA, AP, RR<br>
 <b>LOIANE</b>: AL, PE, PB, CE, PI, RN, RJ, ES, MG, BA, SE
-</p>
-</div>
+</li>
 
-<div alt="5" class="chipcce">	
+<li alt="Aviso - SAP" class="chipcce">	
 <h3>❗ Aviso - SAP</h3>
 <p>TCO e TSL retornam pra fila TCO para aprovação do Gustavo</p>
-</div>
+</li>
 
-<div alt="6" class="chipcce">	
+<li alt="Aviso - SAP" class="chipcce">	
 <h3>❗ Aviso - SAP</h3>
 <p>Apartir de 12/04/2021, adicionar o km na solicitação de transporte.</p>
-</div>
+</li>
 
-<div alt="1" class="chipcce">
+<li alt="Avisos - SAP" class="chipcce">
 <h3>❗ Avisos - SAP</h3>
 <p>•	Todas as NFs que forem emitidas através de BIP, cujos fretes serão responsabilidade do demandante, ou seja, por exemplo, quando é o Player que fará o transporte, teremos que emitir CC-e com a informação “Frete por conta do demandante”;<br><br>•	Todas as NFs Writer, que são emitidas na transação ZSDNFW, cujos fretes serão responsabilidade do demandante, mesmo exemplo acima (quando o Player realizar o transporte), devem alterar o campo “Incoterms” de CIF para FOB.</p>
-</div>
+</li>
 
-<div alt="2" class="chipcce">		
+<li alt="Avisos - TRANSPORTE" class="chipcce">		
 <h3>❗ Avisos - TRANSPORTE</h3>
 <p>•	Segunda a sexta x horário comercial:<br>o	Back Office aprova até 1 mil reais;<br>o	Focais aprovam de 1 mil a 3 mil reais (voltamos à regra anterior);<br>o	Gestor da área (Renata) aprova acima de $ 3 mil;<br><br><br>•	Fora do horário comercial, finais de semana e feriados:<br>o	Back Office aprova até 3 mil reais;<br>o	De R$ 3 mil a R$ 5 mil, BackOffice segue com o frete pré aprovado, porém formaliza por e-mail para ciência/cópia do focal/gestor. Este acompanhamento será feito para fazermos o acompanhamento da frequência dessas demandas, e como estão tratando esses fretes maiores;<br>o	Acima de R$ 5 mil: aprovação somente com o gestor da área (Renata).<br></p>
-</div>
-
-<div alt="7" class="chipcce">
-<h3>❗ Avisos - SIMPLES REMESSA</h3>
-<p>Segue orientação para ser aplicada na emissão de NF de Outras Saídas – Simples Remessa (S00044) emitida para o Mantenedor:<br><br>•	Informar nas observações o texto: Remessa para depósito em estabelecimento de terceiro.<br><br>•	Caso trate-se da segunda perna de uma transferência entre estados informar nas observações: O número da NF de transferência de ativos entre estados (1ª perna) + o texto “Remessa para depósito em estabelecimento de terceiro”.</p>
-</div>
-
-</div>
+</li>
 
 
-					
+
+</ul>
 </div>
 
 <div id="Montar Texto" class="tabcontent">
-<center>
 
+<center>
 
 <table>
 <thead>
@@ -400,7 +417,7 @@ A Carta de Correção e disciplinada pelo parágrafo 1o-A do art. 7o do Convenio
 I - as variáveis que determinam o valor do imposto tais como: base de cálculo, alíquota, diferença de preço, quantidade, valor da operação ou da prestação;<br>
 II - a correção de dados cadastrais que implique mudança do remetente ou do destinatário;<br>
 III - a data de emissão ou de saída.
-</p><br>
+<br>
 <b>A representação gráfica da carta de correção não possue validade fiscal. A CC-e deve ser recebida e mantida em arquivo eletrônico XML e pode ser consultada através dos Portais das SEFAZ.</b><br><br>
 <ul style="list-style-type: square;">
   <li><a class="btn btn__Menu" href="https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx"target="_blank">Nfe Fazenda</a></li>
@@ -477,25 +494,27 @@ III - a data de emissão ou de saída.
 <ul id="ConteudoPesquisa">
 
 <div class="rowgrid">
- <li class="chipcce">
- <figure>
- <img class="chipcce"  src="img/RBS.jpg" style="width:100%">
- <figcaption>
- <a>
- <i>
- <h1>Radio Base Station (RBS)</h1>
- </i>
- <p>Desenvolvida pela Ericsson, normalmente constituindo uma parte considerável de Radio Access Network (RAN)<br>
- <h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+
+<li alt="1 - Radio Base Station (RBS)" class="chipcce">
+<figure>
+<img class="chipcce"  src="img/RBS.jpg" style="width:100%">
+<figcaption>
+<a>
+<i>
+<h1>Radio Base Station (RBS)</h1>
+</i>
+<p>Desenvolvida pela Ericsson, normalmente constituindo uma parte considerável de Radio Access Network (RAN)<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
 <div class="TextAreaForm">
 <p>- RBS (Radio Base Station)</p>
 <p>- BTS (Base Transceiver Station)</p>
 <p>- Distribution Switch Unit (DXU)</p>
 <p>- Rack</p>
 </div>
- </p></a></figcaption></figure></li>
+</p></a></figcaption></figure></li>
  
-<li class="chipcce"><figure><img class="chipcce"  src="img/DUWRBSKDU.jpg" style="width:100%"><figcaption><a><i>
+<li alt="2 - DUW cards for UMTS (UTRAN" class="chipcce">
+<figure><img class="chipcce"  src="img/DUWRBSKDU.jpg" style="width:100%"><figcaption><a><i>
 <h1>DUW cards for UMTS (UTRAN)</h1>
 </i>
 <p>Desenvolvida pela Ericsson, é um modulo parte do Radio Base Station (RBS)<br>
@@ -508,7 +527,8 @@ III - a data de emissão ou de saída.
 </div>
 </p></a></figcaption></figure></li>
 
-<li class="chipcce"><figure><img  class="chipcce" src="img/PTN.png" style="width:100%"><figcaption><a><i>
+<li alt="3 - OptiX PTN ou SPTN" class="chipcce">
+<figure><img  class="chipcce" src="img/PTN.png" style="width:100%"><figcaption><a><i>
 <h1>OptiX PTN ou SPTN</h1>
 </i>
 <p>É composta por dispositivos de acesso multisserviço de última geração orientados ao transporte de pacotes<br>
@@ -522,7 +542,8 @@ III - a data de emissão ou de saída.
 </div>
 </p></a></figcaption></figure></li>
 
-<li class="chipcce"><figure><img  class="chipcce" src="img/ASR.jpg" style="width:100%"><figcaption><a><i>
+<li alt="4 - ASR 900 Series" class="chipcce">
+<figure><img  class="chipcce" src="img/ASR.jpg" style="width:100%"><figcaption><a><i>
 <h1>ASR 900 Series</h1>
 </i>
 <p>É um módulo de interface Cisco<br>
@@ -536,7 +557,8 @@ III - a data de emissão ou de saída.
 </div>
 </p></a></figcaption></figure></li>
 
-<li class="chipcce"><figure><img  class="chipcce" src="img/FAN.jpg" style="width:100%"><figcaption><a><i>
+<li alt="5 - FAN" class="chipcce">
+<figure><img  class="chipcce" src="img/FAN.jpg" style="width:100%"><figcaption><a><i>
 <h1>FAN</h1>
 </i>
 <p>Existe vários modelos de vários fabricantes, mas basicamente é um "Módulo de Ventilador" ou "Módulo de Ventoinha" conhecidas como bandejas de ventilador. São utilizadas para fluxo de ar dentro de um rack fechado ou RBS...<br>
@@ -549,7 +571,8 @@ III - a data de emissão ou de saída.
 </div>
 </p></a></figcaption></figure></li>
 
-<li class="chipcce"><figure><img  class="chipcce" src="img/FLATPACK.jpg" style="width:100%"><figcaption><a><i>
+<li alt="6 - Flatpack ou Retificador" class="chipcce">
+<figure><img  class="chipcce" src="img/FLATPACK.jpg" style="width:100%"><figcaption><a><i>
 <h1>Flatpack ou Retificador</h1>
 </i>
 <p>Existe vários modelos de vários fabricantes, mas basicamente é um retificador que controla e proteje a fonte de energia de gabinete ou rack. A unidade retificadora é importante para fornecer a alimentação de energia na medida certa, sem inconsistência e falhas, permitindo o funcionamento correto e sem interrupções dos equipamentos de telecomunicações.<br>
@@ -563,7 +586,8 @@ III - a data de emissão ou de saída.
 </div>
 </p></a></figcaption></figure></li>
 
-<li class="chipcce"><figure><img  class="chipcce" src="img/ASIA.jpg" style="width:100%"><figcaption><a><i>
+<li alt="7 - Flexi Multiradio" class="chipcce">
+<figure><img  class="chipcce" src="img/ASIA.jpg" style="width:100%"><figcaption><a><i>
 <h1>Flexi Multiradio</h1>
 </i>
 <p>Desenvolvido pela NOKIA, é basicamente um modulo externo que transmite rede lte...<br>
@@ -578,7 +602,8 @@ III - a data de emissão ou de saída.
 </div>
 </p></a></figcaption></figure></li>
 
-<li class="chipcce"><figure><img  class="chipcce" src="img/IDU.jpg" style="width:100%"><figcaption><a><i>
+<li alt="8 - Unidade Interna (IDU – “indoor unit”)" class="chipcce">
+<figure><img  class="chipcce" src="img/IDU.jpg" style="width:100%"><figcaption><a><i>
 <h1>Unidade Interna (IDU – “indoor unit”)</h1>
 </i>
 <p>IDU é onde fica toda a parte de banda básica, constituída essencialmente do modem. A IDU se conecta à ODU por meio de cabos coaxiais onde a transmissão é feita a nível de frequência intermediária (FI), geralmente na faixa de 2 GHz. A distância máxima que a ODU pode ficar da IDU varia de 50 a 100 metros.<br>
@@ -592,7 +617,8 @@ III - a data de emissão ou de saída.
 </div>
 </p></a></figcaption></figure></li>
 
-<li class="chipcce"><figure><img  class="chipcce" src="img/ODU.jpg" style="width:100%"><figcaption><a><i>
+<li alt="9 - Unidade Externa (ODU – “outdoor unit”)" class="chipcce">
+<figure><img  class="chipcce" src="img/ODU.jpg" style="width:100%"><figcaption><a><i>
 <h1>Unidade Externa (ODU – “outdoor unit”)</h1>
 </i>
 <p>ODU é onde fica a antena, alimentador e a parte de RF, o transmissor e o receptor.<br>
@@ -604,7 +630,8 @@ III - a data de emissão ou de saída.
 </div>
 </p></a></figcaption></figure></li>
 
-<li class="chipcce"><figure><img  class="chipcce" src="img/COREVO.jpg" style="width:100%"><figcaption><a><i>
+<li alt="10 - CorEvo" class="chipcce">
+<figure><img  class="chipcce" src="img/COREVO.jpg" style="width:100%"><figcaption><a><i>
 <h1>CorEvo</h1>
 </i>
 <p>CorEvo é uma placa que fornece gerenciamento de nó, conexão cruzada entre MSS plugins e portas Ethernet a 10 Gbit/s, resumindo é uma placa de controle para IDU<br>
@@ -616,7 +643,8 @@ III - a data de emissão ou de saída.
 </div>
 </p></a></figcaption></figure></li>
 
-<li class="chipcce"><figure><img  class="chipcce" src="img/OPSS.jpg" style="width:100%"><figcaption><a><i>
+<li alt="11 - OPSS ou OPZS" class="chipcce">
+<figure><img  class="chipcce" src="img/OPSS.jpg" style="width:100%"><figcaption><a><i>
 <h1>OPSS ou OPZS</h1>
 </i>
 <p>Bateria de armazenamento tubular para a energia solar<br>
@@ -629,26 +657,70 @@ III - a data de emissão ou de saída.
 </div>
 </p></a></figcaption></figure></li>
 
-<li class="chipcce"><figure><img  class="chipcce" src="img/UPEU.jpg" style="width:100%"><figcaption><a><i>
+<li alt="12 - UPEU" class="chipcce">
+<figure><img  class="chipcce" src="img/UPEU.jpg" style="width:100%"><figcaption><a><i>
 <h1>UPEU</h1>
 </i>
 <p>A placa UPEU converte a energia de entrada de -48 V DC em energia de +12 V DC e fornece duas portas com cada uma transmitindo um canal de sinais RS485, diferente da unidade retificadora a placa UPEU funciona como inversor. É parte de uma OLT (Terminal de Linha Óptica)<br>
 <h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
 <div class="TextAreaForm">
-<p>- UPEUc</p>
-<p>- UPEU</p>
-<p>- BTS</p>
-<p>- INVERSOR</p>
+<p>- OPSS 200AH</p>
+<p>- OPS2</p>
+<p>- OPZS2</p>
+<p>- Battery</p>
 </div>
 </p></a></figcaption></figure></li>
 
-<li class="chipcce"><figure><img  class="chipcce" src="img/RETROFIT.jpg" style="width:100%"><figcaption><a><i>
+<li alt="13 - Retrofit ou Retrofitting (Renovação)" class="chipcce">
+<figure><img  class="chipcce" src="img/RETROFIT.jpg" style="width:100%"><figcaption><a><i>
 <h1>Retrofit ou Retrofitting (Renovação)</h1>
 </i>
 <p>O termo é utilizado para itens aprimorados para maior durabilidade e economia, portando precisa prestar atenção na utilização dos ativos com este termo pois pode não estar referindo-se ao equipamento e sim ao melhoramento dele. Um exemplo na imagem...<br>
 <h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
 <div class="TextAreaForm">
 <p>- RETROFIT</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li alt="14 - WBBPF" class="chipcce">
+<figure><img  class="chipcce" src="img/WBBPF.jpg" style="width:100%"><figcaption><a><i>
+<h1>WBBPF</h1>
+</i>
+<p>WBBP é uma unidade de processamento de banda base WCDMA e pode ser instalado em um BBU<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- WCDMA</p>
+<p>- WBBPb</p>
+<p>- WBBPf</p>
+<p>- PLACA DE PROCES</p>
+<p>- PLACA DE PROCESSAMENTO</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li alt="15 - SFP (Small form-factor pluggable transceiver)" class="chipcce">
+<figure><img  class="chipcce" src="img/SFP.jpg" style="width:100%"><figcaption><a><i>
+<h1>SFP (Small form-factor pluggable transceiver)</h1>
+</i>
+<p>SFP é um módulo de interface de rede compacto e hot-plug usado para aplicações de telecomunicações e comunicação de dados. Uma interface SFP no hardware de rede é um slot modular para um transceptor específico de mídia para conectar um cabo de fibra óptica ou às vezes um cabo de cobre<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- GBIC</p>
+<p>- SFP</p>
+<p>- Transceiver</p>
+</div>
+</p></a></figcaption></figure></li>
+
+<li alt="16 - BBU (Baseband Unit)" class="chipcce">
+<figure><img  class="chipcce" src="img/BBU.jpg" style="width:100%"><figcaption><a><i>
+<h1>BBU (Baseband Unit)</h1>
+</i>
+<p>BBU (Baseband Unit) é um modulo que processa a banda base em sistemas de telecomunicações, uma BBU possui design modular, tamanho reduzido, baixo consumo de energia e fácil implantação<br>
+<h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- MODULO DE PROCESSAMENTO</p>
+<p>- BB2E</p>
+<p>- EDGE</p>
+<p>- BASEBAND</p>
 </div>
 </p></a></figcaption></figure></li>
 
