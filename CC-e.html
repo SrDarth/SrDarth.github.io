@@ -1,0 +1,269 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128" media="print" type="font" rel="stylesheet">
+<script type="text/javascript">
+    var reader;
+    function checkFileAPI() {
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+            reader = new FileReader();
+            return true; 
+        } else {
+            alert('As APIs de arquivo não são totalmente suportadas por seu navegador. Suporte obrigatório.');
+            return false;
+        }
+    }
+
+    /**
+     * read text input
+     */
+    function readText(filePath) {
+        var output = ""; //placeholder for text output
+        if(filePath.files && filePath.files[0]) {           
+            reader.onload = function (e) {
+                output = e.target.result;
+                displayContents(output);
+            };//end onload()
+            reader.readAsText(filePath.files[0]);
+        }//end if html5 filelist support
+        else if(ActiveXObject && filePath) { //fallback to IE 6-8 support via ActiveX
+            try {
+                reader = new ActiveXObject("Scripting.FileSystemObject");
+                var file = reader.OpenTextFile(filePath, 1); //ActiveX File Object
+                output = file.ReadAll(); //text contents of file
+                file.Close(); //close file "input stream"
+                displayContents(output);
+            } catch (e) {
+                if (e.number == -2146827859) {
+                    alert('Incapaz de acessar arquivos locais devido às configurações de segurança do navegador. ' + 
+                     'Para superar isso, vá para Ferramentas-> Opções da Internet-> Segurança-> Nível personalizado. ' + 
+                     'Encontre a configuração para "Inicializar e executar scripts de controles ActiveX não marcados como seguros" e altere para "Ativar" ou "Solicitar"'); 
+                }
+            }       
+        }
+        else { //this is where you could fallback to Java Applet, Flash or similar
+            return false;
+        }       
+        return true;
+    }   
+    function displayContents(xml) {
+        var parser = new DOMParser();
+        var el = document.getElementById('blocodenotas');
+		var xmlDoc = parser.parseFromString(xml,"text/xml");
+		var NotaFiscal = xmlDoc.getElementsByTagName("chNFe")[0].childNodes[0].nodeValue;
+		var CriadoEm = xmlDoc.getElementsByTagName("dhEvento")[0].childNodes[0].nodeValue;
+		var RegEm = xmlDoc.getElementsByTagName("dhRegEvento")[0].childNodes[0].nodeValue;
+		
+        el.innerHTML = xml;
+		document.getElementById("AQUIinfEvento").innerHTML = xmlDoc.getElementsByTagName("tpEvento")[0].childNodes[0].nodeValue + xmlDoc.getElementsByTagName("chNFe")[0].childNodes[0].nodeValue + "01";
+		
+		document.getElementById("AQUIxCorrecao").innerHTML = xmlDoc.getElementsByTagName("xCorrecao")[0].childNodes[0].nodeValue;
+		
+		document.getElementById("AQUIdhEvento").innerHTML = CriadoEm[8]+CriadoEm[9]+"/"+CriadoEm[5]+CriadoEm[6]+"/"+CriadoEm[0]+CriadoEm[1]+CriadoEm[2]+CriadoEm[3]+" "+CriadoEm[11]+CriadoEm[12]+CriadoEm[13]+CriadoEm[14]+CriadoEm[15]+CriadoEm[16]+CriadoEm[17]+CriadoEm[18];
+		
+		document.getElementById("AQUInProt").innerHTML = xmlDoc.getElementsByTagName("nProt")[0].childNodes[0].nodeValue;
+		
+		document.getElementById("AQUIdhRegEvento").innerHTML = RegEm[8]+RegEm[9]+"/"+RegEm[5]+RegEm[6]+"/"+RegEm[0]+RegEm[1]+RegEm[2]+RegEm[3]+" "+RegEm[11]+RegEm[12]+RegEm[13]+RegEm[14]+RegEm[15]+RegEm[16]+RegEm[17]+RegEm[18];
+		
+		document.getElementById("AQUIchNFe").innerHTML = xmlDoc.getElementsByTagName("chNFe")[0].childNodes[0].nodeValue;
+		
+		document.getElementById("AQUIchNFe2").innerHTML = xmlDoc.getElementsByTagName("chNFe")[0].childNodes[0].nodeValue;
+		
+		document.getElementById("AQUINotaFiscal").innerHTML = "<b>Nota Fiscal: </b>" + NotaFiscal[25]+NotaFiscal[26]+NotaFiscal[27]+"."+NotaFiscal[28]+NotaFiscal[29]+NotaFiscal[30]+"."+NotaFiscal[31]+NotaFiscal[32]+NotaFiscal[33]+"<br><b>Série: </b>"+NotaFiscal[22]+NotaFiscal[23]+NotaFiscal[24];
+		}
+</script>
+<style type="text/css">
+body {
+width: 795px;
+max-width: 800px;
+heigth: 841px;
+}
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    width: 15cm;
+    border-radius: 25px;
+}
+.search__input {
+  width: 20.4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  padding-left: 3.8rem;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+  background: none;
+  font-family: inherit;
+  color: var(--greyDark);
+}
+.search__input::-webkit-input-placeholder {
+  color: var(--greyLight-3);
+}
+.search__input::-moz-placeholder {
+  color: var(--greyLight-3);
+}
+.search__input:-ms-input-placeholder {
+  color: var(--greyLight-3);
+}
+.search__input::-ms-input-placeholder {
+  color: var(--greyLight-3);
+}
+.search__input::placeholder {
+  color: var(--greyLight-3);
+}
+.search__input:focus {
+  outline: none;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+}
+.search__input:focus + .search__icon {
+  color: #00fff1;
+}
+.search__icon {
+  height: 2rem;
+  position: absolute;
+  font-size: 2rem;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: flex;
+  color: #000;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.btn {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    justify-self: center;
+    display: inline-flex;
+    margin: 3px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+	font-family: 'Poppins', sans-serif;
+}
+
+.btn__Menu {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+  color: var(--greyDark);
+}
+.btn__Menu:hover {
+  color: var(--primary);
+}
+.btn__Menu:active {
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.068),inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+.a4 {
+width: 795px;
+max-width: 800px;
+heigth: 841px;
+margin-top: 2px;
+}
+.barcode {
+font-family: 'Libre Barcode 128', cursive;
+font-size: 27px;
+-ms-transform: scaleY(3);
+transform: scaleY(3);
+display: inline-block;
+}
+@media print {
+body {
+position: relative;
+width: 795px;
+max-width: 795px;
+heigth: 841px;
+}
+.a4 {
+width: 795px;
+max-width: 795px;
+heigth: 841px;
+margin-top: 2px;
+}
+.barcode {
+font-family: 'Libre Barcode 128', cursive;
+font-size: 27px;
+transform: scaleY(3);
+display: inline-block;
+}
+}
+</style>
+</head>
+<body onload="checkFileAPI();">
+    <div style="position:relative;left:0px;top:0px;z-index:99999" id="ctextarea">    
+        <input type="file" class="search__input" onchange='readText(this)' /><button class="btn btn__Menu" id="doPrint">GERAR CC-e</button><br><br>
+        <textarea style="display:none;" id="blocodenotas">
+        </textarea>
+		<br><br>
+		<p id='demo'></p>
+    </div>
+	<br><br><br>
+
+<div id="printDiv" class="a4">
+
+<div class="a4">
+
+<center>
+<div alt="cabeça" style="border-style: dashed;border-width: thin;padding: 30px 30px 30px 30px;">
+<div><h1>Representação Gráfica de CC-e</h1></div>
+<div><span>(Carta de Correção Eletrônica)</span></div>
+</div>
+</center>
+<br>
+<div style="border-style: dashed;border-width: thin;padding: 15px;font-size:15px;">
+<div>
+<div>
+ID do Evento: <b id="AQUIinfEvento"></b>
+<br>
+Criado em: <b ID="AQUIdhEvento"></b>
+<br>
+Prococolo: <b ID="AQUInProt"></b>
+<br>
+Registrado na SEFAZ em: <b ID="AQUIdhRegEvento"></b>
+</div>
+</div>
+</div>
+<br>
+<div><span>De acordo com as determinações legais vigentes, vimos por meio desta comunicar-lhe que a Nota Fiscal, abaixo referenciada, contêm irregularidades que estão destacadas e suas respectivas correções, solicitamos que sejam aplicadas essas correções ao executar seus lançamentos fiscais.</span></div>
+</div>
+<br>
+<div alt="infnota" style="border-style: dashed;border-width: thin;padding: 5px">
+<p ID="AQUINotaFiscal"></p>
+<br>
+<div style="margin-left: 350px;margin-top: -100px;"><p><span class="barcode"><p ID="AQUIchNFe" class="barcode"></p></span></p><p ID="AQUIchNFe2" class="barcoden"></p></div>
+</div>
+<br>
+<div style="border-style: dashed;border-width: thin;padding: 5px">
+<div><span>A Carta de Correcao e disciplinada pelo paragrafo 1o-A do art. 7o do Convenio S/N, de 15 de dezembro de 1970 e pode ser utilizada para regularizacao de erro ocorrido na emissao de documento fiscal, desde que o erro nao esteja relacionado com: I - as variaveis que determinam o valor do imposto tais como: base de calculo, aliquota, diferenca de preco, quantidade, valor da operacao ou da prestacao; II - a correcao de dados cadastrais que implique mudanca do remetente ou do destinatario; III - a data de emissao ou de saida.</span></div>
+</div>
+<br>
+<div style="border-style: dashed;border-width: thin;padding: 5px">
+<div><center><span>CORREÇÕES A SEREM CONSIDERADAS</span></center></div>
+</div>
+<br><br>
+<div><p id="AQUIxCorrecao"></p></div>
+<br>
+<div style="margin-top:180px;"><div style="border-style: dashed;border-width: thin;padding: 5px"><span>Este documento é uma representação gráfica da CC-e e foi impresso apenas para sua informação e não possue validade fiscal. A CC-e deve ser recebida e mantida em arquivo eletrônico XML e pode ser consultada através dos Portais das SEFAZ.</span></div>
+<div><center><span>Amerinode - BackOffice</span></center></div>
+</div>
+</div>
+
+<script>
+document.getElementById("doPrint").addEventListener("click", function() {
+     var printContents = document.getElementById('printDiv').innerHTML;
+     var originalContents = document.body.innerHTML;
+     document.body.innerHTML = printContents;
+     window.print();
+     location.reload();
+});
+</script>
+
+</body>
+</html>
