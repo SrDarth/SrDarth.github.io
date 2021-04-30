@@ -1686,6 +1686,12 @@ switch(MantenedorSenha) {
 	var text;
   var CodigoM = document.getElementById("XMANTENEDOR").value;
   switch(CodigoM) {
+	  case "ABILITY - ITABUNA - BA":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ABILITY - ITABUNA - BA</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063996</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>R. EVARISTO ANDRADE, 66 - NOSSA SRA.&nbsp;&nbsp;&nbsp;DA CONCEIÇÃO, ITABUNA - BA, 45605-005</td></tr><tr><td>CNPJ:</td><td>06.127.582/0028-78</td></tr><tr><td>Telefone:</td><td>JOSE 8199532-6459</td></tr></tbody></table></div>";
+	   break;
+	  case "ABILITY - ARACAJU - SE":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ABILITY - ARACAJU - SE</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063995</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>R. SANTA LUZIA, 811 - SÃO JOSÉ,&nbsp;&nbsp;&nbsp;ARACAJU - SE, 49015-190</td></tr><tr><td>CNPJ:</td><td>06.127.582/0021-00</td></tr><tr><td>Telefone:</td><td>CRISTIANO 8199982-6745</td></tr></tbody></table></div>";
+	   break;
 	   case "ABILITY - SALVADOR - BA":
        var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>ABILITY - SALVADOR - BA</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063392</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>RUA DA INDONESIA, 500 - GRANJAS RURAIS, PRESIDENTE VARGAS - BA, 41230-020</td></tr><tr><td>CNPJ:</td><td>06.127.582/0014-72</td></tr><tr><td>Telefone:</td><td>ROBERTO 8198295-1400/FABIANO 7199167-3100</td></tr></tbody></table></div>";
 	   break;
