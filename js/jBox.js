@@ -1776,6 +1776,9 @@ switch(MantenedorSenha) {
 	   case "TEL - CUIABÁ - MT":
        var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - CUIABÁ - MT</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063225</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. FERNANDO CORREIA DA COSTA, 6635 -&nbsp;&nbsp;&nbsp;SÃO JOSÉ, CUIABÁ - MT, 78085-700</td></tr><tr><td>CNPJ:</td><td>06.084.614/001-157</td></tr><tr><td>Telefone:</td><td>ANDERSON&nbsp;&nbsp;&nbsp;6598131-0084 / VALDETINA 6599989-6257</td></tr></tbody></table></div>";
 	   break;
+	   case "TEL - GUARULHOS - SP":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - GUARULHOS - SP</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063798</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. SÃO MATEUS DO MARANHÃO, 183 -&nbsp;&nbsp;&nbsp;CUMBICA, GUARULHOS - SP, 07222-140</td></tr><tr><td>CNPJ:</td><td>06.084.614/0026-33</td></tr><tr><td>Telefone:</td><td>VICTOR 1198435-7353 MICHAEL&nbsp;&nbsp;&nbsp;1197794-0137</td></tr></tbody></table></div>";
+	   break;
 	   case "TEL - GOIANIA - GO":
        var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - GOIANIA - GO</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063176</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AVENIDA PRIMEIRA AVENIDA, QD 01B, LT.&nbsp;&nbsp;&nbsp;27 - COND. CIDADE EMPRESARIAL, APARECIDA DE GOIÂNIA - GO, 74935-900</td></tr><tr><td>CNPJ:</td><td>06.084.614/0017-42</td></tr><tr><td>Telefone:</td><td>MARCOS ROBERTO 6299992-7051 / EMERSON&nbsp;&nbsp;&nbsp;SOUZA 6298271-7759</td></tr></tbody></table></div>";
 	   break;
