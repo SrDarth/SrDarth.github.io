@@ -1578,9 +1578,49 @@ if (!Function.prototype.bind) {
 	};
 }
 
-function emailsala() {
-  var linksalatim = document.getElementById("EMAILSALATIM").value;
-  document.getElementById("salatim").innerHTML = linksalatim;
+function GerarEmailSalaTim() {
+var CodigoSalaTim = document.getElementById("ESalaTim").value;
+switch(CodigoSalaTim) {
+	  case "TIM SÃO PAULO - LAPA - REPARO":
+       var enviarpara = "rfreitas_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br;Rmarques_amerinoe@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM SÃO CRISTOVÃO":
+       var enviarpara = "cgomes_amerinode@timbrasil.com.br;jthinnes_amerinode@timbrasil.com.br;taraujo_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM BH - AQUILES LOBO":
+       var enviarpara = "kfreitas_sa@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM ARACAJU":
+       var enviarpara = "asouza_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM SALVADOR - COMERCIO":
+       var enviarpara = "ejcarvalho_sa@timbrasil.com.br;wmiranda_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM FLORIANOPOLIS - ESTREITO":
+       var enviarpara = "edsilva_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM PORTO ALEGRE - RAMIRO BARCELOS":
+       var enviarpara = "moliveira_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM GOIANIA":
+       var enviarpara = "acosta_amerinode@timbrasil.com.br;segurancagoiania@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM CAMPO GRANDE":
+       var enviarpara = "hpereira_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM CUIABA":
+       var enviarpara = "egoncalves_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+}
+var EmailSalaTim = enviarpara;
+var ESTTicket = document.getElementById("ESalaTim").value + "%20TICKET-" + document.getElementById("ESalaTimTicket").value;
+
+var ESTDesc = "&body=Prezado%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20(%20" + 
+document.getElementById("ESalaTimDesc").value + "%20)%20pelo%20t%C3%A9cnico%20(%20" + 
+document.getElementById("ESalaTimTecnico").value + "%20)%20portador%20do%20" + document.getElementById("RGCPF").value + "(%20" + 
+document.getElementById("ESalaTimDoc").value + "%20)%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A";
+
+document.getElementById("linkemail").innerHTML = "<a href='mailto:"+EmailSalaTim+"&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20"+ESTTicket+ESTDesc+"' class='btn btn__Normal' onclick='Atualizar()'> CLIQUE AQUI PARA ABRIR O EMAIL </a>";
 }
 
 function normal() {
@@ -1839,6 +1879,8 @@ switch(MantenedorSenha) {
   document.getElementById("cmantenedor").innerHTML = exibirmantenedor;
 }
 }
+
+
 
 function openPage(pageName,elmnt,color) {
   var i, tabcontent, tablinks;

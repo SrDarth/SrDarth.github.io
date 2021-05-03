@@ -30,7 +30,7 @@ new jBox('Modal', {
         attach: $('#modalDragOnSala'),
         title: 'Email para SALA TIM',
         overlay: false,
-        content: $('#salatim'),
+        content: $('#linkemail'),
         draggable: 'title',
         repositionOnOpen: false,
         repositionOnContent: false

@@ -44,6 +44,7 @@
 <a class="tablink" onclick="openPage('Calcular distâncias')"><div class="btn btn__Menu"><p>Calcular distâncias</p></div></a>
 <a class="tablink" onclick="openPage('CC-e')"><div class="btn btn__Menu"><p>CC-e</p></div></a>
 <a class="tablink" onclick="openPage('Similar')"><div class="btn btn__Menu"><p class="fa fa-search"> </p><p> Pesquisar item similar</p></div></a>
+<a class="tablink" onclick="openPage('Minha Lista')"><div class="btn btn__Menu"><p>Criar Lista</p></div></a>
 </center>
 
 <br>
@@ -58,6 +59,21 @@
 <h1>AVISOS</h1>
 
 <ul class="rowgrid">
+
+<li alt="Aviso - FERIAS" class="chipcce">	
+<h3>❗ Aviso - FÉRIAS</h3>
+<p>Focal Ilda em periodo de férias por 15 dias apartir de 03/05/2021 retornando dia 18/05/2021</p>
+<p>- Responsavel por Aprovação: Regional Norte - Fabiano Araujo Sobral</p>
+<p>- Responsavel por Aprovação: Focal - Quellen TSP</p>
+</li>
+
+<li alt="Aviso - RAPIDO PARANA" class="chipcce">	
+<h3>❗ Aviso - RAPIDO PARANA</h3>
+<p>Não seguir no modal Aéreo Convencional (Normal) quando o transporte cair para RAPIDO PARANA:</p>
+<p>Belém - PA</p>
+<p>Porto Velho – RO</p>
+<p>São Luis – MA</p>
+</li>
 
 <li alt="Aviso - PACER" class="chipcce">	
 <h3>❗ Aviso - PACER</h3>
@@ -439,52 +455,37 @@ III - a data de emissão ou de saída.
 
 <div id="Sala TIM" class="tabcontent">
 <center>
-<div class="chipcce">
-<select class="form__input" id="EMAILSALATIM" style="width:10cm;">
-<option value="<button class='btn btn-warning'><a href='mailto:rfreitas_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br;Rmarques_amerinoe@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20S%C3%83O%20PAULO%20-%20LAPA%20-%20REPARO%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM SÃO PAULO - LAPA - REPARO</option>
-
-<option value="<button class='btn btn-warning'><a href='mailto:cgomes_amerinode@timbrasil.com.br;jthinnes_amerinode@timbrasil.com.br;taraujo_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20S%C3%83O%20CRISTOV%C3%83O%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM SÃO CRISTOVÃO</option>
-
-<option value="<button class='btn btn-warning'><a href='mailto:kfreitas_sa@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20BH%20-%20AQUILES%20LOBO%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM BH - AQUILES LOBO</option>
-
-<option value="<button class='btn btn-warning'><a href='mailto:asouza_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20ARACAJU%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM ARACAJU</option>
-
-<option value="<button class='btn btn-warning'><a href='mailto:ejcarvalho_sa@timbrasil.com.br;wmiranda_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20SALVADOR%20-%20COMERCIO%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM SALVADOR - COMERCIO</option>
-
-<option value="<button class='btn btn-warning'><a href='mailto:edsilva_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20FLORIANOPOLIS%20-%20ESTREITO%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM FLORIANOPOLIS - ESTREITO</option>
-
-<option value="<button class='btn btn-warning'><a href='mailto:moliveira_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20PORTO%20ALEGRE%20-%20RAMIRO%20BARCELOS%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM PORTO ALEGRE - RAMIRO BARCELOS</option>
-
-<option value="<button class='btn btn-warning'><a href='mailto:acosta_amerinode@timbrasil.com.br;segurancagoiania@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20GOIANIA%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM GOIANIA</option>
-
-<option value="<button class='btn btn-warning'><a href='mailto:hpereira_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20CAMPO%20GRANDE%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a></button>">TIM CAMPO GRANDE</option>
-
-<option value="<a href='mailto:egoncalves_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20TIM%20CUIABA%20-%20TICKET-%5B%20NUMERO%20DO%20TICKET%20%5D&body=%5BPrezado%5D%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20%5B%20DESCRI%C3%87%C3%83O%20DO%20MATERIAL%20%5D%20pelo%20t%C3%A9cnico%20%5B%20NOME%20DO%20T%C3%89CNICO%20%5D%20portador%20do%20%5B%20RG%20ou%20CPF%20e%20NUMERO%20DO%20DOCUMENTO%20%5D%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A%5B%20OBSERVA%C3%87%C3%83O%20SE%20MATERIAL%20FOI%20SEGUIDO%20POR%20SIMILARIDADE%20NA%20NOTA%20SE%20N%C3%83O%20TIVER%20O%20QUE%20INFORMAR%20AQUI%20%C3%89%20S%C3%93%20APAGAR%20ESTE%20CAMPO%20%5D%0D%0A%0D%0A...' class='btn btn__Menu'>CLIQUE AQUI PARA ABRIR O EMAIL</a>">TIM CUIABA</option>
+<form>
+<select class="select form__input" id="ESalaTim" style="width:10cm;">
+<option>TIM SÃO PAULO - LAPA - REPARO</option>
+<option>TIM SÃO CRISTOVÃO</option>
+<option>TIM BH - AQUILES LOBO</option>
+<option>TIM ARACAJU</option>
+<option>TIM SALVADOR - COMERCIO</option>
+<option>TIM FLORIANOPOLIS - ESTREITO</option>
+<option>TIM PORTO ALEGRE - RAMIRO BARCELOS</option>
+<option>TIM GOIANIA</option>
+<option>TIM CAMPO GRANDE</option>
+<option>TIM CUIABA</option>
 </select>
+</form>
+<br>
+<input class="form__input" type="text" id="ESalaTimTicket" placeholder="Nº TICKET" style="width:4cm;"/>
+<input class="form__input" type="text" id="ESalaTimDesc" placeholder="DESCRIÇÃO DO MATERIAL" style="width:8cm;"/>
+<input class="form__input" type="text" id="ESalaTimTecnico" placeholder="NOME DO TÉCNICO" style="width:8cm;"/>
+<select class="select form__input" id="RGCPF" style="width:3cm;">
+<option>RG</option>
+<option>CPF</option>
+</select>
+<input class="form__input" type="text" id="ESalaTimDoc" placeholder="Nº RG ou CPF" style="width:7cm;"/>
+<br>
+<button class="btn btn__Normal" id="modalDragOnSala" type="button" onclick="GerarEmailSalaTim()">Gerar Email</button>
 <br><br>
-
-
-<span id="modalDragOnSala" class="btn btn__Normal" onclick="emailsala()">Gerar email para Sala TIM<div id="salatim"></div></span>
-</div>
-</center>
+<p style="display: none;" id="linkemail"></p></center>
 
 <br><br>
 <h1>ATENÇÃO</h1>
 <p> Ao clicar no link ("CLIQUE AQUI PARA ABRIR O EMAIL") vai abrir opções de onde enviar o email, selecionar o email autorizado para liberar o material na SALA TIM.</p>
-<h2>Substituir os campos</h2>
-<h3>Assunto:</h3>
-<ul>
-  <li>Substituir <b>[ NUMERO DO TICKET ]</b> com o  numero do ticket</li>
-</ul>  
-
-<h3>Corpo:</h3>
-<ul style="list-style-type: square;">
-  <li>Substituir <b>[Prezado]</b> com a saudação utilizada por você.</li>
-  <li>Substituir <b>[ DESCRIÇÃO DO MATERIAL ]</b> com a descrição do material no SGS</li>
-  <li>Substituir <b>[ NOME DO TÉCNICO ]</b> com o nome completo do técnico</li>
-  <li>Substituir <b>[ RG ou CPF e NUMERO DO DOCUMENTO ]</b> com RG e NUMERO ou CPF e NUMERO</li>
-  <li><b>[ OBSERVAÇÃO SE MATERIAL FOI SEGUIDO POR SIMILARIDADE NA NOTA SE NÃO TIVER O QUE INFORMAR AQUI É SÓ APAGAR ESTE CAMPO ]</b></li>
-</ul>
 
 </div>
 
@@ -755,7 +756,9 @@ III - a data de emissão ou de saída.
 
 </div>
 
-
+<div id="Minha Lista" class="tabcontent">
+<center><iframe scrolling="no" class="pesquisac" src="CriarLista.html" referrerpolicy="no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url" style="overflow-y:hidden;height:750px;width:100%;"></iframe></center>
+</div>
 
 </div>
 </div>
