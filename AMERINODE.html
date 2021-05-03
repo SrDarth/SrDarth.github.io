@@ -45,6 +45,7 @@
 <a class="tablink" onclick="openPage('CC-e')"><div class="btn btn__Menu"><p>CC-e</p></div></a>
 <a class="tablink" onclick="openPage('Similar')"><div class="btn btn__Menu"><p class="fa fa-search"> </p><p> Pesquisar item similar</p></div></a>
 <a class="tablink" onclick="openPage('Minha Lista')"><div class="btn btn__Menu"><p>Criar Lista</p></div></a>
+<button class="btn btn__Normal" onclick="PopupLista()">PopUp Lista</button>
 </center>
 
 <br>
@@ -777,6 +778,13 @@ li[i].style.display = "";
 } else {
 li[i].style.display = "none"; }
 }
+}
+</script>
+
+<script>
+function PopupLista() {
+  var MeuPopUp = window.open("", "AbriPopUp","width=1000");
+  MeuPopUp.document.write("<iframe class='pesquisac' src='https://srdarth.github.io/CriarLista.html' style='hidden;height:750px;width:100%;'></iframe>");
 }
 </script>
 
