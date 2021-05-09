@@ -1,0 +1,6278 @@
+[
+  {
+    "CUBADO": "0,84",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "373,767296",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": 7140,
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5,56512",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,3225",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": 0,
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "4,344",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "17,685",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6,7284",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "64,2668",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1454,94336",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "788,16",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": 1,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6,25",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "15,54",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "33,75552",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "64,2668",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "319,97784",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "87,36",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "7,0356",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2102,4",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "179,86122",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "32,9175",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "5152,896",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,23855",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "33,495462",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": 534,
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "45,786276",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "59,4099",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "247,24",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "880,76142",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "12,370736",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "30,94",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "91,828352",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "763,992",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "27,04",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "5,96904",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "41,1345",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "41,222808",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,9035",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "33,009536",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "33,009536",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "36,186",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "33,009536",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,042232",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "617,2416",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "26444,88",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "190,938",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "17,46",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "4790,016",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "234,5952",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "52,93992",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "11,05024",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "87,7875",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "64,2668",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "87,7875",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": 0,
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "15,266238",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "4636,8",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "320,968",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "39,9568",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "40,24449",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "60,6",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "29864,718",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "39,9568",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "228,93138",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2081,5025",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2081,5025",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8403,525",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "95,9244",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "91,89458432",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "91,89458432",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,24177952",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "162700,2115",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "16,084464",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "201,204486",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "17,918",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "201,204486",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "7,949448",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "106,9488",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "86,869488",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "78,166",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "107395,2",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1468,8",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": 3910,
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": 3910,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "5,256576",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1814,4",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "0,0856",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "4,7419584",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "20,16",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "27,3216",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "6,084",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "20,16",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "15892,866",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1506,78528",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "113,94",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "15892,866",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "15892,866",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "24,5399616",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "24,5399616",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "80,36",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "96,816",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": 2430,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "84,21504",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,170855",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "17,76576",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "38,63769",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "602,64",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "39,877376",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "20,78125",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "168,75",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "52,394472",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "166,14234",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "11,57989",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "76,4775",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "18579,6",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,9298",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "19,066248",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,80875",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "13,636908",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "72,27792",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "77,76",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "98,18928",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "88,354816",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,007364",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "13,284",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "475,2",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "66,651741",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1916,44992",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": 0,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,80875",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "18,972",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "20,844",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "20,6785128",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "20,6785128",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "21,93",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "38,91228",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "243,432",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,024",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "48,7296",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "10,12032",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "142,884",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,256",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "187,92",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "64,14",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "155,281",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "81,56192",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,776",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "25,669728",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "19,58985",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "2036,16",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "25,669728",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,11695",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "119,669238",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "12,166",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "19,6736",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,112",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "274,4928",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "6296,4",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "634,5",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "200,844",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "580,125",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,65535",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "46,766592",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "715,8",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "29,142",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "39,4625",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2821,675",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "188,635975",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "20,05524",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "345,6",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "37,368",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "9,780288",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "133,1717733",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "22049,28",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "39,545088",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "202,113792",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,6036",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "0,7608",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "21,46176",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "27,20256",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "64,008",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "26,1792",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,31525",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "10,2684",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "108,537408",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "139,0608",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "11392,4475",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1967,662125",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "98,579088",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "19,1235072",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "10,6016688",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "28,577952",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "28,464",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,46265",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "537,072",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,46265",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,30728",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "759,263232",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "2,736",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,531852",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "22,4113176",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "22,4113176",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "53,04",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,180848",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "71,712",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,802032",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "24,384",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "9,83178",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "33771,6",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "4,08464",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "5460,4264",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "40,6656",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "205,87392",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "36,0576",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "17,238144",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "17,91",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "9,472298",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,5809425",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "30,8931084",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,32525",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "39,2448",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,662718",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "2,4165",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "48,570368",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "48,570368",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "43,44516",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "4,885056",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "37,41588",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,536",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "86,752512",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "189,7992",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "13,7492784",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "109,944",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "23,29344",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "158,8475",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "23,37896",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "36,860798",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "164,00439",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "213,47125",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,23421",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "7,96572",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "20,656944",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "451,437624",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "208,3914",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "24,612096",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "20,733696",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "100,6747997",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "30,62124",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "55,577016",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "10,7712",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "25,636875",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "270,931584",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "325,613925",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "174,3672",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "38,976176",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "152,65656",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "13,417173",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "43,52",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "6,705",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "17,66205",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,935925",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "15,096",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,11264",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,036097",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,80192",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "0,00864",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "99,206016",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "373,70004",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "19,0608",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "804,8625",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,848",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "0,4485",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "48,4704",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "93,825",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "14,581875",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,703125",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "43,704",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "27,09",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "56,8854",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "17,4144",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "26,33229",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "14374,4139",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "118,404",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "6,21376",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "28,128",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "86,7216",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "13203,648",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "11,599848",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "19,509336",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,024",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,35",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "20,49",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "45,7776",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "81,54",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": 9,
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,94",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "43,4304",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,492048",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "175,7888",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "270,51174",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "29,475",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2648,448",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "42,305328",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "2,3415392",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,3415392",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "37,94544",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4786,56",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "53,934336",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "25,884",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "15,4224",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "18,617856",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "65,5168",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "27,192952",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "118,58",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3341,52",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "65,5168",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,042505",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "9,36504",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "72,78336",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "39,789792",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "39,789792",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "81,578448",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "62,837712",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "14,58",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "68,0064",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "0,06",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "1121,10012",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "640,96",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1233,848",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "275,681726",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "325,2582",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "20,04912",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "12,6050544",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "16,1498",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "16,1498",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "629,8611",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1725,4272",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "630,18164",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "2,92842",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "14,8416",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "34,6256",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "55,406592",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "39,0688",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "12,288",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "18,1888",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "402,22336",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,0784",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "30,925312",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,685311",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "151,4304",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "420,5228736",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6571,26",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "630,18164",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "333,568",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "32,775",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "39,0688",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,10448",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "22,644",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,10448",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3534,868",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "48,73344",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "73,008",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "5,715072",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "42,84",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "23,284224",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "23,284224",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "17,21376",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": 0,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "252,746208",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "126,373104",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "380,20864",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,854",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "196,54",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "106,907148",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "32,80728",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "85,6",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "46,926",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2529,6408",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1925,44",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "134,0496",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "904,475",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "27,395568",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "33,98610879",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,6377472",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "48,607776",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "67,0112",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "698,544",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "902,9625",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "21,683376",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "4,360092",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "48,279",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "288,432",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "812,284928",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "158,152428",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,8136",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "98,92575",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": 230,
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3506,25",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "411,8352",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1207,084032",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "204,72816",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "22,875489",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "65,93792",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "492,0552",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "28,49664",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "769,684032",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "44,85",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "90,069056",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "46,24",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "271,430352",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "166,68288",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": 0,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "0,123318",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,6036",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,65184",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "12,285",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "0,54306",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "239,20384",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "125,664",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,665028",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5,787096",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "9,089955",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6,8785416",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "169,2558",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "192,308256",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "95,83224",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "87,83775",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,1",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "32,368",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2626,56",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "16,420096",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "140,7648",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "26,5608",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "11684,52",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,16775",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "13,83824871",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "80,94017016",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,22131968",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "240,2255654",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5702,4",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2641,392",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "63748,608",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "40,7862",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "6,12",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,154",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "171,36",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "165,90912",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,3232",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,382604",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "66,9552",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "53,09785467",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "23,71563656",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,68252",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,06",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "596,64",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "596,64",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "44,85",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "164,3382",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,82",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "284,8326",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "156,72312",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "475,6976",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "100,96578",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "916,99776",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "637,48608",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "219,7098",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "17,70336",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,54656",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "11,216",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,77",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,84256",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "15,75",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "194,22228",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "238,14",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "655,92",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "87,36",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "31,104",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "56,1",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "23,824944",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "78,6942",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "6,064896",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "6,064896",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "51,48492525",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "10,23984",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "30,672",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "9,747",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "53,46",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "20,9664",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "31,07335",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "63,936",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,1175",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "70,155396",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "64,356768",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "160,1775",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "14,664064",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "58,07509344",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "69,0336",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "76,671868",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,399",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "27,9969375",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "40,016691",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "4,94208",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "6,19164",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "240,5312",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,052",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "918,28968",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "19,2",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,39024",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "23,8464",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,048506",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "17,44632",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "34,416",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "25,5915",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "14,664064",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "50,676444",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "70,02072",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "47,712",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "26,480016",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "26,792136",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "18,25362",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "14,06664",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "277,7895",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "4120,704",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "13,86",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "817,8",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "679,52808",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,999505",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "241,192",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "18,617856",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "33,264",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "67,032",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "160,38",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "78,853824",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "18,291",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6,5376",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "32,92632",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "68,12546",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "184,2",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "14,651392",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "31,8",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "106,708074",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "6,77952",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,058",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "23,36",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "65,772",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1050,168",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1050,168",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "32,4",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": 157,
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "860,544",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "30,21375",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,106",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "264,6945",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6,232",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "49,99368",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,848248",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "10,32408",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "23,520816",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,848248",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "23,8038372",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "32,687847",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "281,775",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "17,061",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "132,85536",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "147,91392",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "84,6",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "20,28",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "49,3152",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "161,04",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,709",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "26,485932",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "32,768064",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6,28494",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "127,548",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "585,144",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "118,18408",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "37,66826",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,998",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "34,84089",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "35,235508",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1385,472",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "9,7222014",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1259,52",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "15,15136",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "119,9100474",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "782,58972",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "85,504",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "237,58336",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "453,10464",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "42,752",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "94,72",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,496192",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,496192",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3716,064",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "95,146425",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "14,4",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "54,144",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,3205",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "31,45716",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "47,138112",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "32,49792",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "45,72",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "33,1128",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": 65,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6437,424",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "142,12224",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": 81,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "498,26816",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2357,5968",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,8225",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "72,9234",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "415,296",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "87,96",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "13,29125",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "89,843742",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "45,30853888",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "815,4816",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "492,9792",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "70,923",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "20,5275",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "83,85975",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "27,237672",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "52,974768",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6,075",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "27,531",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "46,656",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,788875",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "37,110528",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "12,43818",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "6,64477",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,6485",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "38,4",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "113,7679872",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "52,962",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "663,975",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "7,776",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "16,146",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "226,8",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "11,186",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "12,832512",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,121",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "62,810172",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "51,28",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "10,42475",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "45,48",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "32,346",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "11,45988",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "38,58624",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "329,966784",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "105,48",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "358,31376",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6,1047",
+    "TRANSPORTADOR": ""
+  },
+  {
+    "CUBADO": "6,1047",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "11,61576",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "118,08",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "20,5275",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "118,08",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "130,27872",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "11,00304",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "37,92672",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "47,811456",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "491,505",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "236,16",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "52,39836",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "37,728",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "54,727144",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "205,2",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "40,9248",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "25,081056",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "9,86094",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "65,1726",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "118,74278",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "338,36264",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "236,02176",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "11,8048",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "201,930624",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "313,3125",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8908,272",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "146,45664",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "858,04032",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "21,350385",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "13,565475",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "18,460575",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "484,272",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "90,851326",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,57",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "73,991412",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "9,3",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "113,164128",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "53,5296",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "9,6255",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "14,7264",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "290,12256",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "106,512",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "26,173125",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "20,454",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "21,42",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "41,8824",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "83,7648",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,267",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "0,813",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,63466",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "52,05",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "15,9936",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "32,001123",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "231,51744",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "101,6",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5,22",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "171,8",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": 924,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "89,977784",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "692,1368",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5,45625",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,01144",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "176,4",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "276,164151",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "35,145",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "189,04",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "159,164544",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "68,4168",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1179,348",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "144,31872",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "6251,85",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "290,12256",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "0,255794",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "32,22",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,887328",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "82,845",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "17,81112",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "857,736",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,792",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "195,747552",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5,40592",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "14,023152",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5,21778",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,0875",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "27,394731",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "298,704",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1023,88",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6,72",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "63,0385",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "40,95",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "12,132",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,9568",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "82,4976",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "54,04266",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "21,408",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "57,663",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,5008",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,329",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "13,662",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "271,872",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,439",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "12,609792",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "42,585816",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "38,15",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,3852",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "692,1368",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,485196",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "19,80342",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "18,28656",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "157,92",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,36",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "24,434865",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "319,2",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "20,176784",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "41,7888",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "195,987456",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "40,56",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "401,0292",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "40,56",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "22,59936",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "24,208128",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "44,2827",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "19,56",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "86,574744",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "137,413584",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "39,903192",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1153,152",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "89,586",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "315,3696",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "560,3136",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "133,4025",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "980,5488",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "237,6",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "81,75",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "30,48",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "81,75",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "123,03252",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "26,4792",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "141,50724",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "13,79664",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "174,294",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,6368",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,898424",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "16,625136",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,99636",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "369,580248",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "578,20896",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "576,60816",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,008",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,08736",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "78,055704",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "422,968275",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "15,0675",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "40,8375",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "12,255912",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,6317",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,6317",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,62528",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "23,089332",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "253,9008",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "253,9008",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "95,96834424",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "131,693016",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1518,877404",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "41,4336",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "294,4986624",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "342,79168",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "796,257",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "930,54528",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1204,56",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "19,617728",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "170,694225",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "369,195008",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "230,943232",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,793",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "20,625354",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "721,44",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "44,4312",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "15,684744",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "15,0675",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "10,224",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "26,460032",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": 0,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "12,3095",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "64,77408",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "14,016",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1806,84",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "38,784",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "27,44208",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "41,454",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "133,812",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "19,510656",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "64,9128",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "143,616",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "22,3872",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "41,685",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "913,68",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "24,48",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "243,254055",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,733744",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "29,86192",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "60,78",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "100,675872",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,81432",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,92944",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "17,998631",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "12,50304",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "18,676",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "138,016",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "15,169",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": 55680,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "11,54953548",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "94,24512",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "249,431616",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "54,3456",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "7,104",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "11,059125",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,9225",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,706",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5572,00944",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "58,5684",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "11,29128",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "38,171448",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "57,0342144",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "492,9653625",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "148,446769",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,799",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,176",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "5931,49392",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "724,0661568",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "36,39807808",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "166,37712",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "7,98336",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "64,944",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,919288",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "47,52",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5,2488",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "13,455",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "17,69174",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "30,081408",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "22,06464",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "71,52",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "23,41104",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1732,25",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "58,06215",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,312",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "37,85859",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5923,398656",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "888,22272",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "888,22272",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,48832",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "98,98392",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,48832",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "14,59008",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,1711",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,1711",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "11,68776",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "122,76",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "122,76",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,388",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "61,852752",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "16,192",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,311056",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "18,04425",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "31,671024",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "62,52",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "240,489",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "124,6180572",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "87,71825664",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "148,3984656",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "4,4824032",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "275,95008",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "351,05616",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "27,31212",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "2,883744",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "16,254",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "16,832",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "37,06577",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3837,81888",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "9,774",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "945,421875",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "134,76",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "24,5262094",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "439,38552",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1020,76416",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "19,79136",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "67,7168",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "78,67712",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "27,1992",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "125,856",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "94,976",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "57,4464",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "197,090496",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "97,248",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "50,112",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "79,264",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "42,176",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "35,84",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,163972",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "17,514",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "40703,034",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "9475556,307",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "601,80016",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "20018,88",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "36,298332",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "15,872186",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "30,33296",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "20,64",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "11,278125",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "16,878348",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "83,655936",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2271,01875",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "110,4246",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,76192",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "104,608",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "351,8592",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "113,32728",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,087",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5,26785",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "32,64",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "67,6512",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "754,1248",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "15,170364",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "502,74432",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "163,764496",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "15,85584",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "38,25",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "59,0592",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "111,6",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "34,3434",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "458,7",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "29,65424",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "12,64256",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "21,04668",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "16,32",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "18,7848",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "508,485",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "97,884",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "45,6372",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "216,2688",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "153,56544",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "14,14842",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "63,2625",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "22,401288",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "12,50304",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,12965",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "19,936224",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "22,0689",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "16,368",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "21,27654",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "277,32672",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "30,25152",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,324",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "489,42",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "967,33332",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "12,1104",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "52,100064",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5,19904",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "118,0872",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2800,8",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "21,046725",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "5,47768",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "27,56544",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "14,96",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "67,152",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,944",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "342,79168",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "39,338442",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "55,0942",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "105,213654",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "10,82985",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "219,787425",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "31,582056",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "37,2164",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,0564",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": 4,
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "10,146076",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "308,47068",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "129,325824",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "223,2288",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1830,06",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "22,87575",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "27,696",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "144,6",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "7,176312",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "54,4",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "533,62944",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "10,73688",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "87,55712",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "53,73",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "21,904",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "57,96864",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "483,6",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "84,76755",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "584,775",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "55,32384",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "248,3712",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "288,288",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1577,2482",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "271,392",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "91,11252",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "0,447",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "92,86368",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "82,52448",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "46,760472",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "39,1608",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "27,9",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "201,3",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "23,648768",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "127,89777",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "41,69664",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "435,44832",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "118,286",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "456,288",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "369,54624",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1972,425",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "21,814848",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "128,2176",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,64235",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "67,3152",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,54522",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "22,431024",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,17854",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,5296",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "13,87925",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "69,111504",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "89,94048",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "35,928",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "15,964872",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "36,504",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "26,068",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "12,23424",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,158",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "7,824",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "263,4975",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5931,49392",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "4981,25",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "97,5975",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "716,364",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "184,368",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "185,472",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "7,175",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "216,24",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "51,4845",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "26,196",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "254,16",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "505,84758",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "112,00365",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "448,0146",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "12,90042",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "225,450225",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "19,92",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1014,928688",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1332,33408",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3442,5",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,99376",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "25,5528",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "21,4016",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "24,39680958",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "27,93793464",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "27,93793464",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "93,72062124",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "67,6704",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "25,939375",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "5,929768",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "94,21056",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "129,642942",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "2909,088",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "15,441984",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "87,288318",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "135,48216",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "16,758",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "18,80582",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "28,61",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "112,094976",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": 95,
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,913308",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "26,82",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "5,78376",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "33,795",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "422,950881",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "357,980672",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "119,338674",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "20,6976",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "179,15904",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,6882688",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "179,4133952",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "115,86978",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "62,614944",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "102,637962",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "38,453415",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "63,14",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "16,764992",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "10,085229",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": 6321,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "97,445376",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "262,675",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "25,071336",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "56,72754",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2909,088",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "94,21056",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,389",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "15,0294",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "142,78",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "149,9008",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "34,5762",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "108,336256",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "22,2894",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6,354",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "51,575688",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "279,84",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,688",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "33,84",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "33,77696",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "15,80544",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "11,745342",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "165,4224",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,184",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "11,55264",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "17,69174",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "31,131",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "81,49176",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "21,212334",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "95,960376",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,008",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "369,580248",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "20,76",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "47,52",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,64932",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "363,789888",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "38,2086",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "135,312",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "14,0049",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "11,307584",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "32,624",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "38,148",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,74944",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,33824",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "25,847424",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "88,788",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "56,653554",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "32,61882",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "18,16584",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "134,08",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6,353952",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "18,349344",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "290,9088",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "412,9125",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "247,38",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "290,9088",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "13,160448",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "7,509376",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "152,31996",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "51,85476",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "15,305136",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,224612",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "39,688",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "511,549824",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,694",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "28,7082",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "670,878208",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "54,58428",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "399,85176",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "407,121792",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "93,132",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "10,823917",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "111,0144",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "98,208",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "48,6",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "17,2368",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "19,926",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "470,8125",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1601,6",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "188,188",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "308,808192",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "69,456",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,094",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,151",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "399,85176",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,1296",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "859,11168",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,47279",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "343,008",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "12,361734",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "13,552077",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4985,966336",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "109,1009627",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "44,4484425",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "42,14118528",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,248155",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "23,73702072",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "674,84362",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "61,128",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,87891504",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "1546,974",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "88,05888",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,66444",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "252,002016",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,32755",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "29,183544",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "2,8728",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "54,4",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,13632",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "120,52992",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "15171,96425",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "51,05408",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "27,280512",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "508,51392",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,40003472",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "570,34656",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "163,1183674",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "121,2587085",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "243,80538",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "251,8170368",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "157,3841069",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "7,184",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "239,424",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "73,08",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "25,2126",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "280,1344",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "383,535872",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "689,832",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "17,68884",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,97675",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,632772",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "4,344",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "19,199664",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "121,248736",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,200768",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,402944",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "129,642942",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,404088",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "198,1728",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8508,6936",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "134,701056",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "42,994",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "19,42275",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "53,258688",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "12,136419",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "121,631328",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "13,705536",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "63,69152",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "111,142125",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "7459,92",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "25,6095",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "4985,966336",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "570,34656",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "121,631328",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "38,66863",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "451,431864",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "636,3091469",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "731,8132474",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "197,8086825",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "44,551353",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "235,546344",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "61,4094291",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "61,128",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "158,7744",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1030,375125",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "270,0199488",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "84,6013896",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "45,76",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "368,726904",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "351,91",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,89056",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "33,45408",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "198,66",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "74,016",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "579,4759139",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "21,1345",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "14,8203",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "11796,48",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "30,987328",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "17,988",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "29,016",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "126,820512",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "6,396264",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "90,315",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "182,78436",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "589,5",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "23,780484",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "41,65797",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "589,5",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "10,257408",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "58,3648",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "480,9788838",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "94,6002512",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "353,8823059",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "24,2421228",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "193,78128",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "10,78056",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "91,872",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,59305",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "6,592068",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "61,4094291",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,250936",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "10,2672",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,8375",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "21,751808",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "78,651",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "235,65168",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "579,4759139",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": 2160,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "452,53728",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "235,546344",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "36,57312",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "357,12",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "17,158401",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "15,246",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "31,26988",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "18,08064",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,49442936",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "252,774585",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "74,06911512",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "89,82505008",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "37,9102464",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "12,481425",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "185,10336",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "20,72784",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "639,4134656",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2390,417568",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "76,76751821",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "13,536",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "293789,925",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "255,8304",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2077,056",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "731,8132474",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "41,65797",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "9346,752",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "20,72784",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "185,10336",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "10,9512",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "11,982168",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "231,68376",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "18,910848",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,09375",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "95,28",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "26640,9",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "6,626025",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "132,08832",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "466,863264",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "11,982168",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "26640,9",
+    "TRANSPORTADOR": ""
+  },
+  {
+    "CUBADO": "145,28",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "7,2864",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,78",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "3,78",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "121,278976",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,554775",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,475",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": 0,
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "123,6096",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "22,911",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "19,383",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "150,336",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "0,8308062",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "45,36",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "165,906",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "22,911",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "98,25",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "19,383",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "32,49324",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,475",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": 113,
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "13,87925",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "21,024",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "0,095004",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,29",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "12,282",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "165,099375",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "150,336",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,4145",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "417,295872",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "248,672256",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,44",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "0,91806",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "65,3184",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "24,108",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "8,01504",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "4,34112",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "4,571112",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "4,571112",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "77,112",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "165,672",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "10,494",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "4,6648",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "15,372",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "266,4",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "24,108",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,34112",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "8,01504",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "592,481142",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "38,964016",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "15,372",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "75,168",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "45,1008",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "28,308",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "38,795136",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "103,81824",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "77,9229",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "38,795136",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "44,9865",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "74,046",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "72,1028",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "20,16",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "63,4926",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "69,768",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "909,21264",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "28,308",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "28,308",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "4951,44",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "7,266",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "0,40185",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "17,145",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "8,46",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1,3266",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "12,06864",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "64,1424",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "#VALOR!",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "33,7536",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "123,889557",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "508,5",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "78,656",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "517,104",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "5,41359",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "3,58632",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "31,6",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "45,34591488",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "625,0336435",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "2,673",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "337,43752",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "91,34748",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "7,578",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "84,899016",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "84,899016",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "84,899016",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "13,9797",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "91,34748",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "2,673",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "78,24",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,58",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "4,58",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,66336",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "405,888",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "24,6336",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "28,789376",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "222,312",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "16284,672",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "14,525511",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "47,981536",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "5,6331744",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "3,6283611",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "1177,28576",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "1,335",
+    "TRANSPORTADOR": "RÁPIDO PARANÁ"
+  },
+  {
+    "CUBADO": "113,952",
+    "TRANSPORTADOR": "ASN"
+  },
+  {
+    "CUBADO": "441,969",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "83,9579832",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "71,2314",
+    "TRANSPORTADOR": "PACER"
+  },
+  {
+    "CUBADO": "38,038784",
+    "TRANSPORTADOR": "PACER"
+  }
+]
