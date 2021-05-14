@@ -697,24 +697,48 @@ III - a data de emissão ou de saída.
 
 <div id="Siglas IATA" class="tabcontent pesquisac">
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-vask{font-size:13px;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
+<style>
+#SIGLA {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#TABELA {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#TABELA th, #TABELA td {
+  text-align: left;
+  padding: 12px;
+}
+
+#TABELA tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#TABELA tr.header, #TABELA tr:hover {
+  background-color: #f1f1f1;
+}
 </style>
-	
-<center>
+
+
 <h2>Siglas IATA dos aeroportos no Brasil</h2>
-<br/>
+<center>
+<input type="text" id="SIGLA" onkeyup="pesquisaSIGLA()" placeholder="Procurar SIGLA.." title="Siglas IATA" autocomplete="off">
 
 
-<table class="tg">
+ <table id="TABELA">
 <thead>
-  <tr>
+  <tr class="header">
     <th class="tg-vask">IATA</th>
     <th class="tg-vask">ICAO</th>
     <th class="tg-vask">Nome do Aeroporto</th>
@@ -1114,6 +1138,27 @@ li[i].style.display = "";
 } else {
 li[i].style.display = "none"; }
 }
+}
+</script>
+
+<script>
+function pesquisaSIGLA() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("SIGLA");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("TABELA");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
 }
 </script>
 
