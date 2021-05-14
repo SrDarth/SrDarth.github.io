@@ -57,7 +57,8 @@
 <a class="tablink" onclick="openPage('Avisos')" id="defaultOpen"><div class="btn btn__Menu"><p>Avisos</p></div></a>
 <a class="tablink" onclick="openPage('Montar Texto')"><div class="btn btn__Menu"><p>Montar Texto</p></div></a>
 <a class="tablink" onclick="openPage('Consultar Codigo')"><div class="btn btn__Menu"><p>Consultar Codigo</p></div></a>
-<a class="tablink" onclick="openPage('Sala TIM')"><div class="btn btn__Menu"><p>Email para Sala TIM</p></div></a><br>
+<a class="tablink" onclick="openPage('Sala TIM')"><div class="btn btn__Menu"><p>Email para Sala TIM</p></div></a>
+<a class="tablink" onclick="openPage('Siglas IATA')"><div class="btn btn__Menu"><p>Siglas IATA</p></div></a><br>
 <a class="tablink" onclick="openPage('Anotações')"><div class="btn btn__Menu"><p>Anotações</p></div></a>
 <a class="tablink" onclick="openPage('Calcular distâncias')"><div class="btn btn__Menu"><p>Calcular distâncias</p></div></a>
 <a class="tablink" onclick="openPage('CC-e')"><div class="btn btn__Menu"><p>CC-e</p></div></a>
@@ -693,6 +694,408 @@ III - a data de emissão ou de saída.
 <div id="Minha Lista" class="tabcontent">
 <center><iframe scrolling="no" class="pesquisac" src="CriarLista.html" referrerpolicy="no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url" style="overflow-y:hidden;height:750px;width:100%;"></iframe></center>
 </div>
+
+<div id="Siglas IATA" class="tabcontent">
+	<style>
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  #INICIAL {
+    display: none;
+  }
+</style>
+
+<h2>Siglas IATA dos aeroportos no Brasil</h2>
+<br/>
+
+<table border="0" cellspacing="0" cellpadding="0"><thead>
+<tr>
+<th class="text" width="48px">IATA</th>
+ <th width="58px">ICAO</th>
+ <th width="382px">Nome do Aeroporto</th>
+ <th width="102px">Cidade</th>
+ <th width="53px">UF</th>
+ </tr></thead><tbody>
+<tr>
+<td class="text">BSB</td>
+ <td>SBBR</td>
+ <td>Aeroporto Internacional de Brasília / Presidente Jucelino Kubitschek</td>
+ <td>Brasília</td>
+ <td>DF</td>
+ </tr>
+<tr>
+<td class="text">CGH</td>
+ <td>SBSP</td>
+ <td>Aeroporto Internacional de São Paulo / Congonhas</td>
+ <td>Congonhas</td>
+ <td>SP</td>
+ </tr>
+<tr>
+<td class="text">GIG</td>
+ <td>SBGL</td>
+ <td>Aeroporto Internacional do Rio de Janeiro / Galeão-Antônio Carlos Jobim</td>
+ <td>Galeão</td>
+ <td>RJ</td>
+ </tr>
+<tr>
+<td class="text">SSA</td>
+ <td>SBSV</td>
+ <td>Aeroporto Internacional de Salvador / Deputado Luis Eduardo Magalhães</td>
+ <td>Salvador</td>
+ <td>BA</td>
+ </tr>
+<tr>
+<td class="text">FLN</td>
+ <td>SBFL</td>
+ <td>Aeroporto Internacional de Florianópolis / Hercílio Luz</td>
+ <td>Florianópolis</td>
+ <td>SC</td>
+ </tr>
+<tr>
+<td class="text">POA</td>
+ <td>SBPA</td>
+ <td>Aeroporto Internacional de Porto Alegre / Salgado Filho</td>
+ <td>Porto Alegre</td>
+ <td>RS</td>
+ </tr>
+<tr>
+<td class="text">VCP</td>
+ <td>SBKP</td>
+ <td>Aeroporto Internacional de Viracopos / Campinas</td>
+ <td>Campinas</td>
+ <td>SP</td>
+ </tr>
+<tr>
+<td class="text">REC</td>
+ <td>SBRF</td>
+ <td>Aeroporto Internacional do Recife/ Guararapes – Gilberto Freyre</td>
+ <td>Recife</td>
+ <td>PE</td>
+ </tr>
+<tr>
+<td class="text">CWB</td>
+ <td>SBCT</td>
+ <td>Aeroporto Internacional de Curitiba / Afonso Pena</td>
+ <td>Curitiba</td>
+ <td>PR</td>
+ </tr>
+<tr>
+<td class="text">BEL</td>
+ <td>SBBE</td>
+ <td>Aeroporto Internacional de Belém / Val de Cans</td>
+ <td>Belém</td>
+ <td>PA</td>
+ </tr>
+<tr>
+<td class="text">VIX</td>
+ <td>SBVT</td>
+ <td>Aeroporto de Vitória – Eurico de Aguiar Salles</td>
+ <td>Vitória</td>
+ <td>ES</td>
+ </tr>
+<tr>
+<td class="text">SDU</td>
+ <td>SBRJ</td>
+ <td>Aerorporto Santos Dumont</td>
+ <td>Santos Dumont</td>
+ <td>RJ</td>
+ </tr>
+<tr>
+<td class="text">CGB</td>
+ <td>SBCY</td>
+ <td>Aeroporto Internacional de Cuiabá / Marechal Rondon</td>
+ <td>Cuiabá</td>
+ <td>MT</td>
+ </tr>
+<tr>
+<td class="text">CGR</td>
+ <td>SBCG</td>
+ <td>Aeroporto Internacional de Campo Grande</td>
+ <td>Campo Grande</td>
+ <td>MS</td>
+ </tr>
+<tr>
+<td class="text">FOR</td>
+ <td>SBFZ</td>
+ <td>Aeroporto Internacional de Fortaleza / Pinto Martins</td>
+ <td>Fortaleza</td>
+ <td>CE</td>
+ </tr>
+<tr>
+<td class="text">MCP</td>
+ <td>SBMQ</td>
+ <td>Aeroporto Internacional de Macapá</td>
+ <td>Macapá</td>
+ <td>AP</td>
+ </tr>
+<tr>
+<td class="text">MGF</td>
+ <td>SBMG</td>
+ <td>Aeroporto Regional de Maringá / Silvio Name Junior</td>
+ <td>Maringá</td>
+ <td>PR</td>
+ </tr>
+<tr>
+<td class="text">GYN</td>
+ <td>SBGO</td>
+ <td>Aeroporto de Goiânia / Santa Genoveva</td>
+ <td>Goiânia</td>
+ <td>GO</td>
+ </tr>
+<tr>
+<td class="text">NVT</td>
+ <td>SBNF</td>
+ <td>Aeroporto Internacional de Navegantes / Ministro Victor Konder</td>
+ <td>Navegantes</td>
+ <td>SC</td>
+ </tr>
+<tr>
+<td class="text">MAO</td>
+ <td>SBEG</td>
+ <td>Aeroporto Internacional de Manaus / Eduardo Gomes</td>
+ <td>Manaus</td>
+ <td>AM</td>
+ </tr>
+<tr>
+<td class="text">NAT</td>
+ <td>SBNT</td>
+ <td>Aeroporto Internacional de Natal / Augusto Severo</td>
+ <td>Natal</td>
+ <td>RN</td>
+ </tr>
+<tr>
+<td class="text">BPS</td>
+ <td>SBPS</td>
+ <td>Aeroporto Internacional de Porto Seguro</td>
+ <td>Porto Seguro</td>
+ <td>BA</td>
+ </tr>
+<tr>
+<td class="text">MCZ</td>
+ <td>SBMO</td>
+ <td>Aeroporto de Maceió / Zumbi dos Palmares</td>
+ <td>Maceió</td>
+ <td>AL</td>
+ </tr>
+<tr>
+<td class="text">PMW</td>
+ <td>SSPS</td>
+ <td>Aeroporto de Palmas/Brigadeiro Lysias Rodrigues</td>
+ <td>Palmas</td>
+ <td>TO</td>
+ </tr>
+<tr>
+<td class="text">SLZ</td>
+ <td>SBSL</td>
+ <td>Aeroporto Internacional de São Luís / Marechal Cunha Machado</td>
+ <td>São Luis</td>
+ <td>MA</td>
+ </tr>
+<tr>
+<td class="text">GRU</td>
+ <td>SBGR</td>
+ <td>Aeroporto Internacional de São Paulo/Guarulhos-Governador André Franco Motoro</td>
+ <td>Guarulhos</td>
+ <td>SP</td>
+ </tr>
+<tr>
+<td class="text">LDB</td>
+ <td>SBLO</td>
+ <td>Aeroporto de Londrina / Governador José Richa</td>
+ <td>Londrina</td>
+ <td>PR</td>
+ </tr>
+<tr>
+<td class="text">PVH</td>
+ <td>SBPV</td>
+ <td>Aeroporto Internacional de Porto Velho / Governador Jorge Teixeira de Oliveira</td>
+ <td>Porto Velho</td>
+ <td>RO</td>
+ </tr>
+<tr>
+<td class="text">RBR</td>
+ <td>SBRB</td>
+ <td>Aeroporto Internacional de Rio Branco / Plácido de Castro</td>
+ <td>Rio Branco</td>
+ <td>AC</td>
+ </tr>
+<tr>
+<td class="text">JOI</td>
+ <td>SBJV</td>
+ <td>Aeroporto de Joinville / Lauro Carneiro de Loyola</td>
+ <td>Joinville</td>
+ <td>SC</td>
+ </tr>
+<tr>
+<td class="text">UDI</td>
+ <td>SBUL</td>
+ <td>Aeroporto de Uberlândia / Ten. Cel. Av. César Bombonato</td>
+ <td>Uberlândia</td>
+ <td>MG</td>
+ </tr>
+<tr>
+<td class="text">CXJ</td>
+ <td>SBCX</td>
+ <td>Aeroporto Regional de Caxias do Sul / Hugo Cantergiani</td>
+ <td>Caxias do Sul</td>
+ <td>RS</td>
+ </tr>
+<tr>
+<td class="text">IGU</td>
+ <td>SBFI</td>
+ <td>Aeroporto Internacional de Foz do Iguaçu</td>
+ <td>Foz do Iguaçu</td>
+ <td>PR</td>
+ </tr>
+<tr>
+<td class="text">THE</td>
+ <td>SBTE</td>
+ <td>Aeroporto de Teresina – Senador Petrônio Portella</td>
+ <td>Teresina</td>
+ <td>PI</td>
+ </tr>
+<tr>
+<td class="text">AJU</td>
+ <td>SBAR</td>
+ <td>Aeroporto Internacional de Aracaju / Santa Maria</td>
+ <td>Aracaju</td>
+ <td>SE</td>
+ </tr>
+<tr>
+<td class="text">JPA</td>
+ <td>SBJP</td>
+ <td>Aeroporto Internacional de João Pessoa / Presidente Castro Pinto</td>
+ <td>João Pessoa</td>
+ <td>PB</td>
+ </tr>
+<tr>
+<td class="text">PNZ</td>
+ <td>SBPL</td>
+ <td>Aeroporto de Petrolina / Senador Nilo Coelho</td>
+ <td>Petrolina</td>
+ <td>PE</td>
+ </tr>
+<tr>
+<td class="text">CNF</td>
+ <td>SBCF</td>
+ <td>Aeroporto Internacional de Minas Gerais / Confins – Tancredo Neves</td>
+ <td>Confins</td>
+ <td>MG</td>
+ </tr>
+<tr>
+<td class="text">BVB</td>
+ <td>SBBV</td>
+ <td>Aeroporto Internacional de Boa Vista / Atlas Brasil Cantanhede</td>
+ <td>Boa Vista</td>
+ <td>RR</td>
+ </tr>
+<tr>
+<td class="text">CPV</td>
+ <td>SBKG</td>
+ <td>Aeroporto de Campina Grande / Presidente João Suassuna</td>
+ <td>Campina Grande</td>
+ <td>PB</td>
+ </tr>
+<tr>
+<td class="text">STM</td>
+ <td>SBSN</td>
+ <td>Aeroporto de Santarém / Maestro Wilson Fonseca</td>
+ <td>Santarém</td>
+ <td>PA</td>
+ </tr>
+<tr>
+<td class="text">IOS</td>
+ <td>SBIL</td>
+ <td>Aeroporto de Ilhéus/Bahia-Jorge Amado</td>
+ <td>Ilhéus</td>
+ <td>BA</td>
+ </tr>
+<tr>
+<td class="text">JDO</td>
+ <td>SBJU</td>
+ <td>Aeroporto de Juazeiro do Norte – Orlando Bezerra</td>
+ <td>Juazeiro do Norte</td>
+ <td>CE</td>
+ </tr>
+<tr>
+<td class="text">IMP</td>
+ <td>SBIZ</td>
+ <td>Aeroporto de Imperatriz – Prefeito Renato Moreira</td>
+ <td>Imperatriz</td>
+ <td>MA</td>
+ </tr>
+<tr>
+<td class="text">XAP</td>
+ <td>SBCH</td>
+ <td>Aeroporto de Chapecó – Serafin Enoss Bertaso</td>
+ <td>Chapecó</td>
+ <td>SC</td>
+ </tr>
+<tr>
+<td class="text">MAB</td>
+ <td>SBMA</td>
+ <td>Aeroporto de Marabá</td>
+ <td>Marabá</td>
+ <td>PA</td>
+ </tr>
+<tr>
+<td class="text">CZS</td>
+ <td>SBCZ</td>
+ <td>Aeroporto Internacional de Cruzeiro do Sul</td>
+ <td>Cruzeiro do Sul</td>
+ <td>AC</td>
+ </tr>
+<tr>
+<td class="text">PPB</td>
+ <td>SBDN</td>
+ <td>Aeroporto Estadual de Presidente Prudente</td>
+ <td>Presidente Prudente</td>
+ <td>SP</td>
+ </tr>
+<tr>
+<td class="text">CFB</td>
+ <td>SBCB</td>
+ <td>Aeroporto Internacional de Cabo Frio</td>
+ <td>Cabo Frio</td>
+ <td>RJ</td>
+ </tr>
+<tr>
+<td class="text">FEN</td>
+ <td>SBFN</td>
+ <td>Aeroporto de Fernando de Noronha</td>
+ <td>Fernando de Noronha</td>
+ <td>PE</td>
+ </tr>
+<tr>
+<td class="text">JTC</td>
+ <td>SJTC</td>
+ <td>Aeroporto Estadual de Bauru/Arealva</td>
+ <td>Bauru</td>
+ <td>SP</td>
+ </tr>
+<tr>
+<td class="text">MOC</td>
+ <td>SBMK</td>
+ <td>Aeroporto de Montes Claros/Mário Ribeiro</td>
+ <td>Montes Claros</td>
+ <td>MG</td>
+ </tr></tbody></table>
+</div>
+
+
+
+
 
 </div>
 </div>
