@@ -1795,6 +1795,9 @@ switch(MantenedorSenha) {
 	   case "EZENTIS - SÃO JOSÉ - SC":
        var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>EZENTIS - SÃO JOSÉ - SC</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3054829</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>TRAVESSA NELSON MIGUEL DA SILVA, 19 -&nbsp;&nbsp;&nbsp;SERRARIA, SÃO JOSE - SC, 88115-235</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>DJALMA 4899808-1081</td></tr></tbody></table></div>";
 	   break;
+           case "EZENTIS - VILA VELHA - ES":
+       var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>EZENTIS - VILA VELHA - ES</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3063377</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>R. Antônio Viêira de Freitas, 10 - Brisamar, Vila Velha - ES, 29104-710</td></tr><tr><td>CNPJ:</td><td> </td></tr><tr><td>Telefone:</td><td>ELIAS 27 99858-6223 DAILTON 27 99858-0061</td></tr></tbody></table></div>";
+	   break;
 	   case "TEL - BAURU - SP":
        var exibirmantenedor = "<div class='tabela'><table><thead><tr><th>Reparador:</th><th>TEL - BAURU - SP</th></tr></thead><tbody><tr><td>Código SAP:</td><td>3033178</td></tr><tr><td>OBS Cód Sap:</td><td>Mantenedor</td></tr><tr><td>Endereço para envio de unidades:</td><td>AV. MANOEL DUQUE, 4-70 - JARDIM&nbsp;&nbsp;&nbsp;GUADALAJARA, BAURU - SP, 17030-110</td></tr><tr><td>CNPJ:</td><td>06.084.614/0002-66</td></tr><tr><td>Telefone:</td><td>MAURICIO 1498201-0833 / EVANDRO BARELA&nbsp;&nbsp;&nbsp;1998409-0076</td></tr></tbody></table></div>";
 	   break;
