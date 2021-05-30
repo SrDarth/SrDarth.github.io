@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BackOffice</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <link href="./vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
+    <link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="./vendor/pickadate/themes/default.date.css">
+	<link href="./vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Clockpicker -->
+    <link href="./vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet">
+    <!-- asColorpicker -->
+    <link href="./vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet">
+    <!-- Material color picker -->
+    <link href="./vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/toastr/css/toastr.min.css">
+
+</head>
+<style>
+textarea {
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    margin: 2px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.containerx {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    padding-top: 60%;
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="" alt="">
+				<img class="logo-abbr" src="./images/logo.png" alt="">
+                <img class="logo-compact" src="./images/logo-text.png" alt="">
+                <img class="brand-title" src="./images/logo-text.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+		
+		<!--**********************************
+        ***********************************-->
+		
+		<!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+							<li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link dz-fullscreen primary" href="#">
+									<svg id="Capa_1" enable-background="new 0 0 482.239 482.239" height="22" viewBox="0 0 482.239 482.239" width="22" xmlns="http://www.w3.org/2000/svg"><path d="m0 17.223v120.56h34.446v-103.337h103.337v-34.446h-120.56c-9.52 0-17.223 7.703-17.223 17.223z" fill=""/><path d="m465.016 0h-120.56v34.446h103.337v103.337h34.446v-120.56c0-9.52-7.703-17.223-17.223-17.223z" fill=""/><path d="m447.793 447.793h-103.337v34.446h120.56c9.52 0 17.223-7.703 17.223-17.223v-120.56h-34.446z" fill="" /><path d="m34.446 344.456h-34.446v120.56c0 9.52 7.703 17.223 17.223 17.223h120.56v-34.446h-103.337z" fill=""/></svg>
+                                </a>
+							</li>
+							<li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link primary" href="MontarTextoEmergencial.html" target="_blank">
+									<i id="Capa_1" enable-background="new 0 0 482.239 482.239" height="22" viewBox="0 0 482.239 482.239" width="22" class="la la-copy"></i>
+                                </a>
+							</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar start MENU LATERAL
+        ***********************************-->
+        <div class="deznav">
+            <div class="deznav-scroll">
+				<ul class="metismenu" id="menu">
+                    <li><a href="AMERINODE.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-book"></i>
+							<span class="nav-text">Avisos</span>
+						</a>
+					</li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-381-notepad"></i>
+							<span class="nav-text">Montar Texto</span>
+						</a>
+                        <ul aria-expanded="false">
+							<li><a href="MontarTextoEmergencial.html">Emergencial</a></li>
+							<li><a href="MontarTextoNormal.html">Normal</a></li>
+						</ul>
+                    </li>
+					<li><a href="CCe.html" class="ai-icon" aria-expanded="false">
+							<i class="la la-pencil-ruler"></i>
+							<span class="nav-text">Carta de Correção</span>
+						</a>
+					</li>
+					<li><a href="EmailSalaTim.html" class="ai-icon" aria-expanded="false">
+							<i class="lar la-envelope"></i>
+							<span class="nav-text">Email para Sala TIM</span>
+						</a>
+					</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="la la-plane"></i>
+							<span class="nav-text">Siglas IATA</span>
+						</a>
+                        <ul aria-expanded="false">
+							<li><a href="TabelaIATA.html">Tabela com Filtro</a></li>
+							<li><a href="TradutorIATA.html">Tradutor</a></li>
+						</ul>
+                    </li>
+					<li><a href="Similar.html" class="ai-icon" aria-expanded="false">
+							<i class="la la-search"></i>
+							<span class="nav-text">Pesquisar similar</span>
+						</a>
+					</li>
+                </ul>
+            
+				<div class="add-menu-sidebar">
+				<img src="images/icon1.png" alt="">
+					<p>Encontrou algum erro?</p>
+					<p>Tem alguma sugestão?</p>
+					<p>Quer que desenvolva alguma ferramenta?</p>
+					<p>Conversa com o carinha que mora logo ali...</p>
+					<a href="https://api.whatsapp.com/send?phone=5511997218020&text=Ol%C3%A1%2C%20eu%20cliquei%20no%20link%20do%20site." class="btn btn-primary btn-block light" target=”_blank”>Enviar msg</a>
+				</div>
+				<div class="copyright">
+					<p><strong>SrDarth</strong> © 2021</p>
+					
+				</div>
+				<div class="copyright">
+				---
+				</div>
+			</div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+		
+		<!--**********************************
+            Content body start AREA DE CONTEUDO
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+			<div class="container-fluid">
+				
+				<div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Montar Texto Emergencial</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Montar Texto</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Emergencial</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+<div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title"></h4>
+                            </div>
+                            <div class="card-body">
+                                <!-- Nav tabs -->
+                                <div class="custom-tab-1">
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#montartexto"><i class="la la-hat-wizard mr-2"></i> Montar Texto</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#anotacoes"><i class="la la-edit mr-2"></i> Anotações</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#calculardistancia"><i class="la la-map-marker-alt mr-2"></i>  Calcular Distancia</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#consultarcodigo"><i class="la la-search mr-2"></i> Consultar Codigo</a>
+                                        </li>
+										<li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#lembrete"><i class="la la-paperclip mr-2"></i> Lembretes & Rascunho</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="montartexto" role="tabpanel">
+                                            <div class="pt-4">
+                                                <div class="row">
+<div class="col-xl-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">MONTAR TEXTO</h4>
+								<button type="button" class="btn btn-danger mb-2" data-toggle="modal" data-target="#exampleModalCenter"><i class="la la-trash mb-2"></i> Apagar</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalCenter">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Atenção</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Tem certeza que quer apagar tudo?</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary light" data-dismiss="modal">Não</button>
+<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="document.getElementById('TICKET').value = '', document.getElementById('VALORNF').value = '', document.getElementById('KM').value = '', document.getElementById('MODAL').value = '', document.getElementById('TIPOS').value = '', document.getElementById('TIPOSN').value = '', document.getElementById('COLETA').value = '', document.getElementById('CCOLETA').value = '', document.getElementById('ENTREGA').value = '', document.getElementById('CENTREGA').value = '', document.getElementById('ALTURA').value = '', document.getElementById('LARGURA').value = '', document.getElementById('COMPRIMENTO').value = '', document.getElementById('PESO').value = '', document.getElementById('VOLUME').value = '', document.getElementById('TIPOVOLUME').value = '', document.getElementById('DCOLETA').value = '', document.getElementById('DENTREGA').value = ''">Sim</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+									<form action="#">
+                                        <div class="form-row">
+                                            <div class="input-group input-group-sm mb-3 col-md-4 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">TICKET</span>
+                                            </div>
+                                            <input type="text" id="TICKET" class="form-control" onkeyup="MontarTexto()" autocomplete="off">
+                                        </div>
+										<div class="input-group input-group-sm mb-3 col-md-4 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">VALOR NF</span>
+                                            </div>
+                                            <input type="text" id="VALORNF" class="form-control" onkeyup="MontarTexto()" autocomplete="off">
+                                        </div>
+										<div class="input-group input-group-sm mb-3 col-md-4 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">KM</span>
+                                            </div>
+                                            <input type="text" id="KM" class="form-control" onkeyup="MontarTexto()" autocomplete="off">
+                                        </div>
+                                        </div>
+                                        <div class="form-row">
+										<div class="form-group col-md-4">
+                                            <select id="MODAL" class="form-control form-control-sm" onchange="MontarTexto()">
+                                                <option>RODO DEDICADO</option>
+                                                <option>AÉREO DEDICADO</option>
+                                            </select>
+                                        </div>
+                                            <div class="form-group col-md-4">
+                                                <select id="TIPOS" class="form-control form-control-sm" onchange="MontarTexto()">
+                                                    <option selected>SOLICITAÇÃO</option>
+                                                    <option>TASK</option>
+                                                    <option>NTT</option>
+                                                    <option>EVENTO</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-4 input-group-sm input-danger">
+                                                <input id="TIPOSN" type="text" class="form-control" onkeyup="MontarTexto()" placeholder="NUMERO" autocomplete="off">
+                                            </div>
+                                        </div>
+										<div class="input-group input-group-sm mb-3 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">COLETA</span>
+                                            </div>
+                                            <textarea type="text" id="COLETA" class="form-control" onkeyup="MontarTexto()"></textarea>
+                                        </div>
+										<div class="input-group input-group-sm mb-3 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">CONTATO COLETA</span>
+                                            </div>
+                                            <textarea type="text" id="CCOLETA" class="form-control" onkeyup="MontarTexto()"></textarea>
+                                        </div>
+										<div class="input-group input-group-sm mb-3 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">ENTREGA</span>
+                                            </div>
+                                            <textarea type="text" id="ENTREGA" class="form-control" onkeyup="MontarTexto()"></textarea>
+                                        </div>
+										<div class="input-group input-group-sm mb-3 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">CONTATO ENTREGA</span>
+                                            </div>
+                                            <textarea type="text" id="CENTREGA" class="form-control" onkeyup="MontarTexto()"></textarea> 
+                                        </div>
+										<div class="form-row">
+										<div class="input-group input-group-sm mb-3 col-md-4 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">A</span>
+                                            </div>
+                                            <input type="text" id="ALTURA" class="form-control" onkeyup="MontarTexto()" autocomplete="off">
+                                        </div>
+										<div class="input-group input-group-sm mb-3 col-md-4 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">L</span>
+                                            </div>
+                                            <input type="text" id="LARGURA" class="form-control" onkeyup="MontarTexto()" autocomplete="off">
+                                        </div>
+										<div class="input-group input-group-sm mb-3 col-md-4 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">C</span>
+                                            </div>
+                                            <input type="text" id="COMPRIMENTO" class="form-control" onkeyup="MontarTexto()" autocomplete="off">
+                                        </div>
+										</div>
+										<div class="form-row">
+										<div class="input-group input-group-sm mb-3 col-md-4 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">PESO</span>
+                                            </div>
+                                            <input type="text" id="PESO" class="form-control" onkeyup="MontarTexto()" autocomplete="off">
+                                        </div>
+										<div class="input-group input-group-sm mb-3 col-md-4 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">VOLUME</span>
+                                            </div>
+                                            <input type="text" id="VOLUME" class="form-control" onkeyup="MontarTexto()" autocomplete="off"> 
+											
+                                        </div>
+										<div class="input-group input-group-sm mb-3 col-md-4 input-danger">
+										<select id="TIPOVOLUME" class="form-control form-control-sm" onchange="MontarTexto()">
+                                                <option>CX</option>
+                                                <option>UN</option>
+												<option>PALLET</option>
+                                            </select>
+											</div>
+										</div>
+										<div class="input-group input-group-sm mb-3 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">DATA COLETA</span>
+                                            </div>
+                                            <input type="date" id="DCOLETA" onchange="MontarTexto()">
+                                        </div>
+										<div class="input-group input-group-sm mb-3 input-danger">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">DATA ENTREGA</span>
+                                            </div>
+                                            <input type="date" id="DENTREGA" onchange="MontarTexto()">
+                                        </div>
+                                    </form>
+									
+                                </div>
+                            </div>
+                        </div>
+						
+					</div>
+<div class="col-xl-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">TEXTO RESULTADO</h4>
+								<button class="btn btn-info" id="toastr-success-top-right" onclick="copy_data(select_txt)"><i class="la la-copy mb-2"></i> Copiar</button>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+<div id="select_txt">                                   <form>
+<p>🚨🚨🚨 EMERGENCIAL 🚨🚨🚨<br/>
+TICKET:<b id="RTICKET"></b><br/>
+VALOR NF: R$<b id="RVALORNF"></b><br/>
+MODAL: <b id="RMODAL"></b><br/>
+<b id="RTIPOS">SOLICITAÇÃO</b> Nº: <b id="RTIPOSN"></b><br/>
+DISTÂNCIA: <b id="RKM"></b> KM </p>
+
+<p>COLETA: <b id="RCOLETA"></b><br/>
+CONTATO COLETA: <b id="RCCOLETA"></b></p>
+
+<p>ENTREGA: <b id="RENTREGA"></b><br/>
+CONTATO ENTREGA: <b id="RCENTREGA"></b></p>
+
+<p>ALTURA: <b id="RALTURA"></b><b contenteditable="true">CM</b><br/>
+LARGURA: <b id="RLARGURA"></b><b contenteditable="true">CM</b><br/>
+COMPRIMENTO: <b id="RCOMPRIMENTO"></b><b contenteditable="true">CM</b></p>
+
+<p>PESO: <b id="RPESO"></b> KG<br/>
+VOLUME: <b id="RVOLUME"></b><b id="RTIPOVOLUME">CX</b></p>
+
+<p>DATA COLETA: <b id="RDCOLETA"></b><br/>
+DATA ENTREGA: <b id="RDENTREGA"></b></p>
+
+<p>*CONSEGUEM ATENDER?*</p></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+						
+					</div>
+
+
+</div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="anotacoes">
+                                            <div class="pt-4">
+                                                <div>
+
+
+
+
+<table>
+<thead>
+  <tr>
+    <th><div class="input-group mb-3 input-danger">
+<div class="input-group-prepend">
+<button class="btn btn-info" type="button" onclick="download()"><i class="la la-save mb-2"></i> Salvar anotações</button>
+</div>
+<input type="text" class="form-control input-danger" id="NTICKET" placeholder=". . .">
+<div class="input-group-append">
+<button class="btn btn-danger" type="button" data-toggle="modal" data-target="#exampleModalCenter2"><i class="la la-trash mb-2"></i> Apagar Tudo</button>
+ </div>
+</div></th>
+	  <th>
+                                    <div class="modal fade" id="exampleModalCenter2">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Atenção</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Tem certeza que quer apagar tudo?</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary light" data-dismiss="modal">Não</button>
+<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="document.getElementById('blocodenotas').value = ''">Sim</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+									</th>
+  </tr>
+</thead>
+</table>
+<br>
+
+<textarea id="blocodenotas" style="width: 100%; height: 700px; padding: 10px; font-size: 14px;"></textarea>
+
+
+
+
+</div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="calculardistancia">
+                                            <div class="pt-4">
+											<label for="fonte">Fonte:</label>
+											<a href="https://pt.distance.to/" target="_blank">distance.to</a>
+											<div class="containerx">
+                                                <iframe scrolling="no" class="responsive-iframe" src="https://pt.distance.to/" ></iframe>
+												</div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="consultarcodigo">
+                                            <div class="pt-4">
+                                                <p></p>
+												<div class="row">
+					<div class="col-12">
+					
+					<div class="containerx"> 
+				<iframe class="responsive-iframe" src="page-lock-screen.html"></iframe>
+				</div>
+					
+					</div>
+				</div>
+                                            </div>
+                                        </div>
+										<div class="tab-pane fade" id="lembrete">
+                                            <div class="pt-4">
+                                                
+					
+					
+					<div class="row">
+					
+					<div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header border-0 pb-0">
+                                <h5 class="card-title">Rascunho para email emergencial</h5>
+								
+                            </div>
+							<code>Texto editável</code>
+                            <div class="card-body">
+                                <p class="card-text">
+								<ul contenteditable="true"><li>SOLICITAÇÃO DE TRANSPORTE EMERGENCIAL -&nbsp; &gt;&nbsp; - TICKET&nbsp;</li><li><br></li><li>Boa noite!</li><li><br></li><li>Por favor seguir com o transporte EMERGENCIAL</li><li><br></li><li>Modal:&nbsp;</li><li>NF PRINCIPAL:&nbsp;</li><li>SIMPLES REMESSA:&nbsp;</li><li><br></li><li>Data da Coleta:&nbsp;</li><li><span style="font-size: 1rem;">Data da Entrega:</span></li></ul>
+								</p>
+                            </div>
+                            <div class="card-footer border-0 pt-0">
+                                <p class="card-text d-inline">-</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header border-0 pb-0">
+                                <h5 class="card-title">Rascunho para atualizar ticket</h5>
+								
+                            </div>
+							<code>Texto editável</code>
+                            <div class="card-body">
+                                <p class="card-text">
+								<ul contenteditable="true"><li>Boa noite!</li><li><br></li><li><span style="font-size: 1rem;">Transporte solicitado para transportadora <b>---</b></span></li><li><span style="font-size: 1rem;"><br></span></li><li>Modal:&nbsp;</li><li>NF PRINCIPAL:&nbsp;</li><li>SIMPLES REMESSA:&nbsp;</li><li><br></li><li>Data da Coleta:&nbsp;</li><li>Data da Entrega:&nbsp;</li><li><br><code>para modal aereo</code></li><li><b>Após a chegada, depende de liberação da sefaz</b></li><li><br></li><li>Att,</li><li>---</li></ul>
+								</p>
+                            </div>
+                            <div class="card-footer border-0 pt-0">
+                                <p class="card-text d-inline">-</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header border-0 pb-0">
+                                <h5 class="card-title">Rascunho para email bip de papel</h5>
+								
+                            </div>
+							<code>Texto editável</code>
+                            <div class="card-body">
+                                <p class="card-text">
+								<ul contenteditable="true"><li>ENVIAR PARA: </li><li>dl_cfo_csa_valorcontabil@timbrasil.com.br</li></ul><li><br></li><ul contenteditable="true"><li>COPIA PARA:&nbsp;</li><li>mpanhoca@timbrasil.com.br;</li><li>ssantos_amerinode@timbrasil.com.br;</li><li>atendimento.bo@amerinode.com.br;</li><li><br></li><li>VALOR CONTABIL RESIDUAL Logística - // - Nota Fiscal Emergencial - TICKET ---</li><li><br></li><li>Bom dia!</li><li><br></li><li>Segue formulário BIP e NF ---&nbsp; docnum ---, correspondente a movimentação de ativo.</li></ul>
+								</p>
+                            </div>
+                            <div class="card-footer border-0 pt-0">
+                                <p class="card-text d-inline">-</p>
+                            </div>
+                        </div>
+                    </div>
+					
+                    <div class="col-xl-6">
+                        <div class="card text-white bg-primary">
+                            <div class="card-header">
+                                <h5 class="card-title text-white">Outras Saídas – Simples Remessa (S00044) emitida para o Mantenedor:</h5>
+                            </div>
+                            <div class="card-body mb-0">
+                                <p class="card-text">Informar nas observações o texto: Remessa para depósito em estabelecimento de terceiro.<br/><br/>
+Caso trate-se da segunda perna de uma transferência entre estados informar nas observações: O número da NF de transferência de ativos entre estados (1ª perna) + o texto “Remessa para depósito em estabelecimento de terceiro”.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-white">1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card text-white bg-secondary">
+                            <div class="card-header">
+                                <h5 class="card-title text-white">Sempre adicionar focais de origem e destino no ticket</h5>
+                            </div>
+                            <div class="card-body mb-0">
+                                <p class="card-text">QUELLEN: MT, MS, GO, DF, RO, AC, TO, PR, RS, SC<br/>
+                                ILDA: SP, AM, PA, MA, AP, RR<br/>
+                                LOIANE: AL, PE, PB, CE, PI, RN, RJ, ES, MG, BA, SE</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-white">2
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card text-white bg-success">
+                            <div class="card-header">
+                                <h5 class="card-title text-white">Apartir de 12/04/2021</h5>
+                            </div>
+                            <div class="card-body mb-0">
+                                <p class="card-text">Adicionar o km na solicitação de transporte.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-white">3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card text-white bg-danger">
+                            <div class="card-header">
+                                <h5 class="card-title text-white">Demandas sem transporte</h5>
+                            </div>
+                            <div class="card-body mb-0">
+                                <p class="card-text">Todas as NFs que forem emitidas através de BIP, cujos fretes serão responsabilidade do demandante, ou seja, por exemplo, quando é o Player que fará o transporte, teremos que emitir CC-e com a informação “Frete por conta do demandante”;<br/>
+                                Todas as NFs Writer, que são emitidas na transação ZSDNFW, cujos fretes serão responsabilidade do demandante, mesmo exemplo acima (quando o Player realizar o transporte), devem alterar o campo “Incoterms” de CIF para FOB.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-white">4
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card text-white bg-warning">
+                            <div class="card-header">
+                                <h5 class="card-title text-white">Aprovação de transporte</h5>
+                            </div>
+                            <div class="card-body mb-0">
+                                <p class="card-text">Segunda a sexta x horário comercial:<br/>
+Back Office aprova até 1 mil reais;<br/>
+Focais aprovam de 1 mil a 3 mil reais (voltamos à regra anterior);<br/>
+Gestor da área (Renata) aprova acima de $ 3 mil;<br/><br/>
+Fora do horário comercial, finais de semana e feriados:<br/>
+Back Office aprova até 3 mil reais;<br/>
+De R$ 3 mil a R$ 5 mil, BackOffice segue com o frete pré aprovado, porém formaliza por e-mail para ciência/cópia do focal/gestor. Este acompanhamento será feito para fazermos o acompanhamento da frequência dessas demandas, e como estão tratando esses fretes maiores;<br/>
+Acima de R$ 5 mil: aprovação somente com o gestor da área (Renata).</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-white">5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card text-white bg-info">
+                            <div class="card-header">
+                                <h5 class="card-title text-white">Transporte PACER</h5>
+                            </div>
+                            <div class="card-body mb-0">
+                                <p class="card-text"><p>Não seguir no modal Aéreo Convencional (Normal) quando o transporte cair para PACER:<br/></p><ol><li>Aracaju – SE</li><li>Belém - PA</li><li>Boa Vista – RR</li><li>Cuiabá - MT</li><li>Florianópolis – SC</li><li>Fortaleza – CE</li><li>Imperatriz – MA</li><li>Manaus - AM</li><li>Macapá – AP</li><li>Porto Velho – RO</li><li>Rio Branco – AC</li></ol>
+								</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-white">6
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card bg-light">
+                            <div class="card-header">
+                                <h5 class="card-title text-white">Transporte RAPIDO PARANA</h5>
+                            </div>
+                            <div class="card-body mb-0">
+                                <p class="card-text"><p>Não seguir no modal Aéreo Convencional (Normal) quando o transporte cair para RAPIDO PARANA:<br/></p><ul><li>Belém - PA</li><li>Porto Velho – RO</li><li>São Luis – MA</li></ul>
+								</p>
+                            <div class="card-footer bg-transparent border-0 text-white">7
+                            </div>
+                            </div>
+                        </div>
+					</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="./js/custom.min.js"></script>
+	<script src="./js/deznav-init.js"></script>
+	
+	<!-- Counter Up -->
+    <script src="./vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="./vendor/jquery.counterup/jquery.counterup.min.js"></script>	
+		
+	<!-- Apex Chart -->
+	<script src="./vendor/apexchart/apexchart.js"></script>	
+	
+	<!-- Chart piety plugin files -->
+	<script src="./vendor/peity/jquery.peity.min.js"></script>
+	
+	<!-- Dashboard 1 -->
+	<script src="./js/dashboard/dashboard-1.js"></script>
+	<script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="./js/plugins-init/datatables.init.js"></script>
+	<script src="./vendor/toastr/js/toastr.min.js"></script>
+
+    <!-- All init script -->
+    <script src="./js/plugins-init/toastr-init.js"></script>
+	
+	
+<script>
+function MontarTexto() {
+  var XTICKET = document.getElementById("TICKET").value;
+  document.getElementById("RTICKET").innerHTML = " " + XTICKET.replace("TICKET-", "");
+  var XVALORNF = document.getElementById("VALORNF").value;
+  document.getElementById("RVALORNF").innerHTML = " " + XVALORNF;
+  var XKM = document.getElementById("KM").value;
+  document.getElementById("RKM").innerHTML = " " + XKM;
+  var XMODAL = document.getElementById("MODAL").value;
+  document.getElementById("RMODAL").innerHTML = " " + XMODAL;
+  var XTIPOS = document.getElementById("TIPOS").value;
+  document.getElementById("RTIPOS").innerHTML = " " + XTIPOS;
+  var XTIPOSN = document.getElementById("TIPOSN").value;
+  document.getElementById("RTIPOSN").innerHTML = " " + XTIPOSN;
+  
+  var XCOLETA = document.getElementById("COLETA").value;
+  document.getElementById("RCOLETA").innerHTML = " " + XCOLETA.toUpperCase();
+  var XCCOLETA = document.getElementById("CCOLETA").value;
+  document.getElementById("RCCOLETA").innerHTML = " " + XCCOLETA.toUpperCase();
+  
+  var XENTREGA = document.getElementById("ENTREGA").value;
+  document.getElementById("RENTREGA").innerHTML = " " + XENTREGA.toUpperCase();
+  var XCENTREGA = document.getElementById("CENTREGA").value;
+  document.getElementById("RCENTREGA").innerHTML = " " + XCENTREGA.toUpperCase();
+  
+  var XALTURA = document.getElementById("ALTURA").value;
+  document.getElementById("RALTURA").innerHTML = " " + XALTURA + " ";
+  var XLARGURA = document.getElementById("LARGURA").value;
+  document.getElementById("RLARGURA").innerHTML = " " + XLARGURA + " ";
+  var XCOMPRIMENTO = document.getElementById("COMPRIMENTO").value;
+  document.getElementById("RCOMPRIMENTO").innerHTML = " " + XCOMPRIMENTO + " ";
+  
+  var XPESO = document.getElementById("PESO").value;
+  document.getElementById("RPESO").innerHTML = " " + XPESO;
+  var XVOLUME = document.getElementById("VOLUME").value;
+  document.getElementById("RVOLUME").innerHTML = " " + XVOLUME;
+  var XTIPOVOLUME = document.getElementById("TIPOVOLUME").value;
+  document.getElementById("RTIPOVOLUME").innerHTML = " " + XTIPOVOLUME;
+  
+  var XDCOLETA = document.getElementById("DCOLETA").value;
+  var SDCOLETA = XDCOLETA[8]+XDCOLETA[9]+"/"+XDCOLETA[5]+XDCOLETA[6]+"/"+XDCOLETA[0]+XDCOLETA[1]+XDCOLETA[2]+XDCOLETA[3];
+  if (XDCOLETA < 1) {
+  document.getElementById("RDCOLETA").innerHTML = " ";
+  } else {
+  document.getElementById("RDCOLETA").innerHTML = " " + SDCOLETA;
+  }
+  
+  var XDENTREGA = document.getElementById("DENTREGA").value;
+  var SDENTREGA = XDENTREGA[8]+XDENTREGA[9]+"/"+XDENTREGA[5]+XDENTREGA[6]+"/"+XDENTREGA[0]+XDENTREGA[1]+XDENTREGA[2]+XDENTREGA[3];
+  if (XDENTREGA < 1) {
+  document.getElementById("RDENTREGA").innerHTML = " ";
+  } else {
+  document.getElementById("RDENTREGA").innerHTML = " " + SDENTREGA;
+  }
+}
+</script>	
+
+<script>
+function copy_data(select_txt) {
+  var range = document.createRange();
+  range.selectNode(select_txt); //changed here
+  window.getSelection().removeAllRanges(); 
+  window.getSelection().addRange(range); 
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+}
+</script>
+
+<script>
+function download(){
+var COPYTICKET = document.getElementById("TICKET").value;
+    var text = document.getElementById("blocodenotas").value;
+    text = text.replace(/\n/g, "\r\n");
+    var blob = new Blob([text], { type: "text/plain"});
+    var anchor = document.createElement("a");
+    anchor.download = "Minhas anotações" + " - TICKET-" + COPYTICKET.replace("TICKET-", "") + " - " + document.getElementById("NTICKET").value;
+    anchor.href = window.URL.createObjectURL(blob);
+    anchor.target ="_blank";
+    anchor.style.display = "none";
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+ }
+</script>
+	
+</body>
+</html>

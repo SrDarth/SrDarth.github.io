@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BackOffice</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <link href="./vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
+    <link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="./vendor/pickadate/themes/default.date.css">
+	<link href="./vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Clockpicker -->
+    <link href="./vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet">
+    <!-- asColorpicker -->
+    <link href="./vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet">
+    <!-- Material color picker -->
+    <link href="./vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/toastr/css/toastr.min.css">
+
+</head>
+<style>
+textarea {
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    margin: 2px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.containerx {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    padding-top: 60%;
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="" alt="">
+				<img class="logo-abbr" src="./images/logo.png" alt="">
+                <img class="logo-compact" src="./images/logo-text.png" alt="">
+                <img class="brand-title" src="./images/logo-text.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+		
+		<!--**********************************
+        ***********************************-->
+		
+		<!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+							<li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link dz-fullscreen primary" href="#">
+									<svg id="Capa_1" enable-background="new 0 0 482.239 482.239" height="22" viewBox="0 0 482.239 482.239" width="22" xmlns="http://www.w3.org/2000/svg"><path d="m0 17.223v120.56h34.446v-103.337h103.337v-34.446h-120.56c-9.52 0-17.223 7.703-17.223 17.223z" fill=""/><path d="m465.016 0h-120.56v34.446h103.337v103.337h34.446v-120.56c0-9.52-7.703-17.223-17.223-17.223z" fill=""/><path d="m447.793 447.793h-103.337v34.446h120.56c9.52 0 17.223-7.703 17.223-17.223v-120.56h-34.446z" fill="" /><path d="m34.446 344.456h-34.446v120.56c0 9.52 7.703 17.223 17.223 17.223h120.56v-34.446h-103.337z" fill=""/></svg>
+                                </a>
+							</li>
+							<li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link primary" href="EmailSalaTim.html" target="_blank">
+									<i id="Capa_1" enable-background="new 0 0 482.239 482.239" height="22" viewBox="0 0 482.239 482.239" width="22" class="la la-copy"></i>
+                                </a>
+							</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar start MENU LATERAL
+        ***********************************-->
+        <div class="deznav">
+            <div class="deznav-scroll">
+				<ul class="metismenu" id="menu">
+                    <li><a href="AMERINODE.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-book"></i>
+							<span class="nav-text">Avisos</span>
+						</a>
+					</li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-381-notepad"></i>
+							<span class="nav-text">Montar Texto</span>
+						</a>
+                        <ul aria-expanded="false">
+							<li><a href="MontarTextoEmergencial.html">Emergencial</a></li>
+							<li><a href="MontarTextoNormal.html">Normal</a></li>
+						</ul>
+                    </li>
+					<li><a href="CCe.html" class="ai-icon" aria-expanded="false">
+							<i class="la la-pencil-ruler"></i>
+							<span class="nav-text">Carta de Correção</span>
+						</a>
+					</li>
+					<li><a href="EmailSalaTim.html" class="ai-icon" aria-expanded="false">
+							<i class="lar la-envelope"></i>
+							<span class="nav-text">Email para Sala TIM</span>
+						</a>
+					</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="la la-plane"></i>
+							<span class="nav-text">Siglas IATA</span>
+						</a>
+                        <ul aria-expanded="false">
+							<li><a href="TabelaIATA.html">Tabela com Filtro</a></li>
+							<li><a href="TradutorIATA.html">Tradutor</a></li>
+						</ul>
+                    </li>
+					<li><a href="Similar.html" class="ai-icon" aria-expanded="false">
+							<i class="la la-search"></i>
+							<span class="nav-text">Pesquisar similar</span>
+						</a>
+					</li>
+                </ul>
+            
+				<div class="add-menu-sidebar">
+				<img src="images/icon1.png" alt="">
+					<p>Encontrou algum erro?</p>
+					<p>Tem alguma sugestão?</p>
+					<p>Quer que desenvolva alguma ferramenta?</p>
+					<p>Conversa com o carinha que mora logo ali...</p>
+					<a href="https://api.whatsapp.com/send?phone=5511997218020&text=Ol%C3%A1%2C%20eu%20cliquei%20no%20link%20do%20site." class="btn btn-primary btn-block light" target=”_blank”>Enviar msg</a>
+				</div>
+				<div class="copyright">
+					<p><strong>SrDarth</strong> © 2021</p>
+					
+				</div>
+				<div class="copyright">
+				---
+				</div>
+			</div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+		
+		<!--**********************************
+            Content body start AREA DE CONTEUDO
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+<div class="container-fluid">
+				<div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Email para Sala TIM</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)"></a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Email para Sala TIM</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- Toastr -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title"></h4>
+                            </div>
+                            <div class="card-body">
+<center>
+<select class="col-sm-5" id="ESalaTim">
+<option>TIM SÃO PAULO - LAPA - REPARO</option>
+<option>TIM SÃO CRISTOVÃO</option>
+<option>TIM BH - AQUILES LOBO</option>
+<option>TIM ARACAJU</option>
+<option>TIM SALVADOR - COMERCIO</option>
+<option>TIM FLORIANOPOLIS - ESTREITO</option>
+<option>TIM PORTO ALEGRE - RAMIRO BARCELOS</option>
+<option>TIM GOIANIA</option>
+<option>TIM CAMPO GRANDE</option>
+<option>TIM CUIABA</option>
+</select></center>
+<br/>
+<div class="basic-form">
+<form>
+<div class="form-row input-info">
+<div class="col-sm-2">
+<input class="form-control" type="text" id="ESalaTimTicket" placeholder="Nº TICKET">
+</div>
+<div class="col-sm-5">
+<input class="form-control" type="text" id="ESalaTimDesc" placeholder="DESCRIÇÃO DO MATERIAL">
+</div>
+<div class="col-sm-5">
+<input class="form-control" type="text" id="ESalaTimTecnico" placeholder="NOME DO TÉCNICO">
+</div>
+<br/><br/><br/>
+<div class="col-sm-2">
+<select class="select form-control" id="RGCPF">
+<option>RG</option>
+<option>CPF</option>
+</select>
+</div>
+<div class="col-sm-3">
+<input class="form-control" type="text" id="ESalaTimDoc" placeholder="Nº RG ou CPF">
+</div>
+</div>
+</form>
+</div>
+
+
+                            </div>
+							<button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModalCenter" onclick="GerarEmailSalaTim()">Gerar Email</button>
+                        </div>
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+
+
+<div class="modal fade" id="exampleModalCenter">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Link Email Sala TIM</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Agora é só clicar em "ABRIR EMAIL"</p>
+													<p id="linkemail"></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary light" data-dismiss="modal">Cancelar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="./js/custom.min.js"></script>
+	<script src="./js/deznav-init.js"></script>
+	
+	<!-- Counter Up -->
+    <script src="./vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="./vendor/jquery.counterup/jquery.counterup.min.js"></script>	
+		
+	<!-- Apex Chart -->
+	<script src="./vendor/apexchart/apexchart.js"></script>	
+	
+	<!-- Chart piety plugin files -->
+	<script src="./vendor/peity/jquery.peity.min.js"></script>
+	
+	<!-- Dashboard 1 -->
+	<script src="./js/dashboard/dashboard-1.js"></script>
+<script>
+function GerarEmailSalaTim() {
+var CodigoSalaTim = document.getElementById("ESalaTim").value;
+switch(CodigoSalaTim) {
+	  case "TIM SÃO PAULO - LAPA - REPARO":
+       var enviarpara = "rfreitas_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br;Rmarques_amerinoe@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM SÃO CRISTOVÃO":
+       var enviarpara = "cgomes_amerinode@timbrasil.com.br;jthinnes_amerinode@timbrasil.com.br;taraujo_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM BH - AQUILES LOBO":
+       var enviarpara = "kfreitas_sa@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM ARACAJU":
+       var enviarpara = "asouza_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM SALVADOR - COMERCIO":
+       var enviarpara = "ejcarvalho_sa@timbrasil.com.br;wmiranda_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM FLORIANOPOLIS - ESTREITO":
+       var enviarpara = "edsilva_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM PORTO ALEGRE - RAMIRO BARCELOS":
+       var enviarpara = "moliveira_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM GOIANIA":
+       var enviarpara = "acosta_amerinode@timbrasil.com.br;segurancagoiania@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM CAMPO GRANDE":
+       var enviarpara = "hpereira_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+	   case "TIM CUIABA":
+       var enviarpara = "egoncalves_amerinode@timbrasil.com.br;DL_Security_Operations_PredioTecnicoFloresta@timbrasil.com.br;rnfilho@timbrasil.com.br?cc=ssantos_amerinode@timbrasil.com.br;mpanhoca@timbrasil.com.br;atendimento.bo@amerinode.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;maparecida_servis@timbrasil.com.br;ksilva_ultra@timbrasil.com.br;walmeida_ultra@timbrasil.com.br;lsilva_evik@timbrasil.com.br;fsilva_servis@timbrasil.com.br;rporto@timbrasil.com.br;mrlopes@timbrasil.com.br;bjusto_amerinode@timbrasil.com.br;kfreitas_sa@timbrasil.com.br;";
+	   break;
+}
+var EmailSalaTim = enviarpara;
+var ESTTicket = document.getElementById("ESalaTim").value + "%20TICKET-" + document.getElementById("ESalaTimTicket").value;
+
+var ESTDesc = "&body=Prezado%0D%0A%20%0D%0AAutorizamos%20a%20retirada%20do%20material%20(%20" + 
+document.getElementById("ESalaTimDesc").value + "%20)%20pelo%20t%C3%A9cnico%20(%20" + 
+document.getElementById("ESalaTimTecnico").value + "%20)%20portador%20do%20" + document.getElementById("RGCPF").value + "(%20" + 
+document.getElementById("ESalaTimDoc").value + "%20)%20para%20atendimento%20de%20demanda%20emergencial.%0D%0A%0D%0A";
+
+document.getElementById("linkemail").innerHTML = "<a href='mailto:"+EmailSalaTim+"&subject=Demanda%20Emergencial%20x%20libera%C3%A7%C3%A3o%20de%20retirada%20de%20materiais%20"+ESTTicket+ESTDesc+"' class='btn btn-info mb-2' onclick='Atualizar()'> ABRIR EMAIL </a>";
+}
+</script>	
+	
+</body>
+</html>

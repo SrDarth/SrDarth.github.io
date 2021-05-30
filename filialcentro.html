@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BackOffice</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <link href="./vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
+    <link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="./vendor/pickadate/themes/default.date.css">
+	<link href="./vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Clockpicker -->
+    <link href="./vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet">
+    <!-- asColorpicker -->
+    <link href="./vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet">
+    <!-- Material color picker -->
+    <link href="./vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+
+</head>
+
+<style>
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.tabela {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 10px;
+}
+
+.tabela td, .tabela th {
+  border: 1px solid #ddd;
+  padding: 2px;
+}
+
+.tabela tr:nth-child(even){background-color: #f2f2f2;}
+
+.tabela tr:hover {background-color: #ddd;}
+
+.tabela th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+
+<body>
+
+<div class="row">
+
+<div class="col-xl-6 col-lg-6"><div class="card">
+
+<div class="card-header">
+<h4 class="card-title">Filial & Centro</h4>
+</div>
+
+<div class="card-body">
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-ac">AC</button>
+<div class="modal fade bd-ac" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TCO	QNDB</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+</div>
+<div class="modal-body"><div class='tabela'>Acre<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C057</td><td>CB21</td><td>Back Office AC</td><td>02.421.421/0045-32</td><td>AC</td><td>RUA MAJOR&nbsp;&nbsp;&nbsp;LADISLAU FERREIRA 30, PARTE A - DOM GIOCONDO,RIO BRANCO - AC</td><td>69900-279</td></tr><tr><td>C057</td><td>CO45</td><td>Regional Rio Branco 1 - AC</td><td>02.421.421/0045-32</td><td>AC</td><td>RUA MAJOR LADISLAU FERREIRA 30, PARTE A - DOM GIOCONDO,RIO&nbsp;&nbsp;&nbsp;BRANCO - AC</td><td>69900-279</td></tr><tr><td>I045</td><td>IO45</td><td>Regional Rio&nbsp;&nbsp;&nbsp;Branco 2 - AC</td><td>02.421.421/0045-32</td><td>AC</td><td>RUA MAJOR&nbsp;&nbsp;&nbsp;LADISLAU FERREIRA 30, PARTE A - DOM GIOCONDO,RIO BRANCO - AC</td><td>69900-279</td></tr></tbody></table></div></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-al">AL</button>
+<div class="modal fade bd-al" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TNE	QNDN</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body"><div class='tabela'>Alagoas<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C638</td><td>CB48</td><td>Back Office AL</td><td>02.421.421/0236-77</td><td>AL</td><td>AV COMENDADOR&nbsp;&nbsp;&nbsp;GUSTAVO PAIVA 2990, 109 - MANGABEIRAS,MACEIO - AL</td><td>57037-901</td></tr><tr><td>I015</td><td>CB33</td><td>Back Office AL</td><td>02.421.421/0015-17</td><td>AL</td><td>PROFESSOR JOSÉ DA SILVEIRA CAMERINO 340, 01 -&nbsp;&nbsp;&nbsp;PINHEIRO,MACEIÓ - AL</td><td>57055-630</td></tr><tr><td>I015</td><td>CO54</td><td>Regional Maceió&nbsp;&nbsp;&nbsp;1 - AL</td><td>02.421.421/0015-17</td><td>AL</td><td>PROFESSOR JOSÉ&nbsp;&nbsp;&nbsp;DA SILVEIRA CAMERINO 340, 01 - PINHEIRO,MACEIÓ - AL</td><td>57055-630</td></tr><tr><td>I015</td><td>IO15</td><td>Regional Maceió 2 - AL</td><td>02.421.421/0015-17</td><td>AL</td><td>PROFESSOR JOSÉ DA SILVEIRA CAMERINO 340, 01 -&nbsp;&nbsp;&nbsp;PINHEIRO,MACEIÓ - AL</td><td>57055-630</td></tr></tbody></table></div></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button></div></div></div></div>
+
+
+
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-am">AM</button>
+<div class="modal fade bd-am" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TNNE	QNDP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+</div>
+<div class="modal-body">
+<div class='tabela'>Amazonas<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C132</td><td>CB43</td><td>Back Office AM</td><td>02.421.421/0197-26</td><td>AM</td><td>AVENIDA DJALMA&nbsp;&nbsp;&nbsp;BATISTA 482, LOJAS 117/118 1 PISO - PARQUE 10 DE NOVEMBRO,MANAUS - AM</td><td>69050-902</td></tr><tr><td>I031</td><td>CB05</td><td>Back Office AM</td><td>02.421.421/0031-37</td><td>AM</td><td>AV GUILHERME PARAENSE 93 - ADRIANÁPOLIS,MANAUS - AM</td><td>69057-095</td></tr><tr><td>I031</td><td>CO37</td><td>Regional Manaus&nbsp;&nbsp;&nbsp;1 - AM</td><td>02.421.421/0031-37</td><td>AM</td><td>AV GUILHERME&nbsp;&nbsp;&nbsp;PARAENSE 93 - ADRIANÁPOLIS,MANAUS - AM</td><td>69057-095</td></tr><tr><td>I031</td><td>IO31</td><td>Regional Manaus 2 - AM</td><td>02.421.421/0031-37</td><td>AM</td><td>AV GUILHERME PARAENSE 93 - ADRIANÁPOLIS,MANAUS - AM</td><td>69057-095</td></tr></tbody></table></div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-ap">AP</button>
+<div class="modal fade bd-ap" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TNNE	QNDP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+</div>
+<div class="modal-body">
+<div class='tabela'>Amapá<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C027</td><td>CB10</td><td>Back Office AP</td><td>02.421.421/0121-28</td><td>AP</td><td>RUA SAO JOSE&nbsp;&nbsp;&nbsp;2067 - CENTRAL,MACAPÁ - AP</td><td>68900-110</td></tr><tr><td>C027</td><td>CO40</td><td>Regional Macapá 1 - AP</td><td>02.421.421/0121-28</td><td>AP</td><td>RUA SAO JOSE 2067 - CENTRAL,MACAPÁ - AP</td><td>68900-110</td></tr><tr><td>I022</td><td>IO22</td><td>Regional Macapá&nbsp;&nbsp;&nbsp;2 - AP</td><td>02.421.421/0022-46</td><td>AP</td><td>RUA PROFESSOR&nbsp;&nbsp;&nbsp;TOSTES S/N - BURITIZAL,MACAPÁ - AP</td><td>68905-160</td></tr></tbody></table></div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-ba">BA</button>
+<div class="modal fade bd-ba" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TNE	QNDN</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+</div>
+<div class="modal-body">
+<div class='tabela'>Bahia<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C362</td><td>CO36</td><td>Regional&nbsp;&nbsp;&nbsp;Salvador 2 - BA</td><td>02.421.421/0187-54</td><td>BA</td><td>AL SALVADOR&nbsp;&nbsp;&nbsp;1057, 2206  2214 - CAMINHO DAS&nbsp;&nbsp;&nbsp;ARVORES,SALVADOR - BA</td><td>41820-790</td></tr><tr><td>C362</td><td>CO49</td><td>Regional Salvador 3 - BA</td><td>02.421.421/0187-54</td><td>BA</td><td>AL SALVADOR 1057, 2206 &nbsp;&nbsp;&nbsp;2214 - CAMINHO DAS ARVORES,SALVADOR - BA</td><td>41820-790</td></tr><tr><td>C571</td><td>CB17</td><td>Back Office BA</td><td>02.421.421/0009-79</td><td>BA</td><td>AV. ESTADOS&nbsp;&nbsp;&nbsp;UNIDOS 737 TÉRREO - COMÉRCIO,SALVADOR - BA</td><td>40010-020</td></tr><tr><td>C571</td><td>CD39</td><td>CDL - BA</td><td>02.421.421/0009-79</td><td>BA</td><td>AV. ESTADOS UNIDOS 737 TÉRREO - COMÉRCIO,SALVADOR - BA</td><td>40010-020</td></tr><tr><td>C571</td><td>CO26</td><td>Regional&nbsp;&nbsp;&nbsp;Salvador 6 - BA</td><td>02.421.421/0009-79</td><td>BA</td><td>AV. ESTADOS&nbsp;&nbsp;&nbsp;UNIDOS 737 TÉRREO - COMÉRCIO,SALVADOR - BA</td><td>40010-020</td></tr><tr><td>I009</td><td>CO22</td><td>Regional Salvador 2 - BA</td><td>02.421.421/0009-79</td><td>BA</td><td>AV ESTADOS UNIDOS 737 - COMERCIO,SALVADOR - BA</td><td>40010-020</td></tr><tr><td>I009</td><td>IO09</td><td>Regional&nbsp;&nbsp;&nbsp;Salvador 4 - BA</td><td>02.421.421/0009-79</td><td>BA</td><td>AV ESTADOS&nbsp;&nbsp;&nbsp;UNIDOS 737 - COMERCIO,SALVADOR - BA</td><td>40010-020</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-ce">CE</button>
+<div class="modal fade bd-ce" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TNE	QNDN</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Ceará<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C559</td><td>CB37</td><td>Back Office CE</td><td>02.421.421/0080-15</td><td>CE</td><td>AV. BARÃO&nbsp;&nbsp;&nbsp;STUDART 2575 SL 1,2,3,4 - DIONÍSIO TORRES,FORTALEZA - CE</td><td>60120-375</td></tr><tr><td>C559</td><td>CD32</td><td>CDL - CE</td><td>02.421.421/0080-15</td><td>CE</td><td>AV. BARÃO STUDART 2575 SL 1,2,3,4 - DIONÍSIO&nbsp;&nbsp;&nbsp;TORRES,FORTALEZA - CE</td><td>60120-375</td></tr><tr><td>C559</td><td>CO58</td><td>Regional&nbsp;&nbsp;&nbsp;Fortaleza 1 - CE</td><td>02.421.421/0080-15</td><td>CE</td><td>AV. BARÃO&nbsp;&nbsp;&nbsp;STUDART 2575 SL 1,2,3,4 - DIONÍSIO TORRES,FORTALEZA - CE</td><td>60120-375</td></tr><tr><td>I008</td><td>IO08</td><td>Regional Fortaleza 2 - CE</td><td>02.421.421/0008-98</td><td>CE</td><td>AV.TRISTÃO GONÇALVES, 1461/1477 - CENTRO,FORTALEZA - CE</td><td>60015-002</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-df">DF</button>
+<div class="modal fade bd-df" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TCO	QNDB</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Distrito Federal<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>Rua</th></tr></thead><tbody><tr><td>C038</td><td>CB09</td><td>Back&nbsp;&nbsp;&nbsp;Office DF</td><td>02.421.421/0139-57</td><td>DF</td><td>R&nbsp;&nbsp;&nbsp;SIG SUL QUADRA 04 217 -  ZONA&nbsp;&nbsp;&nbsp;INDUSTRIAL, BRASÍLIA - DF, 70610-440</td></tr><tr><td>C038</td><td>CO52</td><td>Regional&nbsp;&nbsp;&nbsp;Brasília 1 - DF</td><td>02.421.421/0139-57</td><td>DF</td><td>R&nbsp;&nbsp;&nbsp;SIG SUL QUADRA 04 217 -  ZONA&nbsp;&nbsp;&nbsp;INDUSTRIAL, BRASÍLIA - DF, 70610-440</td></tr><tr><td>C108</td><td>CD03</td><td>CDL - DF</td><td>02.421.421/0137-95</td><td>DF</td><td>AE&nbsp;&nbsp;&nbsp;ESPECIAL INDUSTRIA - LOTES 2,3,4 11 - &nbsp;&nbsp;&nbsp;SOBRADINHO, BRASÍLIA - DF, 73050-610</td></tr><tr><td>I029</td><td>IO29</td><td>Regional&nbsp;&nbsp;&nbsp;Brasília 2 - DF</td><td>02.421.421/0029-12</td><td>DF</td><td>SGO/NORTE&nbsp;&nbsp;&nbsp;QUADRA 05 405 -  ASA NORTE, BRASILIA -&nbsp;&nbsp;&nbsp;DF, 70610-650</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-es">ES</button>
+<div class="modal fade bd-es" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TRJ	QNDR</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Espirito Santo<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C031</td><td>CB18</td><td>Back Office ES</td><td>02.421.421/0026-70</td><td>ES</td><td>AV ANTONIO DE&nbsp;&nbsp;&nbsp;ALMEIDA FILHO 881, LT 6E7 QD61 PVTO 01 SL 01 - PRAIA DE ITAPARICA,VILA VELHA&nbsp;&nbsp;&nbsp;- ES</td><td>29102-265</td></tr><tr><td>C031</td><td>CO41</td><td>Regional Vitória 1 - ES</td><td>02.421.421/0026-70</td><td>ES</td><td>AV ANTONIO DE ALMEIDA FILHO 881, LT 6E7 QD61 PVTO 01 SL 01&nbsp;&nbsp;&nbsp;- PRAIA DE ITAPARICA,VILA VELHA - ES</td><td>29102-265</td></tr><tr><td>I026</td><td>IO26</td><td>Regional&nbsp;&nbsp;&nbsp;Vitória 2 - ES</td><td>02.421.421/0026-70</td><td>ES</td><td>AV ANTONIO DE&nbsp;&nbsp;&nbsp;ALMEIDA FILHO 881, LT 6E7 QD61 PVTO 01 SL 01 - PRAIA DE ITAPARICA,VILA VELHA&nbsp;&nbsp;&nbsp;- ES</td><td>29102-265</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-go">GO</button>
+<div class="modal fade bd-go" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TCO	QNDB</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Goiás<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C047</td><td>CB25</td><td>Back Office GO</td><td>02.421.421/0239-10</td><td>GO</td><td>PRIMEIRA&nbsp;&nbsp;&nbsp;AVENIDA S/N, QD 01B LT 7,8,9 - CIDADE VERA CRUZ,APARECIDA DE GOIÂNIA - GO</td><td>74934-600</td></tr><tr><td>C047</td><td>CO16</td><td>Regional Goiânia 1 - GO</td><td>02.421.421/0239-10</td><td>GO</td><td>PRIMEIRA AVENIDA S/N, QD 01B LT 7,8,9 - CIDADE VERA&nbsp;&nbsp;&nbsp;CRUZ,APARECIDA DE GOIÂNIA - GO</td><td>74934-600</td></tr><tr><td>I027</td><td>IO27</td><td>Regional&nbsp;&nbsp;&nbsp;Goiânia 2 - GO</td><td>02.421.421/0027-50</td><td>GO</td><td>AV OESTE 319 -&nbsp;&nbsp;&nbsp;SETOR AEROPORTO,GOIÂNIA - GO</td><td>74465-539</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-ma">MA</button>
+<div class="modal fade bd-ma" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TNNE	QNDP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Maranhão<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C025</td><td>CO38</td><td>Regional São&nbsp;&nbsp;&nbsp;Luiz 1 - MA</td><td>02.421.421/0222-71</td><td>MA</td><td>AVENIDA SÃO&nbsp;&nbsp;&nbsp;LUIS REI DE FRANCA 9, QUADRA C - OLHO D ÁGUA,SÃO LUÍS - MA</td><td>65067-485</td></tr><tr><td>C204</td><td>CB47</td><td>Back Office MA</td><td>02.421.421/0189-16</td><td>MA</td><td>AVENIDA PROFESSOR CARLOS CUNHA - SÃO LUÍS SHOPPING, LOJA&nbsp;&nbsp;&nbsp;165 E 165A - JARACATY,SÃO LUÍS - MA</td><td>65076-907</td></tr><tr><td>I010</td><td>IO10</td><td>Regional São&nbsp;&nbsp;&nbsp;Luiz 2 - MA</td><td>02.421.421/0010-02</td><td>MA</td><td>AV CORONEL&nbsp;&nbsp;&nbsp;COLARES MOREIRA 1000, LOJA 3 - CALHAU,SÃO LUÍS - MA</td><td>65071-322</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-mg">MG</button>
+<div class="modal fade bd-mg" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TLE	QNDM</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Minas Gerais<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C257</td><td>CB40</td><td>Back Office&nbsp;&nbsp;&nbsp;Juiz de Fora</td><td>02.421.421/0114-07</td><td>MG</td><td>RUA HALFELD 698&nbsp;&nbsp;&nbsp;- CENTRO,JUIZ DE FORA - MG</td><td>36010-003</td></tr><tr><td>C509</td><td>CB31</td><td>Back Office MG - Raja</td><td>02.421.421/0195-64</td><td>MG</td><td>AV RAJA GABAGLIA 1781 - LUXEMBURGO,BELO HORIZONTE - MG</td><td>30380-457</td></tr><tr><td>C509</td><td>CO25</td><td>Regional Belo&nbsp;&nbsp;&nbsp;Horizonte 1 - MG</td><td>02.421.421/0195-64</td><td>MG</td><td>AV RAJA&nbsp;&nbsp;&nbsp;GABAGLIA 1781 - LUXEMBURGO,BELO HORIZONTE - MG</td><td>30380-457</td></tr><tr><td>C521</td><td>CB39</td><td>Back Office Uberlândia</td><td>02.421.421/0242-15</td><td>MG</td><td>AV. AFONSO PENA 822 - CENTRO,UBERLÂNDIA - MG</td><td>38400-128</td></tr><tr><td>C529</td><td>CO46</td><td>Regional&nbsp;&nbsp;&nbsp;Varginha - MG</td><td>02.421.421/0000-30</td><td>MG</td><td>PRAÇA&nbsp;&nbsp;&nbsp;CHAMPAGNAT 29 - CENTRO,VARGINHA - MG</td><td>37002-150</td></tr><tr><td>C545</td><td>CB41</td><td>Back Office Poços de Caldas</td><td>02.421.421/0101-84</td><td>MG</td><td>RUA  ASSIS FIGUEIREDO&nbsp;&nbsp;&nbsp;991, 991/993 - CENTRO,POÇOS DE CALDAS - MG</td><td>37701-000</td></tr><tr><td>I020</td><td>CB53</td><td>Back Office MG&nbsp;&nbsp;&nbsp;- Floresta</td><td>02.421.421/0020-84</td><td>MG</td><td>RUA AQUILES&nbsp;&nbsp;&nbsp;LOBO 478 - FLORESTA,BELO HORIZONTE - MG</td><td>30150-160</td></tr><tr><td>I020</td><td>IO20</td><td>Regional Belo Horizonte 2 - MG</td><td>02.421.421/0020-84</td><td>MG</td><td>RUA AQUILES LOBO 478 - FLORESTA,BELO HORIZONTE - MG</td><td>30150-160</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-ms">MS</button>
+<div class="modal fade bd-ms" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TCO	QNDB</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Mato Grosso do Sul<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C112</td><td>CB27</td><td>Back Office MS</td><td>02.421.421/0129-85</td><td>MS</td><td>RUA ANTONIO&nbsp;&nbsp;&nbsp;RAHE 320, LOTE G - MATA DO JACINTO III,CAMPO GRANDE - MS</td><td>79033-580</td></tr><tr><td>C112</td><td>CO18</td><td>Regional Campo Grande 1 - MS</td><td>02.421.421/0129-85</td><td>MS</td><td>RUA ANTONIO RAHE 320, LOTE G - MATA DO JACINTO III,CAMPO&nbsp;&nbsp;&nbsp;GRANDE - MS</td><td>79033-580</td></tr><tr><td>I018</td><td>IO18</td><td>Regional Campo&nbsp;&nbsp;&nbsp;Grande 2 - MS</td><td>02.421.421/0018-60</td><td>MS</td><td>AV.MATO GROSSO&nbsp;&nbsp;&nbsp;4808 - CARANDA BOSQUE,CAMPO GRANDE - MS</td><td>79031-001</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-mt">MT</button>
+<div class="modal fade bd-mt" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TCO	QNDB</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Mato Grosso<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C187</td><td>CB30</td><td>Back Office MT</td><td>02.421.421/0193-00</td><td>MT</td><td>AV. BARAO DE&nbsp;&nbsp;&nbsp;MELGACO 3093 - CENTRO SUL,CUIABA - MT</td><td>78020-800</td></tr><tr><td>C187</td><td>CO21</td><td>Regional Cuiabá 1 - MT</td><td>02.421.421/0193-00</td><td>MT</td><td>AV. BARAO DE MELGACO 3093 - CENTRO SUL,CUIABA - MT</td><td>78020-800</td></tr><tr><td>I025</td><td>IO25</td><td>Regional Cuiabá&nbsp;&nbsp;&nbsp;2 - MT</td><td>02.421.421/0025-99</td><td>MT</td><td>R. QUATRO 10 -&nbsp;&nbsp;&nbsp;SAO JOSE,CUIABA - MT</td><td>78080-560</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-pa">PA</button>
+<div class="modal fade bd-pa" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TNNE	QNDP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Pará<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C023</td><td>CB23</td><td>Back Office PA</td><td>02.421.421/0226-03</td><td>PA</td><td>AV. GOV. JOSÉ&nbsp;&nbsp;&nbsp;MALCHER 2.803, 2º ANDAR - SÃO BRÁS,BELÉM - PA</td><td>66090-100</td></tr><tr><td>C023</td><td>CO02</td><td>Regional Belém 1 - PA</td><td>02.421.421/0226-03</td><td>PA</td><td>AV. GOV. JOSÉ MALCHER 2.803, 2º ANDAR - SÃO BRÁS,BELÉM - PA</td><td>66090-100</td></tr><tr><td>C269</td><td>CD54</td><td>CDL - PA</td><td>02.421.421/0213-80</td><td>PA</td><td>ROD BR 316, KM&nbsp;&nbsp;&nbsp;23/24, COND.ALIANZA S/N MOD3 GALP3, MOD.3 GALPÃO 03 - CANUTAMA,BENEVIDES - PA</td><td>68795-000</td></tr><tr><td>I011</td><td>IO11</td><td>Regional Belém 2 - PA</td><td>02.421.421/0011-93</td><td>PA</td><td>AV.SENADOR LEMOS, 4079 - SACRAMENTA,BELÉM - PA</td><td>66120-000</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-pb">PB</button>
+<div class="modal fade bd-pb" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TNE	QNDN</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Paraíba<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C557</td><td>CB34</td><td>Back Office PB</td><td>02.421.421/0216-23</td><td>PB</td><td>RUA PORFIRIO&nbsp;&nbsp;&nbsp;COSTA 1553 SALA 02, 02 - CRUZ DAS ARMAS,JOÃO PESSOA - PB</td><td>58085-080</td></tr><tr><td>C557</td><td>CO55</td><td>Regional João Pessoa 1 - PB</td><td>02.421.421/0216-23</td><td>PB</td><td>RUA PORFIRIO COSTA 1553 SALA 02, 02 - CRUZ DAS ARMAS,JOÃO&nbsp;&nbsp;&nbsp;PESSOA - PB</td><td>58085-080</td></tr><tr><td>I016</td><td>IO16</td><td>Regional João&nbsp;&nbsp;&nbsp;Pessoa 2 - PB</td><td>02.421.421/0016-06</td><td>PB</td><td>RUA PORFIRIO&nbsp;&nbsp;&nbsp;COSTA 1553 SALA 01, 01 - CRUZ DAS ARMAS,JOÃO PESSOA - PB</td><td>58085-080</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-pe">PE</button>
+<div class="modal fade bd-pe" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TNE	QNDN</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Pernambuco<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C546</td><td>CB38</td><td>Back Office PE</td><td>02.421.421/0220-00</td><td>PE</td><td>AV. AYRTON&nbsp;&nbsp;&nbsp;SENNA DA SILVA 1633 SALA 41 - PIEDADE,JABOATÃO DOS GUARARAPES - PE</td><td>54410-240</td></tr><tr><td>C546</td><td>CD23</td><td>CDL - PE</td><td>02.421.421/0220-00</td><td>PE</td><td>AV. AYRTON SENNA DA SILVA 1633 SALA 41 - PIEDADE,JABOATÃO&nbsp;&nbsp;&nbsp;DOS GUARARAPES - PE</td><td>54410-240</td></tr><tr><td>C546</td><td>CO30</td><td>Regional Recife&nbsp;&nbsp;&nbsp;1 - PE</td><td>02.421.421/0220-00</td><td>PE</td><td>AV. AYRTON&nbsp;&nbsp;&nbsp;SENNA DA SILVA 1633 SALA 41 - PIEDADE,JABOATÃO DOS GUARARAPES - PE</td><td>54410-240</td></tr><tr><td>C546</td><td>CO59</td><td>Regional J. Guararapes 2 - PE</td><td>02.421.421/0220-00</td><td>PE</td><td>AV. AYRTON SENNA DA SILVA 1633 SALA 41 - PIEDADE,JABOATÃO&nbsp;&nbsp;&nbsp;DOS GUARARAPES - PE</td><td>54410-240</td></tr><tr><td>C584</td><td>CD66</td><td>CDL - PE</td><td>02.421.421/0199-98</td><td>PE</td><td>RUA RIACHÃO&nbsp;&nbsp;&nbsp;807, GALPÃO A - MURIBECA,JABOTAO DOS GUARARAPES - PE</td><td>54355-057</td></tr><tr><td>I013</td><td>IO13</td><td>Regional Recife 2 - PE</td><td>02.421.421/0013-55</td><td>PE</td><td>AV.MARECHAL MASCARENHAS DE MORAIS 4270, FREG. DOS AFOGADOS&nbsp;&nbsp;&nbsp;- IMBIRIBEIRA,RECIFE - PE</td><td>51200-000</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-pi">PI</button>
+<div class="modal fade bd-pi" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TNE	QNDN</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Piauí<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C561</td><td>CB49</td><td>Back Office PI</td><td>02.421.421/0234-05</td><td>PI</td><td>AV. FREI&nbsp;&nbsp;&nbsp;SERAFIM 2420 - CENTRO,TERESINA - PI</td><td>64001-020</td></tr><tr><td>I024</td><td>CB36</td><td>Back Office PI</td><td>02.421.421/0024-08</td><td>PI</td><td>RUA LISANDRO NOGUEIRA 1914, SALA 01 - CENTRO,TERESINA - PI</td><td>64000-200</td></tr><tr><td>I024</td><td>CO57</td><td>Regional&nbsp;&nbsp;&nbsp;Teresina 1 - PI</td><td>02.421.421/0024-08</td><td>PI</td><td>RUA LISANDRO&nbsp;&nbsp;&nbsp;NOGUEIRA 1914, SALA 01 - CENTRO,TERESINA - PI</td><td>64000-200</td></tr><tr><td>I024</td><td>IO24</td><td>Regional Teresina 2 - PI</td><td>02.421.421/0024-08</td><td>PI</td><td>RUA LISANDRO NOGUEIRA 1914, SALA 01 - CENTRO,TERESINA - PI</td><td>64000-200</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-pr">PR</button>
+<div class="modal fade bd-pr" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">utilizar TCO	QNDU</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Paraná<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C165</td><td>CB28</td><td>Back Office PR</td><td>02.421.421/0207-32</td><td>PR</td><td>RUA COM. ARAÚJO&nbsp;&nbsp;&nbsp;299 - CENTRO,CURITIBA - PR</td><td>80420-000</td></tr><tr><td>C165</td><td>CO19</td><td>Regional Curitiba 1 - PR</td><td>02.421.421/0207-32</td><td>PR</td><td>RUA COM. ARAÚJO 299 - CENTRO,CURITIBA - PR</td><td>80420-000</td></tr><tr><td>C173</td><td>CD06</td><td>CDL - PR</td><td>02.421.421/0143-33</td><td>PR</td><td>RUA JOÃO&nbsp;&nbsp;&nbsp;BETTEGA 5133, CONJ. A - CIDADE INDUSTRIAL,CURITIBA - PR</td><td>81350-000</td></tr><tr><td>I017</td><td>IO17</td><td>Regional Curitiba 2 - PR</td><td>02.421.421/0017-89</td><td>PR</td><td>RUA LOURENÇO MOURÃO 26 &nbsp;&nbsp;&nbsp;TÉRREO - SEMINÁRIO,CURITIBA - PR</td><td>80310-590</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-rj">RJ</button>
+<div class="modal fade bd-rj" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TRJ	QNDR</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Rio de Janeiro<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C058</td><td>CB03</td><td>Back Office RJ</td><td>02.421.421/0001-11</td><td>RJ</td><td>AV JOAO CABRAL&nbsp;&nbsp;&nbsp;DE MELLO NETO 850, BLC 001 1212 - BARRA DA TIJUCA,RIO DE JANEIRO - RJ</td><td>22775-057</td></tr><tr><td>C058</td><td>CO50</td><td>Regional Rio de Janeiro - RJ</td><td>02.421.421/0001-11</td><td>RJ</td><td>AV JOAO CABRAL DE MELLO NETO 850, BLC 001 1212 - BARRA DA&nbsp;&nbsp;&nbsp;TIJUCA,RIO DE JANEIRO - RJ</td><td>22775-057</td></tr><tr><td>C095</td><td>CO03</td><td>Regional HQ -&nbsp;&nbsp;&nbsp;RJ</td><td>02.421.421/0076-39</td><td>RJ</td><td>AV JOAO CABRAL&nbsp;&nbsp;&nbsp;DE MELLO NETO 850 BLOCO 01, SALAS 213, 214, 215 216 - BARRA DA TIJUCA,RIO DE&nbsp;&nbsp;&nbsp;JANEIRO - RJ</td><td>22775-057</td></tr><tr><td>C285</td><td>CD56</td><td>Back Office RJ</td><td>02.421.421/0059-38</td><td>RJ</td><td>RUA FONSECA TELES 18 A 30, BLOCO B PAVMTO 3 - SÃO&nbsp;&nbsp;&nbsp;CRISTOVÃO,RIO DE JANEIRO - RJ</td><td>20940-200</td></tr><tr><td>C613</td><td>CO31</td><td>Regional Rio 1&nbsp;&nbsp;&nbsp;- RJ</td><td>02.421.421/0000-30</td><td>RJ</td><td>AV. MARECHAL&nbsp;&nbsp;&nbsp;FLORIANO 19, 6 - CENTRO,RIO DE JANEIRO - RJ</td><td>20080-003</td></tr><tr><td>C678</td><td>CB32</td><td>Back Office CEO HQ RJ</td><td>02.421.421/0098-44</td><td>RJ</td><td>AV. JOAO CABRAL DE MELLO NETO 850, SALAS 1209 1210 1211&nbsp;&nbsp;&nbsp;ANDAR 12 - BARRA DA TIJUCA,RIO DE JANEIRO - RJ</td><td>22775-057</td></tr><tr><td>C678</td><td>CO60</td><td>TIM HQ - CEO</td><td>02.421.421/0098-44</td><td>RJ</td><td>AV. JOAO CABRAL&nbsp;&nbsp;&nbsp;DE MELLO NETO 850, SALAS 1209 1210 1211 ANDAR 12 - BARRA DA TIJUCA,RIO DE&nbsp;&nbsp;&nbsp;JANEIRO - RJ</td><td>22775-057</td></tr><tr><td>C680</td><td>CO44</td><td>ISOC - Gamboa - RJ</td><td>02.421.421/0074-77</td><td>RJ</td><td>R PEDRO ERNESTO 15 - GAMBOA,RIO DE JANEIRO - RJ</td><td>20220-350</td></tr><tr><td>I001</td><td>IO01</td><td>Regional Rio 3&nbsp;&nbsp;&nbsp;- RJ</td><td>02.421.421/0001-11</td><td>RJ</td><td>AV JOAO CABRAL&nbsp;&nbsp;&nbsp;DE MELLO NETO 850, BLC 001 1212 - BARRA DA TIJUCA,RIO DE JANEIRO - RJ</td><td>22775-057</td></tr><tr><td>I001</td><td>LO01</td><td>Telecom Italia -MATRIZ SP</td><td>02.421.421/0001-11</td><td>RJ</td><td>AV JOAO CABRAL DE MELLO NETO 850, BLC 001 1212 - BARRA DA&nbsp;&nbsp;&nbsp;TIJUCA,RIO DE JANEIRO - RJ</td><td>22775-057</td></tr><tr><td>I005</td><td>IO05</td><td>Regional Rio 4&nbsp;&nbsp;&nbsp;- RJ</td><td>02.421.421/0005-45</td><td>RJ</td><td>RUA DR. GARNIER&nbsp;&nbsp;&nbsp;655 - BAIRRO ROCHA,RIO DE JANEIRO - RJ</td><td>20975-000</td></tr><tr><td>I052</td><td>IO47</td><td>Regional Rio 5 - RJ</td><td>02.421.421/0000-30</td><td>RJ</td><td>RUA FONSECA TELES 18, 1 - SÃO CRISTOVÃO,RIO DE JANEIRO - RJ</td><td>20940-200</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-rn">RN</button>
+<div class="modal fade bd-rn" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TNE	QNDN</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Rio Grande do Norte<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C558</td><td>CB35</td><td>Back Office RN</td><td>02.421.421/0028-31</td><td>RN</td><td>DAS PRIMULAS&nbsp;&nbsp;&nbsp;661 SL01 L.379 - REDINHA,NATAL - RN</td><td>59122-045</td></tr><tr><td>C558</td><td>CO56</td><td>Regional Natal 1 - RN</td><td>02.421.421/0028-31</td><td>RN</td><td>DAS PRIMULAS 661 SL01 L.379 - REDINHA,NATAL - RN</td><td>59122-045</td></tr><tr><td>I028</td><td>IO28</td><td>Regional Natal&nbsp;&nbsp;&nbsp;2 - RN</td><td>02.421.421/0028-31</td><td>RN</td><td>RUA DAS&nbsp;&nbsp;&nbsp;PRÍMULAS 661, SALA 01 - REDINHA,NATAL - RN</td><td>59122-045</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-ro">RO</button>
+<div class="modal fade bd-ro" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TCO	QNDB</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Rondônia<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C104</td><td>CB19</td><td>Back Office RO</td><td>02.421.421/0023-27</td><td>RO</td><td>AV DOS&nbsp;&nbsp;&nbsp;IMIGRANTES 4105 - INDUSTRIAL,PORTO VELHO - RO</td><td>76821-063</td></tr><tr><td>C104</td><td>CO42</td><td>Regional Porto Velho 1 - RO</td><td>02.421.421/0023-27</td><td>RO</td><td>AV DOS IMIGRANTES 4105 - INDUSTRIAL,PORTO VELHO - RO</td><td>76821-063</td></tr><tr><td>I023</td><td>IO23</td><td>Regional Porto&nbsp;&nbsp;&nbsp;Velho 2 - RO</td><td>02.421.421/0023-27</td><td>RO</td><td>AV DOS&nbsp;&nbsp;&nbsp;IMIGRANTES 4105 - INDUSTRIAL,PORTO VELHO - RO</td><td>76821-063</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-rr">RR</button>
+<div class="modal fade bd-rr" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TNNE	QNDP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Roraima<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C026</td><td>CB11</td><td>Back Office RR</td><td>02.421.421/0192-11</td><td>RR</td><td>RUA CORONEL&nbsp;&nbsp;&nbsp;PINTO 802, LOTE 399 QUADRA 73 - CENTRO,BOA VISTA - RR</td><td>69301-150</td></tr><tr><td>C026</td><td>CO39</td><td>Regional Boa Vista 1 - RR</td><td>02.421.421/0192-11</td><td>RR</td><td>RUA CORONEL PINTO 802, LOTE 399 QUADRA 73 - CENTRO,BOA&nbsp;&nbsp;&nbsp;VISTA - RR</td><td>69301-150</td></tr><tr><td>I042</td><td>IO42</td><td>Regional Boa&nbsp;&nbsp;&nbsp;Vista 2 - RR</td><td>02.421.421/0042-90</td><td>RR</td><td>RUA NILO&nbsp;&nbsp;&nbsp;COLARES 602 - SÃO FRANCISCO,BOA VISTA - RR</td><td>69305-110</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-rs">RS</button>
+<div class="modal fade bd-rs" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">utilizar TCO	QNDU</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Rio Grande do Sul<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C039</td><td>CB04</td><td>Back Office RS&nbsp;&nbsp;&nbsp;- Passo D'areia</td><td>02.421.421/0154-96</td><td>RS</td><td>AV. ANDARAÍ 549&nbsp;&nbsp;&nbsp;- PASSO D´AREIA,PORTO ALEGRE - RS</td><td>91350-110</td></tr><tr><td>C039</td><td>CO51</td><td>Regional Porto Alegre 1 - RS</td><td>02.421.421/0154-96</td><td>RS</td><td>AV. ANDARAÍ 549 - PASSO D´AREIA,PORTO ALEGRE - RS</td><td>91350-110</td></tr><tr><td>I007</td><td>CB51</td><td>Back Office RS&nbsp;&nbsp;&nbsp;- Floresta</td><td>02.421.421/0007-07</td><td>RS</td><td>RUA VOLUNTÁRIOS&nbsp;&nbsp;&nbsp;DA PÁTRIA 1555 - FLORESTA,PORTO ALEGRE - RS</td><td>90230-011</td></tr><tr><td>I007</td><td>IO07</td><td>Regional Porto Alegre 2 - RS</td><td>02.421.421/0007-07</td><td>RS</td><td>RUA VOLUNTÁRIOS DA PÁTRIA 1555 - FLORESTA,PORTO ALEGRE - RS</td><td>90230-011</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-sc">SC</button>
+<div class="modal fade bd-sc" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">utilizar TCO	QNDU</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Santa Catarina<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C176</td><td>CB29</td><td>Back Office SC&nbsp;&nbsp;&nbsp;- Regional</td><td>02.421.421/0012-74</td><td>SC</td><td>RUA SANTOS&nbsp;&nbsp;&nbsp;SARAIVA 1520 2 ANDAR - ESTREITO,FLORIANÓPOLIS - SC</td><td>88070-101</td></tr><tr><td>C176</td><td>CO20</td><td>Regional Florianópolis 1 - SC</td><td>02.421.421/0012-74</td><td>SC</td><td>RUA SANTOS SARAIVA 1520 2 ANDAR - ESTREITO,FLORIANÓPOLIS -&nbsp;&nbsp;&nbsp;SC</td><td>88070-101</td></tr><tr><td>C178</td><td>CB44</td><td>Back Office SC</td><td>02.421.421/0056-95</td><td>SC</td><td>RUA BOCAIUVA&nbsp;&nbsp;&nbsp;2468, LOJA 239 - CENTRO,FLORIANÓPOLIS - SC</td><td>88015-530</td></tr><tr><td>I012</td><td>IO12</td><td>Regional Florianópolis 2 - SC</td><td>02.421.421/0012-74</td><td>SC</td><td>RUA SANTOS SARAIVA 1520 2 ANDAR - ESTREITO,FLORIANOPOLIS -&nbsp;&nbsp;&nbsp;SC</td><td>88070-101</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-se">SE</button>
+<div class="modal fade bd-se" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TNE	QNDN</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Sergipe<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C503</td><td>CB42</td><td>Back Office SE</td><td>02.421.421/0223-52</td><td>SE</td><td>AV.MINISTRO&nbsp;&nbsp;&nbsp;GERALDO BARRETO SOBRAL 215 LOJA 51/53, SALA 01 - JARDINS,ARACAJU - SE</td><td>49026-010</td></tr><tr><td>I019</td><td>CB15</td><td>Back Office SE</td><td>02.421.421/0019-40</td><td>SE</td><td>TV JOSE DE FARO 69 - CENTRO,ARACAJU - SE</td><td>49010-120</td></tr><tr><td>I019</td><td>CB45</td><td>Back Office SE</td><td>02.421.421/0019-40</td><td>SE</td><td>TV JOSE DE FARO&nbsp;&nbsp;&nbsp;69 - CENTRO,ARACAJU - SE</td><td>49010-120</td></tr><tr><td>I019</td><td>CO24</td><td>Regional Aracaju 1 - SE</td><td>02.421.421/0019-40</td><td>SE</td><td>TV JOSE DE FARO 69 - CENTRO,ARACAJU - SE</td><td>49010-120</td></tr><tr><td>I019</td><td>IO19</td><td>Regional Aracaju 2 - SE</td><td>02.421.421/0019-40</td><td>SE</td><td>TV JOSE DE FARO&nbsp;&nbsp;&nbsp;69 - CENTRO,ARACAJU - SE</td><td>49010-120</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-sp">SP</button>
+<div class="modal fade bd-sp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TSP	QNDS</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>São Paulo<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C001</td><td>CB22</td><td>Back Office SP</td><td>02.421.421/0117-41</td><td>SP</td><td>R DOUTOR RUBENS&nbsp;&nbsp;&nbsp;GOMES BUENO 691, ANDAR 7 14 E 15 - VARZEA DE BAIXO,SÃO PAULO - SP</td><td>04730-903</td></tr><tr><td>C001</td><td>CO01</td><td>Regional São Paulo 1 - SP</td><td>02.421.421/0117-41</td><td>SP</td><td>R DOUTOR RUBENS GOMES BUENO 691, ANDAR 7 14 E 15 - VARZEA&nbsp;&nbsp;&nbsp;DE BAIXO,SÃO PAULO - SP</td><td>04730-903</td></tr><tr><td>C109</td><td>CO06</td><td>Regional Santo&nbsp;&nbsp;&nbsp;André - SP</td><td>02.421.421/0231-62</td><td>SP</td><td>AV ALEXANDRE DE&nbsp;&nbsp;&nbsp;GUSMÃO 29, BLOCO B - VILA HOMERO THON,SANTO ANDRÉ - SP</td><td>09111-310</td></tr><tr><td>C213</td><td>CD17</td><td>CDL - SP - JDI</td><td>02.421.421/0127-13</td><td>SP</td><td>ESTRADA MUNICIPAL JOSÉ SEDANO 854, GL 68 QT 30.012 MÓDU LO&nbsp;&nbsp;&nbsp;3 DO G - TECHNO PARK,CAMPINAS - SP</td><td>13069-335</td></tr><tr><td>C214</td><td>CD40</td><td>CDL - SP - GRU</td><td>02.421.421/0183-20</td><td>SP</td><td>AV DOUTOR&nbsp;&nbsp;&nbsp;SEBASTIAO HENRIQUE DA CUNHA PONTES 8500, 6 GALPAON1 - CHACARAS REUNIDAS,SÃO&nbsp;&nbsp;&nbsp;JOSÉ DOS CAMPOS - SP</td><td>12238-365</td></tr><tr><td>C272</td><td>CO29</td><td>Regional Ribeirão Preto - SP</td><td>02.421.421/0217-04</td><td>SP</td><td>AV. PROFESSOR JOÃO FIUSA 1901, SALAS 406 E 407 AREA 1C -&nbsp;&nbsp;&nbsp;JARDIM BOTANICO,RIBEIRAO PRETO - SP</td><td>14024-250</td></tr><tr><td>C644</td><td>C300</td><td>Regional&nbsp;&nbsp;&nbsp;Campinas SP</td><td>02.421.421/0245-68</td><td>SP</td><td>RUA ODILA MAIA&nbsp;&nbsp;&nbsp;ROCHA BRITO 527, TRADE TOWER 33/34 E 35 3 - NOVA CAMPINAS,CAMPINAS - SP</td><td>13092-110</td></tr><tr><td>C644</td><td>CO35</td><td>Regional Campinas 1 -SP</td><td>02.421.421/0245-68</td><td>SP</td><td>RUA ODILA MAIA ROCHA BRITO 527, TRADE TOWER 33/34 E 35 3 -&nbsp;&nbsp;&nbsp;NOVA CAMPINAS,CAMPINAS - SP</td><td>13092-110</td></tr><tr><td>C644</td><td>CO48</td><td>Regional&nbsp;&nbsp;&nbsp;Campinas 2 -SP</td><td>02.421.421/0245-68</td><td>SP</td><td>RUA ODILA MAIA&nbsp;&nbsp;&nbsp;ROCHA BRITO 527, TRADE TOWER 33/34 E 35 3 - NOVA CAMPINAS,CAMPINAS - SP</td><td>13092-110</td></tr><tr><td>C656</td><td>CO32</td><td>Regional Bauru - SP</td><td>02.421.421/0240-53</td><td>SP</td><td>R JULIO DE MESQUITA FILHO 10-31 CJ 205 C2, 2 - JARDIM&nbsp;&nbsp;&nbsp;PANORAMA,BAURU - SP</td><td>17011-137</td></tr><tr><td>C657</td><td>CO33</td><td>Regional Pres.&nbsp;&nbsp;&nbsp;Prudente - SP</td><td>02.421.421/0000-30</td><td>SP</td><td>AV JOSE SOARES&nbsp;&nbsp;&nbsp;MARCONDES 1078, 5 - COND. EMPRESARIAL COM ATILIO FABRIS,PRESIDENTE PRUDENTE -&nbsp;&nbsp;&nbsp;SP</td><td>19010-081</td></tr><tr><td>C673</td><td>CB50</td><td>Back Office SP - Vila Mariana</td><td>02.421.421/0122-09</td><td>SP</td><td>RUA PADRE MACHADO 69 - BOSQUE DA SAÚDE,SÃO PAULO - SP</td><td>04127-000</td></tr><tr><td>C673</td><td>CO61</td><td>Regional Vila&nbsp;&nbsp;&nbsp;Mariana - SP</td><td>02.421.421/0122-09</td><td>SP</td><td>RUA PADRE&nbsp;&nbsp;&nbsp;MACHADO 69 - BOSQUE DA SAÚDE,SÃO PAULO - SP</td><td>04127-000</td></tr><tr><td>C674</td><td>CO34</td><td>Regional Fiber - SP</td><td>02.421.421/0161-15</td><td>SP</td><td>AV. ALFREDO EGIDIO DE SOUZA ARANHA 100 BLOCO B, 1º ANDAR -&nbsp;&nbsp;&nbsp;VILA CRUZEIRO,SÃO PAULO - SP</td><td>04726-908</td></tr><tr><td>C677</td><td>CO43</td><td>Regional S. J.&nbsp;&nbsp;&nbsp;Rio Preto - SP</td><td>02.421.421/0232-43</td><td>SP</td><td>RUA CORONEL&nbsp;&nbsp;&nbsp;SPINDOLA DE CASTRO 3.635, SALAS 22 A 24 2 ANDAR - CENTRO,SÃO JOSE DO RIO&nbsp;&nbsp;&nbsp;PRETO - SP</td><td>15015-500</td></tr><tr><td>I006</td><td>IO06</td><td>Regional São Paulo 2 - SP</td><td>02.421.421/0006-26</td><td>SP</td><td>AV.ERMANO MARCHETTI, 172 PARTE B - ÁGUA BRANCA,SÃO PAULO -&nbsp;&nbsp;&nbsp;SP</td><td>05038-000</td></tr><tr><td>I046</td><td>CB52</td><td>Back Office SP&nbsp;&nbsp;&nbsp;- Lapa</td><td>02.421.421/0014-36</td><td>SP</td><td>AV. ERMANO&nbsp;&nbsp;&nbsp;MARCHETTI 172 - LAPA,SÃO PAULO - SP</td><td>05038-000</td></tr><tr><td>I046</td><td>IO46</td><td>Regional São Paulo 3 - SP</td><td>02.421.421/0014-36</td><td>SP</td><td>AV. ERMANO MARCHETTI 172 - LAPA,SÃO PAULO - SP</td><td>05038-000</td></tr><tr><td>I238</td><td>IO48</td><td>Regional São&nbsp;&nbsp;&nbsp;Paulo 4 - SP</td><td>02.421.421/0238-39</td><td>SP</td><td>AV GIOVANNI&nbsp;&nbsp;&nbsp;GRONCH 7143 - VILA ANDRADE,SÃO PAULO - SP</td><td>05724-005</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-to">TO</button>
+<div class="modal fade bd-to" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TCO	QNDB</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class='tabela'>Tocantins<table><thead><tr><th>Filial</th><th>Centro</th><th>Nome Centro</th><th>CNPJ</th><th>UF</th><th>ENDEREÇO COMPLETO</th><th>CEP</th></tr></thead><tbody><tr><td>C629</td><td>CB46</td><td>Back Office TO</td><td>02.421.421/0196-45</td><td>TO</td><td>104 NORTE&nbsp;&nbsp;&nbsp;AVENIDA JUSCELINO KUBITSCHEK 99 LOJA 104, LOTE 39 01 TERREO - PLANO DIRETOR&nbsp;&nbsp;&nbsp;NORTE,PALMAS - TO</td><td>77006-014</td></tr><tr><td>I021</td><td>CB20</td><td>Back Office TO</td><td>02.421.421/0021-65</td><td>TO</td><td>104 NORTE AVENIDA JUSCELINO KUBITSCHEK 99, LOTE 39 02&nbsp;&nbsp;&nbsp;TERREO - PLANO DIRETOR NORTE,PALMAS - TO</td><td>77006-014</td></tr><tr><td>I021</td><td>CO53</td><td>Regional Palmas&nbsp;&nbsp;&nbsp;1 - TO</td><td>02.421.421/0021-65</td><td>TO</td><td>104 NORTE&nbsp;&nbsp;&nbsp;AVENIDA JUSCELINO KUBITSCHEK 99, LOTE 39 02 TERREO - PLANO DIRETOR&nbsp;&nbsp;&nbsp;NORTE,PALMAS - TO</td><td>77006-014</td></tr><tr><td>I021</td><td>IO21</td><td>Regional Palmas 2 - TO</td><td>02.421.421/0021-65</td><td>TO</td><td>104 NORTE AVENIDA JUSCELINO KUBITSCHEK 99, LOTE 39 02&nbsp;&nbsp;&nbsp;TERREO - PLANO DIRETOR NORTE,PALMAS - TO</td><td>77006-014</td></tr></tbody></table></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div></div></div>
+
+<div class="col-xl-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-header d-block">
+                                <h4 class="card-title">Mantenedor</h4>
+                            </div>
+                            <div class="card-body">
+                                <!-- Default accordion -->
+                                <div id="accordion-one" class="accordion accordion-primary">
+                                    <div class="accordion__item">
+                                        <div class="accordion__header rounded-lg" data-toggle="collapse" data-target="#ABILITY">
+                                            <span class="accordion__header--text">ABILITY</span>
+                                            <span class="accordion__header--indicator"></span>
+                                        </div>
+                                        <div id="ABILITY" class="collapse accordion__body show" data-parent="#accordion-one">
+                                            <div class="accordion__body--text">
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".ability-itabuna-ba">ABILITY - ITABUNA - BA</button>
+<div class="modal fade ability-itabuna-ba" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">ITABUNA - BA</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li>Reparador: <b>ABILITY - ITABUNA - BA</b></li><li>Código SAP: <b>3063996</b></li><li>Endereço: <b>R. EVARISTO ANDRADE, 66 - NOSSA SRA.&nbsp; &nbsp;DA CONCEIÇÃO, ITABUNA - BA, 45605-005</b></li><li>CNPJ: <b>06.127.582/0028-78</b></li><li>Telefone: <b>JOSE 8199532-6459</b></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".ability-aracaju-se">ABILITY - ARACAJU - SE</button>
+<div class="modal fade ability-aracaju-se" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">ARACAJU - SE</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li><li>Reparador: <b>ABILITY - ARACAJU - SE</b></li><li>Código SAP: <b>3063995</b></li><li>Endereço: <b>R. SANTA LUZIA, 811 - SÃO JOSÉ,&nbsp; &nbsp;ARACAJU - SE, 49015-190</b></li><li>CNPJ: <b>06.127.582/0021-00</b></li><li>Telefone: <b>CRISTIANO 8199982-6745</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".ability-salvador-ba">ABILITY - SALVADOR - BA</button>
+<div class="modal fade ability-salvador-ba" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">SALVADOR - BA</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li><li>Reparador: <b>ABILITY - SALVADOR - BA</b></li><li>Código SAP: <b>3063392</b></li><li>Endereço: <b>RUA DA INDONESIA, 500 - GRANJAS RURAIS, PRESIDENTE VARGAS - BA, 41230-020</b></li><li>CNPJ: <b>06.127.582/0014-72</b></li><li>Telefone: <b>ROBERTO 8198295-1400 FABIANO 7199167-3100</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".ability-olinda-pe">ABILITY - OLINDA - PE</button>
+<div class="modal fade ability-olinda-pe" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">OLINDA - PE</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li><li>Reparador: <b>ABILITY - OLINDA - PE</b></li><li>Código SAP: <b>3063358</b></li><li>Endereço: <b>RUA PROF. AGAMENON MAGALHÃES, 400A - VILA POPULAR, OLINDA - PE, 53110-710</b></li><li>CNPJ: <b>06.127.582/0013-91</b></li><li>Telefone: <b>ADEILDON 8198172-7511 / KLEYTON&nbsp; &nbsp;8198172-7847 / MARCELO 8199982-9580</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                        <div class="accordion__header collapsed rounded-lg" data-toggle="collapse" data-target="#ALGAR">
+                                            <span class="accordion__header--text">ALGAR</span>
+                                            <span class="accordion__header--indicator"></span>
+                                        </div>
+                                        <div id="ALGAR" class="collapse accordion__body" data-parent="#accordion-one">
+                                            <div class="accordion__body--text">
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-belohorizonte-mg">ALGAR - BELO HORIZONTE - MG</button>
+<div class="modal fade algar-belohorizonte-mg" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">BELO HORIZONTE - MG</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li><li>Reparador: <b>ALGAR - BELO HORIZONTE - MG</b></li><li>Código SAP: <b>3053762</b></li><li>Endereço: <b>AV. PORTUGAL, 757 - JARDIM ATLÂNTICO,&nbsp; &nbsp;BELO HORIZONTE - MG, 31550-000</b></li><li>CNPJ:&nbsp;</li><li>Telefone: <b>LUCAS 31 99148-5848</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-brasilia-df">ALGAR - BRASÍLIA - DF</button>
+<div class="modal fade algar-brasilia-df" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">BRASÍLIA - DF</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li><li>Reparador: <b>ALGAR - BRASÍLIA - DF</b></li><li>Código SAP: <b>3053878</b></li><li>Endereço: <b>CSG QD 5, LT 7 - TAGUATINGA SUL,&nbsp; &nbsp;BRASÍLIA - DF, 72035-505</b></li><li>CNPJ:&nbsp;</li><li>Telefone: <b>RONNEY 6199370-2071</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-campogrande-ms">ALGAR - CAMPO GRANDE - MS</button>
+<div class="modal fade algar-campogrande-ms" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">CAMPO GRANDE - MS</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <b>ALGAR - CAMPO GRANDE - MS</b></li><li>Código SAP: <b>3055018</b></li><li>Endereço: <b>AV. TIRADENTES, 858 - VILA&nbsp; &nbsp;TAVEIROPOLIS, CAMPO GRANDE - MS, 79090-000</b></li><li>CNPJ:&nbsp;</li><li>Telefone: <b>THYAGO 6798213-0082 / ANTONIO&nbsp; &nbsp;6798213-0063</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-cuiaba-mt">ALGAR - CUIABÁ - MT</button>
+<div class="modal fade algar-cuiaba-mt" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">CUIABÁ - MT</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <b>ALGAR - CUIABÁ - MT</b></li><li>Código SAP: <b>3055019</b></li><li>Endereço: <b>RUA GOVERNADOR PEDRO PEDROSSIAM, 388 -&nbsp; &nbsp;CAMPO VELHO, CUIABÁ - MT, 78065-260</b></li><li>CNPJ:&nbsp;</li><li>Telefone: <b>BRUNO 6599204-1831 / WESLEY&nbsp; &nbsp;6599275-9985</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-goiana-go">ALGAR - GOIÂNIA - GO</button>
+<div class="modal fade algar-goiana-go" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">GOIÂNIA - GO</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <b>ALGAR - GOIÂNIA - GO</b></li><li>Código SAP: <b>3055005</b></li><li>Endereço: <b>RUA 16, QD50 LT12 - JARDIM SANTO&nbsp; &nbsp;ANTÔNIO - GOIÂNIA - GO, 74853-290</b></li><li>CNPJ:&nbsp;</li><li>Telefone: <b>EMERSON 6299231-9776</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-maceio-al">ALGAR - MACEIÓ - AL</button>
+<div class="modal fade algar-maceio-al" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">MACEIÓ - AL</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <b>ALGAR - MACEIÓ - AL</b></li><li>Código SAP: <b>3054234</b></li><li>Endereço: <b>R. DES. BARRETO CARDOSO, 282 - GRUTA&nbsp; &nbsp;DE LOURDES, MACEIÓ - AL, 57052-850</b></li><li>CNPJ: <b>08.162.032/0019-24</b></li><li>Telefone: <b>JANILSON 8299992-2347</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-messejana-ce">ALGAR - MESSEJANA - CE</button>
+<div class="modal fade algar-messejana-ce" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">MESSEJANA - CE</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <b>ALGAR - MESSEJANA - CE</b></li><li>Código SAP: <b>3052391</b></li><li>Endereço: <b>RUA CORONEL ALVES RIBEIRO, 111 B -&nbsp; &nbsp;MESSEJANA, FORTALEZA - CE, 60842-220</b></li><li>CNPJ:&nbsp;</li><li>Telefone: <b>BRUNO 8599912-1653</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-natal-rn">ALGAR - NATAL - RN</button>
+<div class="modal fade algar-natal-rn" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">NATAL - RN</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <b>ALGAR - NATAL - RN</b></li><li>Código SAP: <b>3053835</b></li><li>Endereço: <b>RUA MANOEL DA COSTA SOUZA , 236 -&nbsp; &nbsp;NEOPOLIS, NATAL - RN, 59086-330</b></li><li>CNPJ:&nbsp;</li><li>Telefone: <b>MARCOS 8499132-3239</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-palmas-to">ALGAR - PALMAS - TO</button>
+<div class="modal fade algar-palmas-to" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">PALMAS - TO</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <b>ALGAR - PALMAS - TO</b></li><li>Código SAP: <b>3055006</b></li><li>Endereço: <b>QUADRA 204 SUL, ALAMEDA 02, LOTE 44 -&nbsp; &nbsp;PLANO DIRETOR SUL, PALMAS - TO, 77020-494</b></li><li>CNPJ:&nbsp;</li><li>Telefone: <b>GILVAN 6398119-0129</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-parnamirim-pe">ALGAR - PARNAMIRIM - PE</button>
+<div class="modal fade algar-parnamirim-pe" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">PARNAMIRIM - PE</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <b>ALGAR - PARNAMIRIM - PE</b></li><li>Código SAP: <b>3052605</b></li><li>Endereço: <b>RUA PADRE ROMA, 1601 B - PARNAMIRIM,&nbsp; &nbsp;RECIFE - PE, 52060-060</b></li><li>CNPJ:&nbsp;</li><li>Telefone: <b>THIAGO 81 99980-0284</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-portovelho-ro">ALGAR - PORTO VELHO - RO</button>
+<div class="modal fade algar-portovelho-ro" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">PORTO VELHO - RO</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <b>ALGAR - PORTO VELHO - RO</b></li><li>Código SAP: <b>3055023</b></li><li>Endereço: <b>RUA OSÓRIO ALBURQUERQUE, 5017 - AGENOR&nbsp; &nbsp;CARVALHO, PORTO VELHO - RO, 76820-292</b></li><li>CNPJ:&nbsp;</li><li>Telefone: <b>SILMAR 6999275-6568</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-riobranco-ac">ALGAR - RIO BRANCO - AC</button>
+<div class="modal fade algar-riobranco-ac" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">RIO BRANCO - AC</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <b>ALGAR - RIO BRANCO - AC</b></li><li>Código SAP: <b>3055025</b></li><li>Endereço: <b>TRAVESSA REPÚBLICA, 144 - ESTACAO&nbsp; &nbsp;EXPERIMENTAL, RIO BRANCO - AC, 69918-270</b></li><li>CNPJ:&nbsp;</li><li>Telefone: <b>OSCAR 6898110-0023/6899283-5837</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-aracaju-se">ALGAR - ARACAJU - SE</button>
+<div class="modal fade algar-aracaju-se" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">ARACAJU - SE</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <span style="font-weight: bold;">ALGAR - ARACAJU - SE</span></li><li>Código SAP: <span style="font-weight: bold;">3054001</span></li><li>Endereço: <span style="font-weight: bold;">AV. DR. JOSÉ MACHADO DE SOUZA, 220 - JARDINS, ARACAJU - SE, 49025-740</span></li><li>CNPJ: <span style="font-weight: bold;">22.166.193/0024-84</span></li><li>Telefone: <b style="color: rgb(255, 0, 0);">[NÃO ENCONTRADO - FAVOR AVISAR QUANDO TIVER O CONTATO]</b></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-teresina-pi">ALGAR - TERESINA - PI</button>
+<div class="modal fade algar-teresina-pi" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">TERESINA - PI</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <span style="font-weight: bold;">ALGAR - TERESINA - PI</span></li><li>Código SAP: <span style="font-weight: bold;">3055017</span></li><li>Endereço: <span style="font-weight: bold;">RUA DEPUTADO LAURENTINO NETO, 481 -&nbsp; &nbsp;FÁTIMA, TERESINA - PI, 64049-350</span></li><li>CNPJ: <span style="font-weight: bold;">71.208.516/0174-92</span></li><li>Telefone: <span style="font-weight: bold;">RAIMUNDO 8699968-0173</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".algar-salvador-ba">ALGAR - SALVADOR - BA</button>
+<div class="modal fade algar-salvador-ba" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">SALVADOR - BA</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <span style="font-weight: bold;">ALGAR - SALVADOR - BA</span></li><li>Código SAP: <span style="font-weight: bold;">3053764</span></li><li>Endereço: <span style="font-weight: bold;">RUA JORGE NOVIS, 151, QD A, LT 18A -&nbsp; &nbsp;VILA LAURA, SALVADOR - BA, 40270-370</span></li><li>CNPJ: <span style="font-weight: bold;">08.162.032/0031-10</span></li><li>Telefone: <span style="font-weight: bold;">MANOEL 7199167-3100</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                        <div class="accordion__header collapsed rounded-lg" data-toggle="collapse" data-target="#EZENTIS">
+                                            <span class="accordion__header--text">EZENTIS</span>
+                                            <span class="accordion__header--indicator"></span>
+                                        </div>
+                                        <div id="EZENTIS" class="collapse accordion__body" data-parent="#accordion-one">
+                                            <div class="accordion__body--text">
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".ezentis-canoas-rs">EZENTIS - CANOAS - RS</button>
+<div class="modal fade ezentis-canoas-rs" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">CANOAS - RS</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <span style="font-weight: bold;">EZENTIS - CANOAS - RS</span></li><li>Código SAP: <span style="font-weight: bold;">3053175</span></li><li>Endereço: <span style="font-weight: bold;">RUA ANDRÉ NICHELE, 301 - MATO GRANDE,&nbsp; &nbsp;CANOAS - RS, 92320-030</span></li><li>CNPJ:&nbsp;</li><li>Telefone: <span style="font-weight: bold;">JONATHAN 51 9 9872-6460</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".ezentis-parquelafaiete-rj">EZENTIS - PARQUE LAFAIETE - RJ</button>
+<div class="modal fade ezentis-parquelafaiete-rj" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">PARQUE LAFAIETE - RJ</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li>Reparador: <span style="font-weight: bold;">EZENTIS - PARQUE LAFAIETE - RJ</span></li><li>Código SAP: <span style="font-weight: bold;">3063177</span></li><li>Endereço: <span style="font-weight: bold;">R. PREF. RIBEIRO, 950 - PARQUE&nbsp; &nbsp;LAFAIETE, DUQUE DE CAXIAS - RJ, 25015-327</span></li><li>CNPJ:&nbsp;</li><li>Telefone: <span style="font-weight: bold;">GENILSON 21 9 8142-2976 MARCOS 21 9 8153-3510 VAGNER 21 9 7281-7951 LEONEL 11 9 7380-3962</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".ezentis-pinhais-pr">EZENTIS - PINHAIS - PR</button>
+<div class="modal fade ezentis-pinhais-pr" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">PINHAIS - PR</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li><li>Reparador: <span style="font-weight: bold;">EZENTIS - PINHAIS - PR</span></li><li>Código SAP: <span style="font-weight: bold;">3063378</span></li><li>Endereço: <span style="font-weight: bold;">RUA RIO AZUL, 247 - EMILIANO PERNETA, PINHAIS - PR, 83325-110</span></li><li>CNPJ: <span style="font-weight: bold;">05.823.631/0009-81</span></li><li>Telefone: <span style="font-weight: bold;">DENILSON 41 9 9107-9823 EMERSON 41 9 9181-4529</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".ezentis-saojose-sc">EZENTIS - SÃO JOSÉ - SC</button>
+<div class="modal fade ezentis-saojose-sc" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">SÃO JOSÉ - SC</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li><li>Reparador: <span style="font-weight: bold;">EZENTIS - SÃO JOSÉ - SC</span></li><li>Código SAP: <span style="font-weight: bold;">3054829</span></li><li>Endereço: <span style="font-weight: bold;">TRAVESSA NELSON MIGUEL DA SILVA, 19 -&nbsp; &nbsp;SERRARIA, SÃO JOSE - SC, 88115-235</span></li><li>CNPJ:&nbsp;</li><li>Telefone: <span style="font-weight: bold;">DJALMA 4899808-1081</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".ezentis-vilavelha-es">EZENTIS - VILA VELHA - ES</button>
+<div class="modal fade ezentis-vilavelha-es" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">VILA VELHA - ES</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li><li>Reparador: <span style="font-weight: bold;">EZENTIS - VILA VELHA - ES</span></li><li>Código SAP: <span style="font-weight: bold;">3063377</span></li><li>Endereço: <span style="font-weight: bold;">R. Antônio Viêira de Freitas, 10 - Brisamar, Vila Velha - ES, 29104-710</span></li><li>CNPJ:&nbsp;</li><li>Telefone: <span style="font-weight: bold;">ELIAS 27 99858-6223 DAILTON 27 99858-0061</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="accordion__item">
+                                        <div class="accordion__header collapsed rounded-lg" data-toggle="collapse" data-target="#TEL">
+                                            <span class="accordion__header--text">TEL</span>
+                                            <span class="accordion__header--indicator"></span>
+                                        </div>
+                                        <div id="TEL" class="collapse accordion__body" data-parent="#accordion-one">
+                                            <div class="accordion__body--text">
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-bauru-sp">TEL - BAURU - SP</button>
+<div class="modal fade tel-bauru-sp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">BAURU - SP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li><li>Reparador: <span style="font-weight: bold;">TEL - BAURU - SP</span></li><li>Código SAP: <span style="font-weight: bold;">3033178</span></li><li>Endereço: <span style="font-weight: bold;">AV. MANOEL DUQUE, 4-70 - JARDIM&nbsp; &nbsp;GUADALAJARA, BAURU - SP, 17030-110</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0002-66</span></li><li>Telefone: <span style="font-weight: bold;">MAURICIO 14 9 8201-0833 EVANDRO 19 9 8409-0076</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-belem-pa">TEL - BELEM - PA</button>
+<div class="modal fade tel-belem-pa" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">BELEM - PA</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li><li>Reparador: <span style="font-weight: bold;">TEL - BELEM - PA</span></li><li>Código SAP: <span style="font-weight: bold;">3053771</span></li><li>Endereço: <span style="font-weight: bold;">RODOVIA BR-316 KM 04, S/N - GUANABARA,&nbsp; &nbsp;ANANINDEUA - PA, 67110-000</span></li><li>CNPJ:&nbsp;</li><li>Telefone: <span style="font-weight: bold;">CLEISON NOE 9199335-9498</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-boavista-rr">TEL - BOA VISTA - RR</button>
+<div class="modal fade tel-boavista-rr" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">BOA VISTA - RR</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li></li><li><li>Reparador: <span style="font-weight: bold;">TEL - BOA VISTA - RR</span></li><li>Código SAP: <span style="font-weight: bold;">3054725</span></li><li>Endereço: <span style="font-weight: bold;">AV. GETÚLIO VARGAS, 3684 - CANARINHO,&nbsp; &nbsp;BOA VISTA - RR, 69306-545</span></li><li>CNPJ:&nbsp;</li><li>Telefone: <span style="font-weight: bold;">WARLLEN RONALD 9598108-6261</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-brasilia-df">TEL - BRASÍLIA - DF</button>
+<div class="modal fade tel-brasilia-df" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">BRASÍLIA - DF</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li><li>Reparador: <span style="font-weight: bold;">TEL - BRASÍLIA - DF</span></li><li>Código SAP: <span style="font-weight: bold;">3063192</span></li><li>Endereço: <span style="font-weight: bold;">ADE CONJUNTO 25, 25, LT 03 - ÁREA DE&nbsp; &nbsp;DESENVOLVIMENTO ECONÔMICO (ÁGUAS CLARAS), BRASÍLIA - DF, 71990-541</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0015-80</span></li><li>Telefone: <span style="font-weight: bold;">MARCOS 61 9 9943-3583 MARCUS 61 9 9642-3458 VANDERSON 61 9 9691-9489</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-campogrande-ms">TEL - CAMPO GRANDE - MS</button>
+<div class="modal fade tel-campogrande-ms" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">CAMPO GRANDE - MS</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li><li>Reparador: <span style="font-weight: bold;">TEL - CAMPO GRANDE - MS</span></li><li>Código SAP: <span style="font-weight: bold;">3063224</span></li><li>Endereço: <span style="font-weight: bold;">RUA BUENOS AIRES, 314 - VILA&nbsp; &nbsp;MARGARIDA, CAMPO GRANDE - MS, 79023-210</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0014-08</span></li><li>Telefone: <span style="font-weight: bold;">ALEXANDRE 67 9 9987-0917 EMERSON 67 9 9636-2378</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-cubatao-sp">TEL - CUBATÃO - SP</button>
+<div class="modal fade tel-cubatao-sp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">CUBATÃO - SP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li><li>Reparador: <span style="font-weight: bold;">TEL - CUBATÃO - SP</span></li><li>Código SAP: <span style="font-weight: bold;">3053770</span></li><li>Endereço: <span style="font-weight: bold;">AV. NOSSA SRA. DE FÁTIMA, 1172 -&nbsp; &nbsp;CASQUEIRO, CUBATÃO - SP, 11530-030</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0018-23</span></li><li>Telefone: <span style="font-weight: bold;">PEDRO 13 9 8168-1135 EVANDRO 19 9 8409-0076</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-cuiaba-mt">TEL - CUIABÁ - MT</button>
+<div class="modal fade tel-cuiaba-mt" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">CUIABÁ - MT</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li><li>Reparador: <span style="font-weight: bold;">TEL - CUIABÁ - MT</span></li><li>Código SAP: <span style="font-weight: bold;">3063225</span></li><li>Endereço: <span style="font-weight: bold;">AV. FERNANDO CORREIA DA COSTA, 6635 -&nbsp; &nbsp;SÃO JOSÉ, CUIABÁ - MT, 78085-700</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/001-157</span></li><li>Telefone: <span style="font-weight: bold;">ANDERSON&nbsp; &nbsp;6598131-0084 / VALDETINA 6599989-6257</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-guarulhos-sp">TEL - GUARULHOS - SP</button>
+<div class="modal fade tel-guarulhos-sp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">GUARULHOS - SP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li></li><li><li>Reparador: <span style="font-weight: bold;">TEL - GUARULHOS - SP</span></li><li>Código SAP: <span style="font-weight: bold;">3063798</span></li><li>Endereço: <span style="font-weight: bold;">AV. SÃO MATEUS DO MARANHÃO, 183 -&nbsp; &nbsp;CUMBICA, GUARULHOS - SP, 07222-140</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0026-33</span></li><li>Telefone: <span style="font-weight: bold;">VICTOR 1198435-7353 MICHAEL&nbsp; &nbsp;1197794-0137</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-goiania-go">TEL - GOIANIA - GO</button>
+<div class="modal fade tel-goiania-go" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">GOIANIA - GO</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li><li>Reparador: <span style="font-weight: bold;">TEL - GOIANIA - GO</span></li><li>Código SAP: <span style="font-weight: bold;">3063176</span></li><li>Endereço: <span style="font-weight: bold;">AV. PRIMEIRA AVENIDA, QD 01B, LT.&nbsp; &nbsp;27 - COND. CIDADE EMPRESARIAL, APARECIDA DE GOIÂNIA - GO, 74935-900</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0017-42</span></li><li>Telefone: <span style="font-weight: bold;">MARCOS ROBERTO 6299992-7051 / EMERSON&nbsp; &nbsp;SOUZA 6298271-7759</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-jundiai-sp">TEL - JUNDIAÍ - SP</button>
+<div class="modal fade tel-jundiai-sp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">JUNDIAÍ - SP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li><li>Reparador: <span style="font-weight: bold;">TEL - JUNDIAÍ - SP</span></li><li>Código SAP: <span style="font-weight: bold;">3053770</span></li><li>Endereço: <span style="font-weight: bold;">AV. ANTONIETA PIVA BARRANQUEIROS, 295&nbsp; &nbsp;- ST. INDUSTRIAL, JUNDIAÍ - SP, 13213-009</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0018-23</span></li><li>Telefone: <span style="font-weight: bold;">MARCELO CALIXTO 1197558-2168</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-jurubatuba-sp">TEL - JURUBATUBA - SP</button>
+<div class="modal fade tel-jurubatuba-sp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">JURUBATUBA - SP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li><li>Reparador: <span style="font-weight: bold;">TEL - JURUBATUBA - SP</span></li><li>Código SAP: <span style="font-weight: bold;">3053770</span></li><li>Endereço: <span style="font-weight: bold;">R. DAS BAIADEIRAS, 290 - JURUBATUBA,&nbsp; &nbsp;SÃO PAULO - SP, 04675-210</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0018-23</span></li><li>Telefone: <span style="font-weight: bold;">JHENIFFER 19 9 3004-3169 EVANDRO 19 9 8409-0076</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-macapa-ap">TEL - MACAPÁ - AP</button>
+<div class="modal fade tel-macapa-ap" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">MACAPÁ - AP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li></li><li><li>Reparador: <span style="font-weight: bold;">TEL - MACAPÁ - AP</span></li><li>Código SAP: <span style="font-weight: bold;">3055195</span></li><li>Endereço: <span style="font-weight: bold;">R. PALMAS, 670 - INFRAERO, MACAPÁ -&nbsp; &nbsp;AP, 68908-033</span></li><li>CNPJ:&nbsp;</li><li>Telefone: <span style="font-weight: bold;">EVERTON 96 9 8142-0442</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-manaus-am">TEL - MANAUS - AM</button>
+<div class="modal fade tel-manaus-am" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">MANAUS - AM</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li><li>Reparador: <span style="font-weight: bold;">TEL - MANAUS - AM</span></li><li>Código SAP: <span style="font-weight: bold;">3053772</span></li><li>Endereço: <span style="font-weight: bold;">AV. URUCARÁ, 986 - CACHOEIRINHA,&nbsp; &nbsp;MANAUS - AM, 69065-180</span></li><li>CNPJ:&nbsp;</li><li>Telefone: <span style="font-weight: bold;">ADRIANO 9298193-9394 / RENATO COSTA&nbsp; &nbsp;9298193-5062</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-palmas-to">TEL - PALMAS - TO</button>
+<div class="modal fade tel-palmas-to" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">PALMAS - TO</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li><li>Reparador: <span style="font-weight: bold;">TEL - PALMAS - TO</span></li><li>Código SAP: <span style="font-weight: bold;">3063188</span></li><li>Endereço: <span style="font-weight: bold;">QUADRA 103 SUL RUA SO 5 LT 13 SALA 02&nbsp; &nbsp;- PLANO DIRETOR SUL, PALMAS - TO, 77015-018</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0012-38</span></li><li>Telefone: <span style="font-weight: bold;">LEANDRO 63 9 9994-8871</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-piracicaba-sp">TEL - PIRACICABA - SP</button>
+<div class="modal fade tel-piracicaba-sp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">PIRACICABA - SP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li><li>Reparador: <span style="font-weight: bold;">TEL - PIRACICABA - SP</span></li><li>Código SAP: <span style="font-weight: bold;">3053768</span></li><li>Endereço: <span style="font-weight: bold;">R. JOSÉ DO PATROCÍNIO, 205 - JARDIM&nbsp; &nbsp;CALIFORNIA, PIRACICABA - SP, 13424-565</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0010-76</span></li><li>Telefone: <span style="font-weight: bold;">FLAVIO 19 9 8409-0791 EVANDRO 19 9 8409-0076</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-portovelho-sp">TEL - PORTO VELHO - RO</button>
+<div class="modal fade tel-portovelho-sp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">PORTO VELHO - RO</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li><li>Reparador: <span style="font-weight: bold;">TEL - PORTO VELHO - RO</span></li><li>Código SAP: <span style="font-weight: bold;">3063226</span></li><li>Endereço: <span style="font-weight: bold;">RUA PAULO LEAL, 1622 - NOSSA SENHORA&nbsp; &nbsp;DAS GRAÇAS, PORTO VELHO - RO, 76804-146</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/001-319</span></li><li>Telefone: <span style="font-weight: bold;">LUAN 6999937-0605</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-ribeiraopreto-sp">TEL - RIBEIRÃO PRETO - SP</button>
+<div class="modal fade tel-ribeiraopreto-sp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">RIBEIRÃO PRETO - SP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li></li><li></li><li><li>Reparador: <span style="font-weight: bold;">TEL - RIBEIRÃO PRETO - SP</span></li><li>Código SAP: <span style="font-weight: bold;">3053767</span></li><li>Endereço: <span style="font-weight: bold;">AV. MAL. COSTA E SILVA, 2315 - CAMPOS&nbsp; &nbsp;ELÍSIOS, RIBEIRÃO PRETO - SP, 14080-130</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0008-51</span></li><li>Telefone: <span style="font-weight: bold;">FELIPE 16 9 9961-8242</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-riobranco-sp">TEL - RIO BRANCO - AC</button>
+<div class="modal fade tel-riobranco-sp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">RIO BRANCO - AC</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li>Reparador: <span style="font-weight: bold;">TEL - RIO BRANCO - AC</span></li><li>Código SAP: <span style="font-weight: bold;">3063247</span></li><li>Endereço: <span style="font-weight: bold;">R. SILVESTRE COELHO, 773 - BOSQUE, RIO&nbsp; &nbsp;BRANCO - AC, 69900-661</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0016-61</span></li><li>Telefone: <span style="font-weight: bold;">JHONATAN 68 9 9607-3707</span></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-sjc-sp">TEL - SÃO JOSÉ DOS CAMPOS - SP</button>
+<div class="modal fade tel-sjc-sp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">SÃO JOSÉ DOS CAMPOS - SP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li>Reparador: <span style="font-weight: bold;">TEL - SÃO JOSÉ DOS CAMPOS - SP</span></li><li>Código SAP: <span style="font-weight: bold;">3053770</span></li><li>Endereço: <span style="font-weight: bold;">R. LUCÉLIA, 864 - CHÁCARAS REUNIDAS,&nbsp; &nbsp;SÃO JOSÉ DOS CAMPOS - SP, 12238-450</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0018-23</span></li><li>Telefone: <span style="font-weight: bold;">GILSON 12 9 8171-2478 EVANDRO&nbsp; 19 9 8409-0076</span></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-saojoseriopreto-sp">TEL - SÃO JOSÉ RIO PRETO - SP</button>
+<div class="modal fade tel-saojoseriopreto-sp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">SÃO JOSÉ RIO PRETO - SP</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li>Reparador: <span style="font-weight: bold;">TEL - SÃO JOSÉ RIO PRETO - SP</span></li><li>Código SAP: <span style="font-weight: bold;">3053767</span></li><li>Endereço: <span style="font-weight: bold;">RUA WILK FERREIRA DE SOUZA, 180 -&nbsp; &nbsp;DISTRITO INDUSTRIAL WALDEMAR DE OLIVEIRA VERDI, SÃO JOSÉ DO RIO PRETO - SP,&nbsp; &nbsp;15035-510</span></li><li>CNPJ: <span style="font-weight: bold;">06.084.614/0008-51</span></li><li>Telefone: <span style="font-weight: bold;">GRACIELI 17 9 8211-0955 EVANDRO 19 9 8409-0076</span></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tel-saoluis-ma">TEL - SÃO LUIS - MA</button>
+<div class="modal fade tel-saoluis-ma" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">SÃO LUIS - MA</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li><li>Reparador: <span style="font-weight: bold;">TEL - SÃO LUIS - MA</span></li><li>Código SAP: <span style="font-weight: bold;">3053761</span></li><li>Endereço: <span style="font-weight: bold;">AV. BRISA MAR, LOTES 3 E 4, QUADRA 25&nbsp; &nbsp;- ARAÇAGI, SÃO LUIS - MA, 65068-128</span></li><li>CNPJ:&nbsp;</li><li>Telefone: <span style="font-weight: bold;">FRANCISCO 98 9 9229-9017</span></li></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="accordion__item">
+                                        <div class="accordion__header collapsed rounded-lg" data-toggle="collapse" data-target="#TLP">
+                                            <span class="accordion__header--text">TLP</span>
+                                            <span class="accordion__header--indicator"></span>
+                                        </div>
+                                        <div id="TLP" class="collapse accordion__body" data-parent="#accordion-one">
+                                            <div class="accordion__body--text">
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tlp-manguinhos-rj">TLP - MANGUINHOS - RJ</button>
+<div class="modal fade tlp-manguinhos-rj" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">MANGUINHOS - RJ</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li>Reparador: <span style="font-weight: bold;">TLP - MANGUINHOS - RJ</span></li><li>Código SAP: <span style="font-weight: bold;">3062891</span></li><li>Endereço: <span style="font-weight: bold;">AV. DOM HÉLDER CÂMARA, 199 -&nbsp; &nbsp;MANGUINHOS, RIO DE JANEIRO - RJ, 20911-291</span></li><li>CNPJ:&nbsp;</li><li>Telefone: <span style="font-weight: bold;">KENI 22 9 9759-5360</span></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tlp-serra-es">TLP - SERRA - ES</button>
+<div class="modal fade tlp-serra-es" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">SERRA - ES</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li>Reparador: <span style="font-weight: bold;">TLP - SERRA - ES</span></li><li>Código SAP: <span style="font-weight: bold;">3062919</span></li><li>Endereço: <span style="font-weight: bold;">R. CURITIBA - ALTEROSAS, SERRA - ES,&nbsp; &nbsp;29167-031</span></li><li>CNPJ:&nbsp;</li><li>Telefone: <span style="font-weight: bold;">CRISTIANO 27 9 9824-0864</span></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tlp-belohorizonte-mg">TLP - BELO HORIZONTE - MG</button>
+<div class="modal fade tlp-belohorizonte-mg" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">BELO HORIZONTE - MG</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li>Reparador: <span style="font-weight: bold;">TLP -BELO HORIZONTE - MG</span></li><li>Código SAP: <span style="font-weight: bold;">3062833</span></li><li>Endereço: <span style="font-weight: bold;">RUA HÉLIO LAZZAROTTI, 497 - ALTO&nbsp; &nbsp;CAIÇARAS, BELO HORIZONTE - MG, 30750-270</span></li><li>CNPJ:&nbsp;</li><li>Telefone: <span style="font-weight: bold;">LUCAS 31 9 9131-0611</span></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".tlp-varginha-mg">TLP - VARGINHA - MG</button>
+<div class="modal fade tlp-varginha-mg" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">VARGINHA - MG</h5>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<ul><li>Reparador: <span style="font-weight: bold;">TLP - VARGINHA - MG</span></li><li>Código SAP: <span style="font-weight: bold;">3062890</span></li><li>Endereço: <span style="font-weight: bold;">R. JOÃO LEITE ALVARENGA, 115 - VILA&nbsp; &nbsp;VERONICA, VARGINHA - MG, 37026-486</span></li><li>CNPJ:&nbsp;</li><li>Telefone: <span style="font-weight: bold;">ARIMATEIA 31 9 9131-3383</span></li></ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger light" data-dismiss="modal">Fechar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+</div>
+
+
+
+    <script src="./vendor/global/global.min.js"></script>
+	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="./js/custom.min.js"></script>
+	<script src="./js/deznav-init.js"></script>
+	
+	<!-- Counter Up -->
+    <script src="./vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="./vendor/jquery.counterup/jquery.counterup.min.js"></script>	
+		
+	<!-- Apex Chart -->
+	<script src="./vendor/apexchart/apexchart.js"></script>	
+	
+	<!-- Chart piety plugin files -->
+	<script src="./vendor/peity/jquery.peity.min.js"></script>
+	
+	<!-- Dashboard 1 -->
+	<script src="./js/dashboard/dashboard-1.js"></script>
+	<script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="./js/plugins-init/datatables.init.js"></script>
+	
+	
+
+</body>
+
+</html>

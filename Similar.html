@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BackOffice</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <link href="./vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
+    <link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="./vendor/pickadate/themes/default.date.css">
+	<link href="./vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Clockpicker -->
+    <link href="./vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet">
+    <!-- asColorpicker -->
+    <link href="./vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet">
+    <!-- Material color picker -->
+    <link href="./vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/toastr/css/toastr.min.css">
+
+</head>
+<style>
+textarea {
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    margin: 2px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.containerx {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    padding-top: 60%;
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="" alt="">
+				<img class="logo-abbr" src="./images/logo.png" alt="">
+                <img class="logo-compact" src="./images/logo-text.png" alt="">
+                <img class="brand-title" src="./images/logo-text.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+		
+		<!--**********************************
+        ***********************************-->
+		
+		<!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+							<li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link dz-fullscreen primary" href="#">
+									<svg id="Capa_1" enable-background="new 0 0 482.239 482.239" height="22" viewBox="0 0 482.239 482.239" width="22" xmlns="http://www.w3.org/2000/svg"><path d="m0 17.223v120.56h34.446v-103.337h103.337v-34.446h-120.56c-9.52 0-17.223 7.703-17.223 17.223z" fill=""/><path d="m465.016 0h-120.56v34.446h103.337v103.337h34.446v-120.56c0-9.52-7.703-17.223-17.223-17.223z" fill=""/><path d="m447.793 447.793h-103.337v34.446h120.56c9.52 0 17.223-7.703 17.223-17.223v-120.56h-34.446z" fill="" /><path d="m34.446 344.456h-34.446v120.56c0 9.52 7.703 17.223 17.223 17.223h120.56v-34.446h-103.337z" fill=""/></svg>
+                                </a>
+							</li>
+							<li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link primary" href="Similar.html" target="_blank">
+									<i id="Capa_1" enable-background="new 0 0 482.239 482.239" height="22" viewBox="0 0 482.239 482.239" width="22" class="la la-copy"></i>
+                                </a>
+							</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar start MENU LATERAL
+        ***********************************-->
+        <div class="deznav">
+            <div class="deznav-scroll">
+				<ul class="metismenu" id="menu">
+                    <li><a href="AMERINODE.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-book"></i>
+							<span class="nav-text">Avisos</span>
+						</a>
+					</li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-381-notepad"></i>
+							<span class="nav-text">Montar Texto</span>
+						</a>
+                        <ul aria-expanded="false">
+							<li><a href="MontarTextoEmergencial.html">Emergencial</a></li>
+							<li><a href="MontarTextoNormal.html">Normal</a></li>
+						</ul>
+                    </li>
+					<li><a href="CCe.html" class="ai-icon" aria-expanded="false">
+							<i class="la la-pencil-ruler"></i>
+							<span class="nav-text">Carta de Correção</span>
+						</a>
+					</li>
+					<li><a href="EmailSalaTim.html" class="ai-icon" aria-expanded="false">
+							<i class="lar la-envelope"></i>
+							<span class="nav-text">Email para Sala TIM</span>
+						</a>
+					</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="la la-plane"></i>
+							<span class="nav-text">Siglas IATA</span>
+						</a>
+                        <ul aria-expanded="false">
+							<li><a href="TabelaIATA.html">Tabela com Filtro</a></li>
+							<li><a href="TradutorIATA.html">Tradutor</a></li>
+						</ul>
+                    </li>
+					<li><a href="Similar.html" class="ai-icon" aria-expanded="false">
+							<i class="la la-search"></i>
+							<span class="nav-text">Pesquisar similar</span>
+						</a>
+					</li>
+                </ul>
+            
+				<div class="add-menu-sidebar">
+				<img src="images/icon1.png" alt="">
+					<p>Encontrou algum erro?</p>
+					<p>Tem alguma sugestão?</p>
+					<p>Quer que desenvolva alguma ferramenta?</p>
+					<p>Conversa com o carinha que mora logo ali...</p>
+					<a href="https://api.whatsapp.com/send?phone=5511997218020&text=Ol%C3%A1%2C%20eu%20cliquei%20no%20link%20do%20site." class="btn btn-primary btn-block light" target=”_blank”>Enviar msg</a>
+				</div>
+				<div class="copyright">
+					<p><strong>SrDarth</strong> © 2021</p>
+					
+				</div>
+				<div class="copyright">
+				---
+				</div>
+			</div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+		
+		<!--**********************************
+            Content body start AREA DE CONTEUDO
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+			<div class="container-fluid">
+				<div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Pesquisar similar</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)"></a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Pesquisar similar</a></li>
+                        </ol>
+                    </div>
+                </div>
+				
+
+<div class="row"><div style="display: block;">
+
+<center>
+<input class="form-control" id="MinhaPesquisa" onkeyup="Pesquisa()" type="text" placeholder="Pesquisar..." autocomplete="off" style="width:15cm;" aria-label="Search">
+</center>
+<br><br>
+
+<ul id="ConteudoPesquisa">
+
+<div class="row">
+
+<li alt="1 - Radio Base Station (RBS)" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/RBS.jpg" style="width:100%">
+</div><figcaption>
+<a>
+<i>
+<h1>Radio Base Station (RBS)</h1>
+</i>
+<p>Desenvolvida pela Ericsson, normalmente constituindo uma parte considerável de Radio Access Network (RAN)<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- RBS (Radio Base Station)</p>
+<p>- BTS (Base Transceiver Station)</p>
+<p>- Distribution Switch Unit (DXU)</p>
+<p>- Rack</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+ 
+<li alt="2 - DUW cards for UMTS (UTRAN" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/DUWRBSKDU.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>DUW cards for UMTS (UTRAN)</h1>
+</i>
+<p>Desenvolvida pela Ericsson, é um modulo parte do Radio Base Station (RBS)<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- DUW</p>
+<p>- Modulo</p>
+<p>- Module</p>
+<p>- Switch</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="3 - OptiX PTN ou SPTN" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/PTN.png" style="width:100%"></div><figcaption><a><i>
+<h1>OptiX PTN ou SPTN</h1>
+</i>
+<p>É composta por dispositivos de acesso multisserviço de última geração orientados ao transporte de pacotes<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- SPTN</p>
+<p>- OptiX</p>
+<p>- Modulo</p>
+<p>- Module</p>
+<p>- Switch</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="4 - ASR 900 Series" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/ASR.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>ASR 900 Series</h1>
+</i>
+<p>É um módulo de interface Cisco<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- ASR</p>
+<p>- Placa de Controle</p>
+<p>- Control board</p>
+<p>- CPAK</p>
+<p>- Module ASR</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="5 - FAN" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/FAN.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>FAN</h1>
+</i>
+<p>Existe vários modelos de vários fabricantes, mas basicamente é um "Módulo de Ventilador" ou "Módulo de Ventoinha" conhecidas como bandejas de ventilador. São utilizadas para fluxo de ar dentro de um rack fechado ou RBS...<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- FAN</p>
+<p>- Módulo ventilador</p>
+<p>- Módulo Ventoinha</p>
+<p>- Module FAN</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="6 - Flatpack ou Retificador" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/FLATPACK.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>Flatpack ou Retificador</h1>
+</i>
+<p>Existe vários modelos de vários fabricantes, mas basicamente é um retificador que controla e proteje a fonte de energia de gabinete ou rack. A unidade retificadora é importante para fornecer a alimentação de energia na medida certa, sem inconsistência e falhas, permitindo o funcionamento correto e sem interrupções dos equipamentos de telecomunicações.<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- Retificador</p>
+<p>- Módulo Retificador</p>
+<p>- Rectifiers</p>
+<p>- Module Rectifier</p>
+<p>- Flatpack</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="7 - Flexi Multiradio" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/ASIA.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>Flexi Multiradio</h1>
+</i>
+<p>Desenvolvido pela NOKIA, é basicamente um modulo externo que transmite rede lte...<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- ASIA</p>
+<p>- Flexi Radio</p>
+<p>- Multiradio</p>
+<p>- AirScale</p>
+<p>- Bts</p>
+<p>- FXEA</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="8 - Unidade Interna (IDU – “indoor unit”)" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/IDU.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>Unidade Interna (IDU – “indoor unit”)</h1>
+</i>
+<p>IDU é onde fica toda a parte de banda básica, constituída essencialmente do modem. A IDU se conecta à ODU por meio de cabos coaxiais onde a transmissão é feita a nível de frequência intermediária (FI), geralmente na faixa de 2 GHz. A distância máxima que a ODU pode ficar da IDU varia de 50 a 100 metros.<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- MSS-1</p>
+<p>- AGS20</p>
+<p>- AIRMUX</p>
+<p>- ALCPLUS</p>
+<p>- INDOOR UNIT</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="9 - Unidade Externa (ODU – “outdoor unit”)" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/ODU.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>Unidade Externa (ODU – “outdoor unit”)</h1>
+</i>
+<p>ODU é onde fica a antena, alimentador e a parte de RF, o transmissor e o receptor.<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- RTN</p>
+<p>- ASNK</p>
+<p>- OUTDOOR UNIT</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="10 - CorEvo" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/COREVO.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>CorEvo</h1>
+</i>
+<p>CorEvo é uma placa que fornece gerenciamento de nó, conexão cruzada entre MSS plugins e portas Ethernet a 10 Gbit/s, resumindo é uma placa de controle para IDU<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- 10Gbps</p>
+<p>- Placa de Controle</p>
+<p>- Control board</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="11 - OPSS ou OPZS" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/OPSS.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>OPSS ou OPZS</h1>
+</i>
+<p>Bateria de armazenamento tubular para a energia solar<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- OPSS 200AH</p>
+<p>- OPS2</p>
+<p>- OPZS2</p>
+<p>- Battery</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="12 - UPEU" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/UPEU.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>UPEU</h1>
+</i>
+<p>A placa UPEU converte a energia de entrada de -48 V DC em energia de +12 V DC e fornece duas portas com cada uma transmitindo um canal de sinais RS485, diferente da unidade retificadora a placa UPEU funciona como inversor. É parte de uma OLT (Terminal de Linha Óptica)<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- OPSS 200AH</p>
+<p>- OPS2</p>
+<p>- OPZS2</p>
+<p>- Battery</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="13 - Retrofit ou Retrofitting (Renovação)" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/RETROFIT.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>Retrofit ou Retrofitting (Renovação)</h1>
+</i>
+<p>O termo é utilizado para itens aprimorados para maior durabilidade e economia, portando precisa prestar atenção na utilização dos ativos com este termo pois pode não estar referindo-se ao equipamento e sim ao melhoramento dele. Um exemplo na imagem...<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- RETROFIT</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="14 - WBBPF" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/WBBPF.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>WBBPF</h1>
+</i>
+<p>WBBP é uma unidade de processamento de banda base WCDMA e pode ser instalado em um BBU<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- WCDMA</p>
+<p>- WBBPb</p>
+<p>- WBBPf</p>
+<p>- PLACA DE PROCES</p>
+<p>- PLACA DE PROCESSAMENTO</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="15 - SFP (Small form-factor pluggable transceiver)" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/SFP.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>SFP (Small form-factor pluggable transceiver)</h1>
+</i>
+<p>SFP é um módulo de interface de rede compacto e hot-plug usado para aplicações de telecomunicações e comunicação de dados. Uma interface SFP no hardware de rede é um slot modular para um transceptor específico de mídia para conectar um cabo de fibra óptica ou às vezes um cabo de cobre<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- GBIC</p>
+<p>- SFP</p>
+<p>- Transceiver</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="16 - BBU (Baseband Unit)" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/BBU.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>BBU (Baseband Unit)</h1>
+</i>
+<p>BBU (Baseband Unit) é um modulo que processa a banda base em sistemas de telecomunicações, uma BBU possui design modular, tamanho reduzido, baixo consumo de energia e fácil implantação<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- MODULO DE PROCESSAMENTO</p>
+<p>- BB2E</p>
+<p>- EDGE</p>
+<p>- BASEBAND</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+<li alt="17 - Cisco ONS 15454 10-Port 10 Gbps Line Card Data Sheet" class="col-lg-12 col-xl-6">
+<figure><div class="card"><div class="card-body"><div class="new-arrival-product"><div class="new-arrivals-img-contnent">
+<img class="img-fluid" src="https://srdarth.github.io/img/OSN.jpg" style="width:100%"></div><figcaption><a><i>
+<h1>Cisco ONS 15454 10-Port 10 Gbps Line Card Data Sheet</h1>
+</i>
+<p>ONS 15454 é uma placa multiserviço que simplifica a integração e o transporte de interfaces e serviços de 10 Gbps em redes ópticas corporativas ou de provedor de serviços<br>
+</p><h2>Termos que podem ser utilizados na pesquisa por ativos:</h2>
+<div class="TextAreaForm">
+<p>- ONS</p>
+<p>- OSN</p>
+<p>- PLACA DE CONTROLE</p>
+<p>- PLACA AUXILIAR DE SISTEMA</p>
+<p>- PLACA INTERFACE SISTEMA AUXILIAR OSN</p>
+</div>
+<p></p></div></div></div></a></figcaption></figure></li>
+
+</div>
+  
+</ul>
+
+</div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="./js/custom.min.js"></script>
+	<script src="./js/deznav-init.js"></script>
+	
+	<!-- Counter Up -->
+    <script src="./vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="./vendor/jquery.counterup/jquery.counterup.min.js"></script>	
+		
+	<!-- Apex Chart -->
+	<script src="./vendor/apexchart/apexchart.js"></script>	
+	
+	<!-- Chart piety plugin files -->
+	<script src="./vendor/peity/jquery.peity.min.js"></script>
+	
+	<!-- Dashboard 1 -->
+	<script src="./js/dashboard/dashboard-1.js"></script>
+<script>
+function Pesquisa() {
+var input, filter, ul, li, a, i;
+input = document.getElementById("MinhaPesquisa");
+filter = input.value.toUpperCase();
+ul = document.getElementById("ConteudoPesquisa");
+li = ul.getElementsByTagName("li");
+for (i = 0; i < li.length; i++) {
+a = li[i].getElementsByTagName("a")[0];
+if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+li[i].style.display = "";
+} else {
+li[i].style.display = "none"; }
+}
+}
+</script>	
+	
+</body>
+</html>

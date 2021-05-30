@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BackOffice</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <link href="./vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
+    <link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="./vendor/pickadate/themes/default.date.css">
+	<link href="./vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Clockpicker -->
+    <link href="./vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet">
+    <!-- asColorpicker -->
+    <link href="./vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet">
+    <!-- Material color picker -->
+    <link href="./vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+	<link rel="stylesheet" href="./vendor/toastr/css/toastr.min.css">
+
+</head>
+<style>
+textarea {
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    margin: 2px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.containerx {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    padding-top: 60%;
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.textoresult {
+-webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    resize: auto;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    column-count: initial !important;
+    padding: 2px;
+}
+</style>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="" alt="">
+				<img class="logo-abbr" src="./images/logo.png" alt="">
+                <img class="logo-compact" src="./images/logo-text.png" alt="">
+                <img class="brand-title" src="./images/logo-text.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+		
+		<!--**********************************
+        ***********************************-->
+		
+		<!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+							<li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link dz-fullscreen primary" href="#">
+									<svg id="Capa_1" enable-background="new 0 0 482.239 482.239" height="22" viewBox="0 0 482.239 482.239" width="22" xmlns="http://www.w3.org/2000/svg"><path d="m0 17.223v120.56h34.446v-103.337h103.337v-34.446h-120.56c-9.52 0-17.223 7.703-17.223 17.223z" fill=""/><path d="m465.016 0h-120.56v34.446h103.337v103.337h34.446v-120.56c0-9.52-7.703-17.223-17.223-17.223z" fill=""/><path d="m447.793 447.793h-103.337v34.446h120.56c9.52 0 17.223-7.703 17.223-17.223v-120.56h-34.446z" fill="" /><path d="m34.446 344.456h-34.446v120.56c0 9.52 7.703 17.223 17.223 17.223h120.56v-34.446h-103.337z" fill=""/></svg>
+                                </a>
+							</li>
+							<li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link primary" href="TradutorIATA.html" target="_blank">
+									<i id="Capa_1" enable-background="new 0 0 482.239 482.239" height="22" viewBox="0 0 482.239 482.239" width="22" class="la la-copy"></i>
+                                </a>
+							</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar start MENU LATERAL
+        ***********************************-->
+        <div class="deznav">
+            <div class="deznav-scroll">
+				<ul class="metismenu" id="menu">
+                    <li><a href="AMERINODE.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-book"></i>
+							<span class="nav-text">Avisos</span>
+						</a>
+					</li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-381-notepad"></i>
+							<span class="nav-text">Montar Texto</span>
+						</a>
+                        <ul aria-expanded="false">
+							<li><a href="MontarTextoEmergencial.html">Emergencial</a></li>
+							<li><a href="MontarTextoNormal.html">Normal</a></li>
+						</ul>
+                    </li>
+					<li><a href="CCe.html" class="ai-icon" aria-expanded="false">
+							<i class="la la-pencil-ruler"></i>
+							<span class="nav-text">Carta de Correção</span>
+						</a>
+					</li>
+					<li><a href="EmailSalaTim.html" class="ai-icon" aria-expanded="false">
+							<i class="lar la-envelope"></i>
+							<span class="nav-text">Email para Sala TIM</span>
+						</a>
+					</li>
+					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="la la-plane"></i>
+							<span class="nav-text">Siglas IATA</span>
+						</a>
+                        <ul aria-expanded="false">
+							<li><a href="TabelaIATA.html">Tabela com Filtro</a></li>
+							<li><a href="TradutorIATA.html">Tradutor</a></li>
+						</ul>
+                    </li>
+					<li><a href="Similar.html" class="ai-icon" aria-expanded="false">
+							<i class="la la-search"></i>
+							<span class="nav-text">Pesquisar similar</span>
+						</a>
+					</li>
+                </ul>
+            
+				<div class="add-menu-sidebar">
+				<img src="images/icon1.png" alt="">
+					<p>Encontrou algum erro?</p>
+					<p>Tem alguma sugestão?</p>
+					<p>Quer que desenvolva alguma ferramenta?</p>
+					<p>Conversa com o carinha que mora logo ali...</p>
+					<a href="https://api.whatsapp.com/send?phone=5511997218020&text=Ol%C3%A1%2C%20eu%20cliquei%20no%20link%20do%20site." class="btn btn-primary btn-block light" target=”_blank”>Enviar msg</a>
+				</div>
+				<div class="copyright">
+					<p><strong>SrDarth</strong> © 2021</p>
+					
+				</div>
+				<div class="copyright">
+				---
+				</div>
+			</div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+		
+		<!--**********************************
+            Content body start AREA DE CONTEUDO
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+			<div class="container-fluid">
+				<div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Tradutor IATA</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Siglas IATA</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Tradutor</a></li>
+                        </ol>
+                    </div>
+                </div>
+<div class="row">
+<div class="col-xl-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">TEXTO COM IATA</h4>
+								<p><code>[espaço]</code><b>IATA</b><code>[espaço]</code></p>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form containerx">
+<textarea id="tradutor" class="responsive-iframe" rows="10" onkeyup="tradutorIATA()"></textarea>
+                                </div>
+                            </div>
+                        </div>
+						
+					</div>
+<div class="col-xl-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">RESULTADO</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+<p class="textoresult" id="resultIATA"></p>
+                                </div>
+                            </div>
+                        </div>
+						
+					</div>
+</div>	
+			
+</div>
+</div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="./js/custom.min.js"></script>
+	<script src="./js/deznav-init.js"></script>
+	
+	<!-- Counter Up -->
+    <script src="./vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="./vendor/jquery.counterup/jquery.counterup.min.js"></script>	
+		
+	<!-- Apex Chart -->
+	<script src="./vendor/apexchart/apexchart.js"></script>	
+	
+	<!-- Chart piety plugin files -->
+	<script src="./vendor/peity/jquery.peity.min.js"></script>
+	
+	<!-- Dashboard 1 -->
+	<script src="./js/dashboard/dashboard-1.js"></script>
+<script>
+function tradutorIATA() {
+
+var textAREA = document.getElementById("tradutor").value;
+
+var ICAO1 = (textAREA.search(/ BSB /gi) >= 0) ? textAREA.replace(/BSB/gi, '<b> *BSB - AeroportoInternacional de Brasília / Presidente Jucelino Kubitschek, Brasília - DF* </b>') : textAREA;
+var ICAO2 = (textAREA.search(/ CGH /gi) >= 0) ? ICAO1.replace(/CGH/gi, '<b> *CGH - AeroportoInternacional de São Paulo / Congonhas, Congonhas - SP* </b>') : ICAO1;
+var ICAO3 = (textAREA.search(/ GIG /gi) >= 0) ? ICAO2.replace(/GIG/gi, '<b> *GIG - AeroportoInternacional do Rio de Janeiro / Galeão-Antônio Carlos Jobim, Galeão - RJ* </b>') : ICAO2;
+var ICAO4 = (textAREA.search(/ SSA /gi) >= 0) ? ICAO3.replace(/SSA/gi, '<b> *SSA - AeroportoInternacional de Salvador / Deputado Luis Eduardo Magalhães, Salvador - BA* </b>') : ICAO3;
+var ICAO5 = (textAREA.search(/ FLN /gi) >= 0) ? ICAO4.replace(/FLN/gi, '<b> *FLN - AeroportoInternacional de Florianópolis / Hercílio Luz, Florianópolis - SC* </b>') : ICAO4;
+var ICAO6 = (textAREA.search(/ POA /gi) >= 0) ? ICAO5.replace(/POA/gi, '<b> *POA - AeroportoInternacional de Porto Alegre / Salgado Filho, PortoAlegre - RS* </b>') : ICAO5;
+var ICAO7 = (textAREA.search(/ VCP /gi) >= 0) ? ICAO6.replace(/VCP/gi, '<b> *VCP - AeroportoInternacional de Viracopos / Campinas, Campinas - SP* </b>') : ICAO6;
+var ICAO8 = (textAREA.search(/ REC /gi) >= 0) ? ICAO7.replace(/REC/gi, '<b> *REC - AeroportoInternacional do Recife/ Guararapes – Gilberto Freyre, Recife - PE* </b>') : ICAO7;
+var ICAO9 = (textAREA.search(/ CWB /gi) >= 0) ? ICAO8.replace(/CWB/gi, '<b> *CWB - AeroportoInternacional de Curitiba / Afonso Pena, Curitiba - PR* </b>') : ICAO8;
+var ICAO10 = (textAREA.search(/ BEL /gi) >= 0) ? ICAO9.replace(/BEL/gi, '<b> *BEL - AeroportoInternacional de Belém / Val de Cans, Belém - PA* </b>') : ICAO9;
+var ICAO11 = (textAREA.search(/ VIX /gi) >= 0) ? ICAO10.replace(/VIX/gi, '<b> *VIX - Aeroportode Vitória – Eurico de Aguiar Salles, Vitória - ES* </b>') : ICAO10;
+var ICAO12 = (textAREA.search(/ SDU /gi) >= 0) ? ICAO11.replace(/SDU/gi, '<b> *SDU - AerorportoSantos Dumont, SantosDumont - RJ* </b>') : ICAO11;
+var ICAO13 = (textAREA.search(/ CGB /gi) >= 0) ? ICAO12.replace(/CGB/gi, '<b> *CGB - AeroportoInternacional de Cuiabá / Marechal Rondon, Cuiabá - MT* </b>') : ICAO12;
+var ICAO14 = (textAREA.search(/ CGR /gi) >= 0) ? ICAO13.replace(/CGR/gi, '<b> *CGR - AeroportoInternacional de Campo Grande, CampoGrande - MS* </b>') : ICAO13;
+var ICAO15 = (textAREA.search(/ FOR /gi) >= 0) ? ICAO14.replace(/FOR/gi, '<b> *FOR - AeroportoInternacional de Fortaleza / Pinto Martins, Fortaleza - CE* </b>') : ICAO14;
+var ICAO16 = (textAREA.search(/ MCP /gi) >= 0) ? ICAO15.replace(/MCP/gi, '<b> *MCP - AeroportoInternacional de Macapá, Macapá - AP* </b>') : ICAO15;
+var ICAO17 = (textAREA.search(/ MGF /gi) >= 0) ? ICAO16.replace(/MGF/gi, '<b> *MGF - AeroportoRegional de Maringá / Silvio Name Junior, Maringá - PR* </b>') : ICAO16;
+var ICAO18 = (textAREA.search(/ GYN /gi) >= 0) ? ICAO17.replace(/GYN/gi, '<b> *GYN - Aeroportode Goiânia / Santa Genoveva, Goiânia - GO* </b>') : ICAO17;
+var ICAO19 = (textAREA.search(/ NVT /gi) >= 0) ? ICAO18.replace(/NVT/gi, '<b> *NVT - AeroportoInternacional de Navegantes / Ministro Victor Konder, Navegantes - SC* </b>') : ICAO18;
+var ICAO20 = (textAREA.search(/ MAO /gi) >= 0) ? ICAO19.replace(/MAO/gi, '<b> *MAO - AeroportoInternacional de Manaus / Eduardo Gomes, Manaus - AM* </b>') : ICAO19;
+var ICAO21 = (textAREA.search(/ NAT /gi) >= 0) ? ICAO20.replace(/NAT/gi, '<b> *NAT - AeroportoInternacional de Natal / Augusto Severo, Natal - RN* </b>') : ICAO20;
+var ICAO22 = (textAREA.search(/ BPS /gi) >= 0) ? ICAO21.replace(/BPS/gi, '<b> *BPS - AeroportoInternacional de Porto Seguro, PortoSeguro - BA* </b>') : ICAO21;
+var ICAO23 = (textAREA.search(/ MCZ /gi) >= 0) ? ICAO22.replace(/MCZ/gi, '<b> *MCZ - Aeroportode Maceió / Zumbi dos Palmares, Maceió - AL* </b>') : ICAO22;
+var ICAO24 = (textAREA.search(/ PMW /gi) >= 0) ? ICAO23.replace(/PMW/gi, '<b> *PMW - Aeroportode Palmas/Brigadeiro Lysias Rodrigues, Palmas - TO* </b>') : ICAO23;
+var ICAO25 = (textAREA.search(/ SLZ /gi) >= 0) ? ICAO24.replace(/SLZ/gi, '<b> *SLZ - AeroportoInternacional de São Luís / Marechal Cunha Machado, SãoLuis - MA* </b>') : ICAO24;
+var ICAO26 = (textAREA.search(/ GRU /gi) >= 0) ? ICAO25.replace(/GRU/gi, '<b> *GRU - AeroportoInternacional de São Paulo/Guarulhos-Governador André Franco Motoro, Guarulhos - SP* </b>') : ICAO25;
+var ICAO27 = (textAREA.search(/ LDB /gi) >= 0) ? ICAO26.replace(/LDB/gi, '<b> *LDB - Aeroportode Londrina / Governador José Richa, Londrina - PR* </b>') : ICAO26;
+var ICAO28 = (textAREA.search(/ PVH /gi) >= 0) ? ICAO27.replace(/PVH/gi, '<b> *PVH - AeroportoInternacional de Porto Velho / Governador Jorge Teixeira de Oliveira, PortoVelho - RO* </b>') : ICAO27;
+var ICAO29 = (textAREA.search(/ RBR /gi) >= 0) ? ICAO28.replace(/RBR/gi, '<b> *RBR - AeroportoInternacional de Rio Branco / Plácido de Castro, RioBranco - AC* </b>') : ICAO28;
+var ICAO30 = (textAREA.search(/ JOI /gi) >= 0) ? ICAO29.replace(/JOI/gi, '<b> *JOI - Aeroportode Joinville / Lauro Carneiro de Loyola, Joinville - SC* </b>') : ICAO29;
+var ICAO31 = (textAREA.search(/ UDI /gi) >= 0) ? ICAO30.replace(/UDI/gi, '<b> *UDI - Aeroportode Uberlândia / Ten. Cel. Av. César Bombonato, Uberlândia - MG* </b>') : ICAO30;
+var ICAO32 = (textAREA.search(/ CXJ /gi) >= 0) ? ICAO31.replace(/CXJ/gi, '<b> *CXJ - AeroportoRegional de Caxias do Sul / Hugo Cantergiani, Caxiasdo Sul - RS* </b>') : ICAO31;
+var ICAO33 = (textAREA.search(/ IGU /gi) >= 0) ? ICAO32.replace(/IGU/gi, '<b> *IGU - AeroportoInternacional de Foz do Iguaçu, Fozdo Iguaçu - PR* </b>') : ICAO32;
+var ICAO34 = (textAREA.search(/ THE /gi) >= 0) ? ICAO33.replace(/THE/gi, '<b> *THE - Aeroportode Teresina – Senador Petrônio Portella, Teresina - PI* </b>') : ICAO33;
+var ICAO35 = (textAREA.search(/ AJU /gi) >= 0) ? ICAO34.replace(/AJU/gi, '<b> *AJU - AeroportoInternacional de Aracaju / Santa Maria, Aracaju - SE* </b>') : ICAO34;
+var ICAO36 = (textAREA.search(/ JPA /gi) >= 0) ? ICAO35.replace(/JPA/gi, '<b> *JPA - AeroportoInternacional de João Pessoa / Presidente Castro Pinto, JoãoPessoa - PB* </b>') : ICAO35;
+var ICAO37 = (textAREA.search(/ PNZ /gi) >= 0) ? ICAO36.replace(/PNZ/gi, '<b> *PNZ - Aeroportode Petrolina / Senador Nilo Coelho, Petrolina - PE* </b>') : ICAO36;
+var ICAO38 = (textAREA.search(/ CNF /gi) >= 0) ? ICAO37.replace(/CNF/gi, '<b> *CNF - AeroportoInternacional de Minas Gerais / Confins – Tancredo Neves, Confins - MG* </b>') : ICAO37;
+var ICAO39 = (textAREA.search(/ BVB /gi) >= 0) ? ICAO38.replace(/BVB/gi, '<b> *BVB - AeroportoInternacional de Boa Vista / Atlas Brasil Cantanhede, BoaVista - RR* </b>') : ICAO38;
+var ICAO40 = (textAREA.search(/ CPV /gi) >= 0) ? ICAO39.replace(/CPV/gi, '<b> *CPV - Aeroportode Campina Grande / Presidente João Suassuna, CampinaGrande - PB* </b>') : ICAO39;
+var ICAO41 = (textAREA.search(/ STM /gi) >= 0) ? ICAO40.replace(/STM/gi, '<b> *STM - Aeroportode Santarém / Maestro Wilson Fonseca, Santarém - PA* </b>') : ICAO40;
+var ICAO42 = (textAREA.search(/ IOS /gi) >= 0) ? ICAO41.replace(/IOS/gi, '<b> *IOS - Aeroportode Ilhéus/Bahia-Jorge Amado, Ilhéus - BA* </b>') : ICAO41;
+var ICAO43 = (textAREA.search(/ JDO /gi) >= 0) ? ICAO42.replace(/JDO/gi, '<b> *JDO - Aeroportode Juazeiro do Norte – Orlando Bezerra, Juazeirodo Norte - CE* </b>') : ICAO42;
+var ICAO44 = (textAREA.search(/ IMP /gi) >= 0) ? ICAO43.replace(/IMP/gi, '<b> *IMP - Aeroportode Imperatriz – Prefeito Renato Moreira, Imperatriz - MA* </b>') : ICAO43;
+var ICAO45 = (textAREA.search(/ XAP /gi) >= 0) ? ICAO44.replace(/XAP/gi, '<b> *XAP - Aeroportode Chapecó – Serafin Enoss Bertaso, Chapecó - SC* </b>') : ICAO44;
+var ICAO46 = (textAREA.search(/ MAB /gi) >= 0) ? ICAO45.replace(/MAB/gi, '<b> *MAB - Aeroportode Marabá, Marabá - PA* </b>') : ICAO45;
+var ICAO47 = (textAREA.search(/ CZS /gi) >= 0) ? ICAO46.replace(/CZS/gi, '<b> *CZS - AeroportoInternacional de Cruzeiro do Sul, Cruzeirodo Sul - AC* </b>') : ICAO46;
+var ICAO48 = (textAREA.search(/ PPB /gi) >= 0) ? ICAO47.replace(/PPB/gi, '<b> *PPB - AeroportoEstadual de Presidente Prudente, PresidentePrudente - SP* </b>') : ICAO47;
+var ICAO49 = (textAREA.search(/ CFB /gi) >= 0) ? ICAO48.replace(/CFB/gi, '<b> *CFB - AeroportoInternacional de Cabo Frio, CaboFrio - RJ* </b>') : ICAO48;
+var ICAO50 = (textAREA.search(/ FEN /gi) >= 0) ? ICAO49.replace(/FEN/gi, '<b> *FEN - Aeroportode Fernando de Noronha, Fernandode Noronha - PE* </b>') : ICAO49;
+var ICAO51 = (textAREA.search(/ JTC /gi) >= 0) ? ICAO50.replace(/JTC/gi, '<b> *JTC - AeroportoEstadual de Bauru/Arealva, Bauru - SP* </b>') : ICAO50;
+var ICAO52 = (textAREA.search(/ MOC /gi) >= 0) ? ICAO51.replace(/MOC/gi, '<b> *MOC - Aeroportode Montes Claros/Mário Ribeiro, MontesClaros - MG* </b>') : ICAO51;
+
+var RESULT = ICAO52;
+
+document.getElementById("resultIATA").innerHTML = RESULT
+
+}
+</script>	
+	
+</body>
+</html>
